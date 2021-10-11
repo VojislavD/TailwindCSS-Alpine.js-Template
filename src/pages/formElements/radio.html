@@ -1860,7 +1860,165 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    Radio
+                    <!-- start::Basic Radio -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Basic Radio</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mt-6">
+
+                            <!-- start::Radio Unchecked -->
+                            <div class="flex items-center">
+                                <label for="radio_unchecked">Unchecked</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_unchecked" 
+                                    id="radio_unchecked" 
+                                    class="ml-2 focus:ring-0" 
+                                >
+                            </div>
+                            <!-- end::Radio Unchecked -->
+
+                            <!-- start::Radio Checked -->
+                            <div class="flex items-center">
+                                <label for="radio_checked">Checked</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_checked" 
+                                    id="radio_checked" 
+                                    class="ml-2 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Checked -->
+
+                            <!-- start::Radio Unchecked Disabled -->
+                            <div class="flex items-center">
+                                <label for="radio_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_unchecked_disabled" 
+                                    id="radio_unchecked_disabled" 
+                                    class="ml-2 text-gray-300 focus:ring-0"
+                                    disabled
+                                >
+                            </div>
+                            <!-- end::Radio Unchecked Disabled -->
+
+                            <!-- start::Radio Checked Disabled -->
+                            <div class="flex items-center">
+                                <label for="radio_checked_disabled" class="text-gray-500">Checked Disabled</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_checked_disabled" 
+                                    id="radio_checked_disabled" 
+                                    class="ml-2 text-gray-500 focus:ring-0"
+                                    checked
+                                    disabled
+                                >
+                            </div>
+                            <!-- end::Radio Checked Disabled -->
+
+                            <!-- start::Radio Label Right -->
+                            <div class="flex items-center">
+                                <input 
+                                    type="radio" 
+                                    name="radio_label_right" 
+                                    id="radio_label_right" 
+                                    class="mr-2 focus:ring-0"
+                                >
+                                <label for="radio_label_right">Label Right</label>
+                            </div>
+                            <!-- end::Radio Label Right-->
+
+                            
+                        </div>
+                    </div>
+                    <!-- end::Basic Radio -->
+
+                    <!-- start::Color Radio -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Color Radio</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+
+                            <!-- start::Radio Color Primary -->
+                            <div class="flex items-center">
+                                <label for="radio_color_primary">Color Primary</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_primary" 
+                                    id="radio_color_primary" 
+                                    class="ml-2 text-primary border border-primary focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Primary -->
+
+                            <!-- start::Radio Color Secondary -->
+                            <div class="flex items-center">
+                                <label for="radio_color_secondary">Color Secondary</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_secondary" 
+                                    id="radio_color_secondary" 
+                                    class="ml-2 text-secondary border border-secondary focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Secondary -->
+
+                            <!-- start::Radio Color Red -->
+                            <div class="flex items-center">
+                                <label for="radio_color_red">Color Red</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_red" 
+                                    id="radio_color_red" 
+                                    class="ml-2 text-red-600 border border-red-600 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Red -->
+
+                            <!-- start::Radio Color Green -->
+                            <div class="flex items-center">
+                                <label for="radio_color_green">Color Green</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_green" 
+                                    id="radio_color_green" 
+                                    class="ml-2 text-green-500 border border-green-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Green -->
+
+                            <!-- start::Radio Color Blue -->
+                            <div class="flex items-center">
+                                <label for="radio_color_blue">Color Blue</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_blue" 
+                                    id="radio_color_blue" 
+                                    class="ml-2 text-blue-500 border border-blue-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Blue -->
+
+                            <!-- start::Radio Color Yellow -->
+                            <div class="flex items-center">
+                                <label for="radio_color_yellow">Color Yellow</label>
+                                <input 
+                                    type="radio" 
+                                    name="radio_color_yellow" 
+                                    id="radio_color_yellow" 
+                                    class="ml-2 text-yellow-500 border border-yellow-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Radio Color Yellow -->
+                        </div>
+                    </div>
+                    <!-- end::Color Radio -->
                 </div>
                 <!-- end:Page content -->
             </div>
