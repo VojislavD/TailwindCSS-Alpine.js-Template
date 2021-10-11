@@ -1860,10 +1860,117 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    Textarea
+                    <!-- start::Basic Textarea -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Basic Textarea</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
+
+                            <!-- start::Textarea Default -->
+                            <div class="flex flex-col">
+                                <label for="textarea_default">Default</label>
+                                <textarea
+                                    id="textarea_default"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0"
+                                    placeholder="Some text goes here..."
+                                ></textarea>
+                            </div>
+                            <!-- end::Textarea Default -->
+
+                            <!-- start::Textarea Readonly -->
+                            <div class="flex flex-col">
+                                <label for="textarea_readonly">Readonly</label>
+                                <textarea
+                                    id="textarea_readonly"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0 text-gray-500"
+                                    readonly
+                                >Some text goes here...</textarea>
+                            </div>
+                            <!-- end::Textarea Readonly -->
+
+                            <!-- start::Textarea Border Primary -->
+                            <div class="flex flex-col">
+                                <label for="textarea_border_primary">Border Primary</label>
+                                <textarea
+                                    id="textarea_border_primary"
+                                    class="mt-2 border-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    placeholder="Some text goes here..."
+                                ></textarea>
+                            </div>
+                            <!-- end::Textarea Border Primary -->
+                        </div>
+                    </div>
+                    <!-- end::Basic Textarea -->
+
+                    <!-- start::State Textarea -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">State Textarea</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
+
+                            <!-- start::Textarea State Valid -->
+                            <div class="flex flex-col">
+                                <label for="textarea_state_valid">State Valid</label>
+                                <div class="relative flex">
+                                    <textarea
+                                    id="textarea_state_valid"
+                                    class="flex-1 mt-2 border-green-500 focus:border-green-500 ring-1 ring-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
+                                    placeholder="Some text goes here..."
+                                    ></textarea>
+                                    <svg class="w-5 h-5 absolute right-4 top-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </div>
+                            </div>
+                            <!-- end::Textarea State Valid -->
+
+                            <!-- start::Textarea State Invalid -->
+                            <div class="flex flex-col">
+                                <label for="textarea_state_invalid">State Invalid</label>
+                                <div class="relative flex">
+                                    <textarea
+                                    id="textarea_state_invalid"
+                                    class="flex-1 mt-2 border-red-600 focus:border-red-600 ring-1 ring-red-600 focus:outline-none focus:ring-1 focus:ring-red-600"
+                                    placeholder="Some text goes here..."
+                                    ></textarea>
+                                    <svg class="w-5 h-5 absolute right-4 top-3 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                            </div>
+                            <!-- end::Textarea State Invalid -->
+                        </div>
+                    </div>
+                    <!-- end::State Textarea -->
+
+                    <!-- start::Characters Counter -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Characters Counter</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
+
+                            <!-- start::Textarea Default -->
+                            <div class="flex flex-col">
+                                <label for="textarea_char_count">Characters Count</label>
+                                <textarea
+                                    id="textarea_char_count"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0"
+                                    placeholder="Some text goes here..."
+                                    maxlength="50"
+                                    onkeydown="countChar()"
+                                ></textarea>
+                                <div class="flex items-center justify-end">
+                                    <div class="bg-primary text-gray-100 px-2 py-1 mr-4 text-xs rounded-bl-lg rounded-br-lg">
+                                        <span id="numChar"></span>
+                                        <span>/</span>
+                                        <span id="maxChar"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Textarea Default -->
+                        </div>
+                    </div>
+                    <!-- end::Characters Counter -->
                 </div>
                 <!-- end:Page content -->
             </div>
         </div>
+
+        <!-- Specific Script -->
+        <script src="/src/js/textarea_char_count.js"></script>
+
     </body>
 </html>
