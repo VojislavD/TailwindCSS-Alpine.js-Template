@@ -1860,7 +1860,561 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    Switch
+                    <!-- start::Basic Switch -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Basic Switch</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+
+                            <!-- start::Switch Active -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active" 
+                                        name="switch_active" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Active -->
+
+                            <!-- start::Switch Inactive -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_inactive" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive" 
+                                        name="switch_inactive" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive -->
+
+                            <!-- start::Switch Active Disabled -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Disabled</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-gray-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_disabled" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_disabled" 
+                                        name="switswitch_active_disabled_active" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Active Disabled -->
+
+                            <!-- start::Switch Inactive Disabled -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Disabled</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-500'"
+                                >
+                                    <label 
+                                        for="switch_inactive_disabled" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_disabled" 
+                                        name="switch_inactive_disabled" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive Disabled -->
+
+                            <!-- start::Switch Active Square -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_square" 
+                                        name="switch_active_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Active Square -->
+
+                            <!-- start::Switch Inactive Square -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_inactive_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_square" 
+                                        name="switch_inactive_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive Square -->
+
+                            <!-- start::Switch Active Disabled Square -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Active Disabled Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-gray-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_active_disabled_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_active_disabled_square" 
+                                        name="switch_active_disabled_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Active Disabled Square -->
+
+                            <!-- start::Switch Inactive Disabled Square -->
+                            <div
+                                x-data="{ active: false }"
+                            >
+                                <label>Switch Inactive Disabled Square</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-500'"
+                                >
+                                    <label 
+                                        for="switch_inactive_disabled_square" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-400' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_inactive_disabled_square" 
+                                        name="switch_inactive_disabled_square" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                        disabled
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Switch Inactive Disabled Square -->
+                        </div>
+                    </div>
+                    <!-- end::Basic Switch -->
+
+                    <!-- start::Switch Colors -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Switch Colors</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+
+                            <!-- start::Color Primary -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Primary</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-primary' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_primary" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-primary' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_primary" 
+                                        name="switch_color_primary" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Primary -->
+
+                            <!-- start::Color Secondary -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Secondary</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-secondary' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_secondary" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-secondary' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_secondary" 
+                                        name="switch_color_secondary" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Secondary -->
+
+                            <!-- start::Color Red -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Red</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-red-600' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_red" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-red-600' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_red" 
+                                        name="switch_color_red" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Red -->
+
+                            <!-- start::Color Yellow -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Yellow</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-yellow-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_yellow" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-yellow-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_yellow" 
+                                        name="switch_color_yellow" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Yellow -->
+
+                            <!-- start::Color Blue -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Color Blue</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-blue-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_color_blue" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-blue-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_color_blue" 
+                                        name="switch_color_blue" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                </div>
+                            </div>
+                            <!-- end::Color Blue -->
+                        </div>
+                    </div>
+                    <!-- end::Switch Colors -->
+
+                    <!-- start::Switch Icons -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Switch Icons</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-7 gap-6 mt-6">
+
+                            <!-- start::Switch Sound -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Sound</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_sound" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_sound" 
+                                        name="switch_sound" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Sound -->
+
+                            <!-- start::Switch Visibility -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Visibility</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_visibility" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_visibility" 
+                                        name="switch_visibility" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Visibility -->
+
+                            <!-- start::Switch Locked -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Locked</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_locked" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_locked" 
+                                        name="switch_locked" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Locked -->
+
+                            <!-- start::Switch Online -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Online</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_online" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_online" 
+                                        name="switch_online" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 18.364a9 9 0 010-12.728m12.728 0a9 9 0 010 12.728m-9.9-2.829a5 5 0 010-7.07m7.072 0a5 5 0 010 7.07M13 12a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Online -->
+
+                            <!-- start::Switch OK -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch OK</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_ok" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_ok" 
+                                        name="switch_ok" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch OK -->
+
+                            <!-- start::Switch Like -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Like</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_like" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_like" 
+                                        name="switch_like" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Like -->
+
+                            <!-- start::Switch Light -->
+                            <div
+                                x-data="{ active: true }"
+                            >
+                                <label>Switch Light</label>
+                                <div 
+                                    class="relative w-12 h-6 mt-2 rounded-full transition duration-200 ease-linear"
+                                    :class="active ? 'bg-green-500' : 'bg-gray-400'"
+                                >
+                                    <label 
+                                        for="switch_light" 
+                                        class="absolute left-0 w-6 h-6 bg-white border-2 mb-2 rounded-full transition transform duration-100 ease-linear cursor-pointer" 
+                                        :class=" active  ? 'translate-x-full border-green-500' : 'translate-x-0 border-gray-400'"
+                                    ></label>
+                                    <input 
+                                        type="checkbox" 
+                                        id="switch_light" 
+                                        name="switch_light" 
+                                        class="focus:ring-0 hidden" 
+                                        @click="active = !active"
+                                    >
+                                    <div class="flex items-center justify-between">
+                                        <svg class="w-5 h-5 pt-1 pl-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                                        <svg class="w-5 h-5 pt-1 pr-1 text-gray-100" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Switch Light -->
+                        </div>
+                    </div>
+                    <!-- end::Switch Icons -->
                 </div>
                 <!-- end:Page content -->
             </div>
