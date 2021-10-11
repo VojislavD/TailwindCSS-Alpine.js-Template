@@ -16,6 +16,7 @@ module.exports = {
     extend: {},
   },
   plugins: [
+    require('@tailwindcss/forms'),
     plugin(function({ addUtilities, theme }) {
       const newUtilities = {
           '.custom-scrollbar': {
