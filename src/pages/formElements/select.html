@@ -1860,7 +1860,267 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    Select
+                    <!-- start::Basic Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8">
+                        <h4 class="text-xl capitalize">Basic Selects</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- start::Basic Select -->
+                            <div class="flex flex-col">
+                                <label for="basic_select">Basic</label>
+                                <select
+                                    name="basic_select"
+                                    id="basic_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Basic Select -->
+
+                            <!-- start::Disabled Select -->
+                            <div class="flex flex-col">
+                                <label for="disabled_select">Disabled</label>
+                                <select
+                                    name="disabled_select"
+                                    id="disabled_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    disabled
+                                >
+                                    <option></option>
+                                    <option selected>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Disabled Select -->
+
+                            <!-- start::Rounded Select -->
+                            <div class="flex flex-col">
+                                <label for="rounded_select">Rounded</label>
+                                <select
+                                    name="rounded_select"
+                                    id="rounded_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-lg"
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Rounded Select -->
+
+                            <!-- start::Multiple Select -->
+                            <div class="flex flex-col">
+                                <label for="mulitple_select">Multiple</label>
+                                <select
+                                    name="mulitple_select"
+                                    id="mulitple_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    multiple
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Multiple Select -->
+                        </div>
+                    </div>
+                    <!-- start::Basic Selects -->
+
+                    <!-- start::Size Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 gap-6">
+                                <h4 class="text-xl capitalize">Size</h4>
+                                <!-- start::Extra Large Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="extra_large_size_select">Extra Large</label>
+                                    <select
+                                        name="extra_large_size_select"
+                                        id="extra_large_size_select"
+                                        class="mt-2 py-1 text-xl border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Extra Large Size Select -->
+
+                                <!-- start::Large Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="large_size_select">Large</label>
+                                    <select
+                                        name="large_size_select"
+                                        id="large_size_select"
+                                        class="mt-2 py-1 text-lg border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Large Size Select -->
+
+                                <!-- start::Default Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="default_size_select">Default</label>
+                                    <select
+                                        name="default_size_select"
+                                        id="default_size_select"
+                                        class="mt-2 py-1 text-base border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Default Size Select -->
+
+                                <!-- start::Small Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="small_size_select">Small</label>
+                                    <select
+                                        name="small_size_select"
+                                        id="small_size_select"
+                                        class="mt-2 py-1 text-sm border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Small Size Select -->
+
+                                <!-- start::Extra Small Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="extra_small_size_select">Extra Small</label>
+                                    <select
+                                        name="extra_small_size_select"
+                                        id="extra_small_size_select"
+                                        class="mt-2 py-1 text-xs border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Extra Small Size Select -->
+                            </div>
+                            <div class="grid grid-cols-1 gap-6">
+                                <h4 class="text-xl capitalize">Colors</h4>
+                                <!-- start::Primary Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="primary_color_select">Primary</label>
+                                    <select
+                                        name="primary_color_select"
+                                        id="primary_color_select"
+                                        class="mt-2 py-1 border-primary focus:outline-none focus:ring-0 focus:border-primary"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Primary Color Select -->
+
+                                <!-- start::Secondary Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="secondary_color_select">Secondary</label>
+                                    <select
+                                        name="secondary_color_select"
+                                        id="secondary_color_select"
+                                        class="mt-2 py-1 border-secondary focus:outline-none focus:ring-0 focus:border-secondary"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Secondary Color Select -->
+
+                                <!-- start::Green Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="green_color_select">Green</label>
+                                    <select
+                                        name="green_color_select"
+                                        id="green_color_select"
+                                        class="mt-2 py-1 border-green-500 focus:outline-none focus:ring-0 focus:border-green-500"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Green Color Select -->
+
+                                <!-- start::Red Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="red_color_select">Red</label>
+                                    <select
+                                        name="red_color_select"
+                                        id="red_color_select"
+                                        class="mt-2 py-1 border-red-600 focus:outline-none focus:ring-0 focus:border-red-600"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Red Color Select -->
+
+                                <!-- start::Blue Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="blue_color_select">Blue</label>
+                                    <select
+                                        name="blue_color_select"
+                                        id="blue_color_select"
+                                        class="mt-2 py-1 border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-500"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Blue Color Select -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- start::Size Selects -->
+
+                    <!-- start::Size Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
+                        <h4 class="text-xl capitalize">Advanced</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- start::Text And Image Select -->
+                            <div 
+                                x-data="{ selected: 0 }"
+                                class="flex flex-col"
+                            >
+                                <label for="text_and_image_select">Border Color Based On Selected Value</label>
+                                <select
+                                    x-model="selected"
+                                    name="text_and_image_select"
+                                    id="text_and_image_select"
+                                    class="mt-2 py-1 border border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    :class="selected == 1 ? 'border-green-500 focus:border-green-500' : selected == 2 ? 'border-red-600 focus:border-red-600' : ''"
+                                >
+                                    <option value="0"></option>
+                                    <option value="1">Allowed</option>
+                                    <option value="2">Forbidden</option>
+                                    <option disabled>Disabled</option>
+                                </select>
+                            </div>
+                            <!-- end::Text And Image Select  -->
+                        </div>
+                    </div>
+                    <!-- start::Size Selects -->
                 </div>
                 <!-- end:Page content -->
             </div>
