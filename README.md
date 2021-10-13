@@ -1,5 +1,6 @@
 # Tailwind CSS & Alpine.js Template
-
+<img src="https://user-images.githubusercontent.com/23532087/137189566-765e9df9-acca-4281-ba9c-3f438753b8ed.png">
+  
 Free admin dashboard template created with Tailwind CSS and Alpine.js.
 
 ## Demo
