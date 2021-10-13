@@ -5,7 +5,7 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="/src/css/tailwind.css">
+        <link rel="stylesheet" href="/css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -296,7 +296,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/input.html"
+                                    href="/pages/formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -308,7 +308,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/checkbox.html"
+                                    href="/pages/formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -320,7 +320,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/radio.html"
+                                    href="/pages/formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -332,7 +332,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/textarea.html"
+                                    href="/pages/formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -344,7 +344,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/switch.html"
+                                    href="/pages/formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -356,7 +356,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/select.html"
+                                    href="/pages/formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -438,7 +438,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="/src/pages/buttons.html"
+                        href="/pages/buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1587,7 +1587,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1636,7 +1636,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1685,7 +1685,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1734,7 +1734,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1768,7 +1768,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="/src/img/profile.jpg"
+                                        src="/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1880,270 +1880,117 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Default Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8">
-                        <h4 class="text-xl capitalize">Default Selects</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- start::Default Select -->
-                            <div class="flex flex-col">
-                                <label for="default_select">Default</label>
-                                <select
-                                    name="default_select"
-                                    id="default_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                            <!-- end::Default Select -->
+                    <!-- start::Default Textarea -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Default Textarea</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
 
-                            <!-- start::Disabled Select -->
+                            <!-- start::Textarea Default -->
                             <div class="flex flex-col">
-                                <label for="disabled_select">Disabled</label>
-                                <select
-                                    name="disabled_select"
-                                    id="disabled_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    disabled
-                                >
-                                    <option></option>
-                                    <option selected>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                                <label for="textarea_default">Default</label>
+                                <textarea
+                                    id="textarea_default"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0"
+                                    placeholder="Some text goes here..."
+                                ></textarea>
                             </div>
-                            <!-- end::Disabled Select -->
+                            <!-- end::Textarea Default -->
 
-                            <!-- start::Rounded Select -->
+                            <!-- start::Textarea Readonly -->
                             <div class="flex flex-col">
-                                <label for="rounded_select">Rounded</label>
-                                <select
-                                    name="rounded_select"
-                                    id="rounded_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-lg"
-                                >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                                <label for="textarea_readonly">Readonly</label>
+                                <textarea
+                                    id="textarea_readonly"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0 text-gray-500"
+                                    readonly
+                                >Some text goes here...</textarea>
                             </div>
-                            <!-- end::Rounded Select -->
+                            <!-- end::Textarea Readonly -->
 
-                            <!-- start::Multiple Select -->
+                            <!-- start::Textarea Border Primary -->
                             <div class="flex flex-col">
-                                <label for="mulitple_select">Multiple</label>
-                                <select
-                                    name="mulitple_select"
-                                    id="mulitple_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    multiple
-                                >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
+                                <label for="textarea_border_primary">Border Primary</label>
+                                <textarea
+                                    id="textarea_border_primary"
+                                    class="mt-2 border-primary focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                                    placeholder="Some text goes here..."
+                                ></textarea>
                             </div>
-                            <!-- end::Multiple Select -->
+                            <!-- end::Textarea Border Primary -->
                         </div>
                     </div>
-                    <!-- start::Default Selects -->
+                    <!-- end::Default Textarea -->
 
-                    <!-- start::Size Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="grid grid-cols-1 gap-6">
-                                <h4 class="text-xl capitalize">Size</h4>
-                                <!-- start::Extra Large Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="extra_large_size_select">Extra Large</label>
-                                    <select
-                                        name="extra_large_size_select"
-                                        id="extra_large_size_select"
-                                        class="mt-2 py-1 text-xl border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Extra Large Size Select -->
+                    <!-- start::State Textarea -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">State Textarea</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
 
-                                <!-- start::Large Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="large_size_select">Large</label>
-                                    <select
-                                        name="large_size_select"
-                                        id="large_size_select"
-                                        class="mt-2 py-1 text-lg border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
+                            <!-- start::Textarea State Valid -->
+                            <div class="flex flex-col">
+                                <label for="textarea_state_valid">State Valid</label>
+                                <div class="relative flex">
+                                    <textarea
+                                    id="textarea_state_valid"
+                                    class="flex-1 mt-2 border-green-500 focus:border-green-500 ring-1 ring-green-500 focus:outline-none focus:ring-1 focus:ring-green-500"
+                                    placeholder="Some text goes here..."
+                                    ></textarea>
+                                    <svg class="w-5 h-5 absolute right-4 top-3 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                                 </div>
-                                <!-- end::Large Size Select -->
-
-                                <!-- start::Default Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="default_size_select">Default</label>
-                                    <select
-                                        name="default_size_select"
-                                        id="default_size_select"
-                                        class="mt-2 py-1 text-base border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Default Size Select -->
-
-                                <!-- start::Small Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="small_size_select">Small</label>
-                                    <select
-                                        name="small_size_select"
-                                        id="small_size_select"
-                                        class="mt-2 py-1 text-sm border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Small Size Select -->
-
-                                <!-- start::Extra Small Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="extra_small_size_select">Extra Small</label>
-                                    <select
-                                        name="extra_small_size_select"
-                                        id="extra_small_size_select"
-                                        class="mt-2 py-1 text-xs border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Extra Small Size Select -->
                             </div>
-                            <div class="grid grid-cols-1 gap-6">
-                                <h4 class="text-xl capitalize">Colors</h4>
-                                <!-- start::Primary Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="primary_color_select">Primary</label>
-                                    <select
-                                        name="primary_color_select"
-                                        id="primary_color_select"
-                                        class="mt-2 py-1 border-primary focus:outline-none focus:ring-0 focus:border-primary"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Primary Color Select -->
+                            <!-- end::Textarea State Valid -->
 
-                                <!-- start::Secondary Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="secondary_color_select">Secondary</label>
-                                    <select
-                                        name="secondary_color_select"
-                                        id="secondary_color_select"
-                                        class="mt-2 py-1 border-secondary focus:outline-none focus:ring-0 focus:border-secondary"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
+                            <!-- start::Textarea State Invalid -->
+                            <div class="flex flex-col">
+                                <label for="textarea_state_invalid">State Invalid</label>
+                                <div class="relative flex">
+                                    <textarea
+                                    id="textarea_state_invalid"
+                                    class="flex-1 mt-2 border-red-600 focus:border-red-600 ring-1 ring-red-600 focus:outline-none focus:ring-1 focus:ring-red-600"
+                                    placeholder="Some text goes here..."
+                                    ></textarea>
+                                    <svg class="w-5 h-5 absolute right-4 top-3 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 </div>
-                                <!-- end::Secondary Color Select -->
-
-                                <!-- start::Green Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="green_color_select">Green</label>
-                                    <select
-                                        name="green_color_select"
-                                        id="green_color_select"
-                                        class="mt-2 py-1 border-green-500 focus:outline-none focus:ring-0 focus:border-green-500"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Green Color Select -->
-
-                                <!-- start::Red Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="red_color_select">Red</label>
-                                    <select
-                                        name="red_color_select"
-                                        id="red_color_select"
-                                        class="mt-2 py-1 border-red-600 focus:outline-none focus:ring-0 focus:border-red-600"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Red Color Select -->
-
-                                <!-- start::Blue Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="blue_color_select">Blue</label>
-                                    <select
-                                        name="blue_color_select"
-                                        id="blue_color_select"
-                                        class="mt-2 py-1 border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-500"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Blue Color Select -->
                             </div>
+                            <!-- end::Textarea State Invalid -->
                         </div>
                     </div>
-                    <!-- start::Size Selects -->
+                    <!-- end::State Textarea -->
 
-                    <!-- start::Size Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
-                        <h4 class="text-xl capitalize">Advanced</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- start::Text And Image Select -->
-                            <div 
-                                x-data="{ selected: 0 }"
-                                class="flex flex-col"
-                            >
-                                <label for="text_and_image_select">Border Color Based On Selected Value</label>
-                                <select
-                                    x-model="selected"
-                                    name="text_and_image_select"
-                                    id="text_and_image_select"
-                                    class="mt-2 py-1 border border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    :class="selected == 1 ? 'border-green-500 focus:border-green-500' : selected == 2 ? 'border-red-600 focus:border-red-600' : ''"
-                                >
-                                    <option value="0"></option>
-                                    <option value="1">Allowed</option>
-                                    <option value="2">Forbidden</option>
-                                    <option disabled>Disabled</option>
-                                </select>
+                    <!-- start::Characters Counter -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Characters Counter</h4>
+                        <div class="grid grid-cols-1 gap-6 mt-6">
+
+                            <!-- start::Textarea Default -->
+                            <div class="flex flex-col">
+                                <label for="textarea_char_count">Characters Count</label>
+                                <textarea
+                                    id="textarea_char_count"
+                                    class="mt-2 border-gray-400 focus:border-gray-400 focus:outline-none focus:ring-0"
+                                    placeholder="Some text goes here..."
+                                    maxlength="50"
+                                    onkeydown="countChar()"
+                                ></textarea>
+                                <div class="flex items-center justify-end">
+                                    <div class="bg-primary text-gray-100 px-2 py-1 mr-4 text-xs rounded-bl-lg rounded-br-lg">
+                                        <span id="numChar"></span>
+                                        <span>/</span>
+                                        <span id="maxChar"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- end::Text And Image Select  -->
+                            <!-- end::Textarea Default -->
                         </div>
                     </div>
-                    <!-- start::Size Selects -->
+                    <!-- end::Characters Counter -->
                 </div>
                 <!-- end:Page content -->
             </div>
         </div>
+
+        <!-- Specific Script -->
+        <script src="/js/textarea_char_count.js"></script>
+
     </body>
 </html>

@@ -5,7 +5,7 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="/src/css/tailwind.css">
+        <link rel="stylesheet" href="/css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -296,7 +296,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/input.html"
+                                    href="/pages/formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -308,7 +308,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/checkbox.html"
+                                    href="/pages/formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -320,7 +320,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/radio.html"
+                                    href="/pages/formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -332,7 +332,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/textarea.html"
+                                    href="/pages/formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -344,7 +344,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/switch.html"
+                                    href="/pages/formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -356,7 +356,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="/src/pages/formElements/select.html"
+                                    href="/pages/formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -438,7 +438,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="/src/pages/buttons.html"
+                        href="/pages/buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -452,7 +452,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -1587,7 +1587,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1636,7 +1636,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1685,7 +1685,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1734,7 +1734,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="/src/img/profile.jpg"
+                                                    src="/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1768,7 +1768,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="/src/img/profile.jpg"
+                                        src="/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1880,178 +1880,165 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Default Checkbox -->
+                    <!-- start::Default Radio -->
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Default Checkbox</h4>
-                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+                        <h4 class="text-xl capitalize">Default Radio</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-6 mt-6">
 
-                            <!-- start::Checkbox Unchecked -->
+                            <!-- start::Radio Unchecked -->
                             <div class="flex items-center">
-                                <label for="checkbox_unchecked">Unchecked</label>
+                                <label for="radio_unchecked">Unchecked</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked" 
-                                    id="checkbox_unchecked" 
+                                    type="radio" 
+                                    name="radio_unchecked" 
+                                    id="radio_unchecked" 
                                     class="ml-2 focus:ring-0" 
                                 >
                             </div>
-                            <!-- end::Checkbox Unchecked -->
+                            <!-- end::Radio Unchecked -->
 
-                            <!-- start::Checkbox Checked -->
+                            <!-- start::Radio Checked -->
                             <div class="flex items-center">
-                                <label for="checkbox_checked">Checked</label>
+                                <label for="radio_checked">Checked</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked" 
-                                    id="checkbox_checked" 
+                                    type="radio" 
+                                    name="radio_checked" 
+                                    id="radio_checked" 
                                     class="ml-2 focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Checked -->
+                            <!-- end::Radio Checked -->
 
-                            <!-- start::Checkbox Unchecked Disabled -->
+                            <!-- start::Radio Unchecked Disabled -->
                             <div class="flex items-center">
-                                <label for="checkbox_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
+                                <label for="radio_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_unchecked_disabled" 
-                                    id="checkbox_unchecked_disabled" 
+                                    type="radio" 
+                                    name="radio_unchecked_disabled" 
+                                    id="radio_unchecked_disabled" 
                                     class="ml-2 text-gray-300 focus:ring-0"
                                     disabled
                                 >
                             </div>
-                            <!-- end::Checkbox Unchecked Disabled -->
+                            <!-- end::Radio Unchecked Disabled -->
 
-                            <!-- start::Checkbox Checked Disabled -->
+                            <!-- start::Radio Checked Disabled -->
                             <div class="flex items-center">
-                                <label for="checkbox_checked_disabled" class="text-gray-500">Checked Disabled</label>
+                                <label for="radio_checked_disabled" class="text-gray-500">Checked Disabled</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_checked_disabled" 
-                                    id="checkbox_checked_disabled" 
+                                    type="radio" 
+                                    name="radio_checked_disabled" 
+                                    id="radio_checked_disabled" 
                                     class="ml-2 text-gray-500 focus:ring-0"
                                     checked
                                     disabled
                                 >
                             </div>
-                            <!-- end::Checkbox Checked Disabled -->
+                            <!-- end::Radio Checked Disabled -->
 
-                            <!-- start::Checkbox Rounded -->
-                            <div class="flex items-center">
-                                <label for="checkbox_rounded">Rounded</label>
-                                <input 
-                                    type="checkbox" 
-                                    name="checkbox_rounded" 
-                                    id="checkbox_rounded" 
-                                    class="ml-2 focus:ring-0 rounded-full"
-                                    checked
-                                >
-                            </div>
-                            <!-- end::Input Checkbox Rounded -->
-
-                            <!-- start::Checkbox Label Right -->
+                            <!-- start::Radio Label Right -->
                             <div class="flex items-center">
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_label_right" 
-                                    id="checkbox_label_right" 
+                                    type="radio" 
+                                    name="radio_label_right" 
+                                    id="radio_label_right" 
                                     class="mr-2 focus:ring-0"
-                                    checked
                                 >
-                                <label for="checkbox_label_right">Label Right</label>
+                                <label for="radio_label_right">Label Right</label>
                             </div>
-                            <!-- end::Checkbox Label Right-->
+                            <!-- end::Radio Label Right-->
 
                             
                         </div>
                     </div>
-                    <!-- end::Default Checkbox -->
+                    <!-- end::Default Radio -->
 
-                    <!-- start::Color Checkbox -->
+                    <!-- start::Color Radio -->
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <h4 class="text-xl capitalize">Color Checkbox</h4>
+                        <h4 class="text-xl capitalize">Color Radio</h4>
                         <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
-                            <!-- start::Checkbox Color Primary -->
+
+                            <!-- start::Radio Color Primary -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_primary">Color Primary</label>
+                                <label for="radio_color_primary">Color Primary</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_primary" 
-                                    id="checkbox_color_primary" 
+                                    type="radio" 
+                                    name="radio_color_primary" 
+                                    id="radio_color_primary" 
                                     class="ml-2 text-primary border border-primary focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Primary -->
+                            <!-- end::Radio Color Primary -->
 
-                            <!-- start::Checkbox Color Secondary -->
+                            <!-- start::Radio Color Secondary -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_secondary">Color Secondary</label>
+                                <label for="radio_color_secondary">Color Secondary</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_secondary" 
-                                    id="checkbox_color_secondary" 
+                                    type="radio" 
+                                    name="radio_color_secondary" 
+                                    id="radio_color_secondary" 
                                     class="ml-2 text-secondary border border-secondary focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Secondary -->
+                            <!-- end::Radio Color Secondary -->
 
-                            <!-- start::Checkbox Color Red -->
+                            <!-- start::Radio Color Red -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_red">Color Red</label>
+                                <label for="radio_color_red">Color Red</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_red" 
-                                    id="checkbox_color_red" 
+                                    type="radio" 
+                                    name="radio_color_red" 
+                                    id="radio_color_red" 
                                     class="ml-2 text-red-600 border border-red-600 focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Red -->
+                            <!-- end::Radio Color Red -->
 
-                            <!-- start::Checkbox Color Green -->
+                            <!-- start::Radio Color Green -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_green">Color Green</label>
+                                <label for="radio_color_green">Color Green</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_green" 
-                                    id="checkbox_color_green" 
+                                    type="radio" 
+                                    name="radio_color_green" 
+                                    id="radio_color_green" 
                                     class="ml-2 text-green-500 border border-green-500 focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Green -->
+                            <!-- end::Radio Color Green -->
 
-                            <!-- start::Checkbox Color Blue -->
+                            <!-- start::Radio Color Blue -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_blue">Color Blue</label>
+                                <label for="radio_color_blue">Color Blue</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_blue" 
-                                    id="checkbox_color_blue" 
+                                    type="radio" 
+                                    name="radio_color_blue" 
+                                    id="radio_color_blue" 
                                     class="ml-2 text-blue-500 border border-blue-500 focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Blue -->
+                            <!-- end::Radio Color Blue -->
 
-                            <!-- start::Checkbox Color Yellow -->
+                            <!-- start::Radio Color Yellow -->
                             <div class="flex items-center">
-                                <label for="checkbox_color_yellow">Color Yellow</label>
+                                <label for="radio_color_yellow">Color Yellow</label>
                                 <input 
-                                    type="checkbox" 
-                                    name="checkbox_color_yellow" 
-                                    id="checkbox_color_yellow" 
+                                    type="radio" 
+                                    name="radio_color_yellow" 
+                                    id="radio_color_yellow" 
                                     class="ml-2 text-yellow-500 border border-yellow-500 focus:ring-0"
                                     checked
                                 >
                             </div>
-                            <!-- end::Checkbox Color Yellow -->
+                            <!-- end::Radio Color Yellow -->
                         </div>
                     </div>
-                    <!-- end::Color Checkbox -->
+                    <!-- end::Color Radio -->
                 </div>
                 <!-- end:Page content -->
             </div>
