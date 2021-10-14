@@ -557,11 +557,11 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="#"
+                                    href="./line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
-                                    <span class="overflow-ellipsis">Link 1</span>
+                                    <span class="overflow-ellipsis">Line Charts</span>
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
@@ -1888,7 +1888,7 @@
                             <canvas id="verticalBarChart"></canvas>
                         </div>
                     </div>
-                    <!-- end::Horizontal Bar Chart -->
+                    <!-- end::Vertical Bar Chart -->
 
                     <!-- start::Horizontal Bar Chart -->
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
@@ -1912,7 +1912,7 @@
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
                         <h4 class="text-xl capitalize">Stacked Bar Chart With Groups</h4>
                         <div class="mt-6">
-                            <canvas id="stackedBarChartWithGroups"></canvas>
+                            <canvas id="stackedBarChartGroup"></canvas>
                         </div>
                     </div>
                     <!-- end::Stacked Bar Chart With Groups -->
@@ -1933,82 +1933,33 @@
 
         <!-- Chart Scripts -->
         <script>
-            const DATA_SET_1 = [
-                -68.106,
-                26.762,
-                -94.255,
-                -72.021,
-                74.082,
-                -64.923,
-                -85.565
-            ];
+            // start::Vertical Bar Chart
+            const DATA_SET_VERTICAL_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
 
-            const DATA_SET_2 = [
-                74.168,
-                83.233,
-                74.932,
-                -80.488,
-                -64.632,
-                87.931,
-                94.233
-            ];
+            const DATA_SET_VERTICAL_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
 
-            const labels = [
-                'January',
-                'February',
-                'Mart',
-                'April',
-                'May',
-                'Jun',
-                'July'
-            ];
+            const labels_vertical_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
 
-            const data= {
-                labels: labels,
+            const dataVerticalBarChart= {
+                labels: labels_vertical_bar_chart,
                 datasets: [
                     {
                         label: 'Dataset 1',
-                        data: DATA_SET_1,
+                        data: DATA_SET_VERTICAL_BAR_CHART_1,
                         borderColor: 'rgb(255, 99, 132)',
                         backgroundColor: 'rgba(255, 99, 132, 0.5)',
                     },
                     {
                         label: 'Dataset 2',
-                        data: DATA_SET_2,
+                        data: DATA_SET_VERTICAL_BAR_CHART_2,
                         borderColor: 'rgb(54, 162, 235)',
                         backgroundColor: 'rgba(54, 162, 235, 0.5)',
                     }
                 ]
             };
-
-            const dataBorderRadius= {
-                labels: labels,
-                datasets: [
-                    {
-                        label: 'Full Rounded',
-                        data: DATA_SET_1,
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-                        borderWidth: 2,
-                        borderRadius: Number.MAX_VALUE,
-                        borderSkipped: false
-                    },
-                    {
-                        label: 'Dataset 2',
-                        data: DATA_SET_2,
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                        borderWidth: 2,
-                        borderRadius: 5,
-                        borderSkipped: false
-                    }
-                ]
-            };
-
-            // start::Vertical Bar Chart
             const configVerticalBarChart = {
                 type: 'bar',
-                data: data,
+                data: dataVerticalBarChart,
                 options: {
                     responsive: true,
                     plugins: {
@@ -2030,9 +1981,33 @@
             // end::Vertical Bar Chart 
 
             // start::Horizontal Bar Chart
+            const DATA_SET_HORIZONTAL_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
+
+            const DATA_SET_HORIZONTAL_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
+
+            const labels_horizontal_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
+
+            const dataHorizontalBarChart= {
+                labels: labels_horizontal_bar_chart,
+                datasets: [
+                    {
+                        label: 'Dataset 1',
+                        data: DATA_SET_HORIZONTAL_BAR_CHART_1,
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: DATA_SET_HORIZONTAL_BAR_CHART_2,
+                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    }
+                ]
+            };
+
             const configHorizontalBarChart = {
                 type: 'bar',
-                data: data,
+                data: dataHorizontalBarChart,
                 options: {
                     indexAxis: 'y',
                     // Elements options apply to all of the options unless overridden in a dataset
@@ -2062,9 +2037,33 @@
             // end::Horizontal Bar Chart
 
             // start::Stacked Bar Chart
+            const DATA_SET_STACKED_BAR_CHART_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
+
+            const DATA_SET_STACKED_BAR_CHART_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
+
+            const labels_stacked_bar_chart = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
+
+            const dataStackedBarChart= {
+                labels: labels_stacked_bar_chart,
+                datasets: [
+                    {
+                        label: 'Dataset 1',
+                        data: DATA_SET_STACKED_BAR_CHART_1,
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: DATA_SET_STACKED_BAR_CHART_2,
+                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    }
+                ]
+            };
+
             const configStackedBarChart = {
                 type: 'bar',
-                data: data,
+                data: dataStackedBarChart,
                 options: {
                     plugins: {
                         title: {
@@ -2091,9 +2090,33 @@
             // end::Stacked Bar Chart
 
             // start::Stacked Bar Chart With Groups
-            const configStackedBarChartWithGroups = {
+            const DATA_SET_STACKED_BAR_CHART_GROUP_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
+
+            const DATA_SET_STACKED_BAR_CHART_GROUP_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
+
+            const labels_stacked_bar_chart_group = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
+
+            const dataStackedBarChartGroup= {
+                labels: labels_stacked_bar_chart_group,
+                datasets: [
+                    {
+                        label: 'Dataset 1',
+                        data: DATA_SET_STACKED_BAR_CHART_GROUP_1,
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: DATA_SET_STACKED_BAR_CHART_GROUP_2,
+                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    }
+                ]
+            };
+
+            const configStackedBarChartGroup = {
                 type: 'bar',
-                data: data,
+                data: dataStackedBarChartGroup,
                 options: {
                     plugins: {
                         title: {
@@ -2116,16 +2139,46 @@
                 }
             };
 
-            var stackedBarChartWithGroups = new Chart(
-                document.getElementById('stackedBarChartWithGroups'),
-                configStackedBarChartWithGroups
+            var stackedBarChartGroup = new Chart(
+                document.getElementById('stackedBarChartGroup'),
+                configStackedBarChartGroup
             );
             // end::Stacked Bar Chart With Groups
 
             // start::Bar Chart Border Radius
+            const DATA_SET_BAR_CHART_BORDER_RADIUS_1 = [-68.106, 26.762, -94.255, -72.021, 74.082, -64.923, -85.565];
+
+            const DATA_SET_BAR_CHART_BORDER_RADIUS_2 = [74.168, 83.233, 74.932, -80.488, -64.632, 87.931, 94.233];
+
+            const labels_bar_chart_border_radius = ['January', 'February', 'Mart', 'April', 'May', 'Jun', 'July'];
+
+            const dataBarChartBorderRadius= {
+                labels: labels_bar_chart_border_radius,
+                datasets: [
+                    {
+                        label: 'Full Rounded',
+                        data: DATA_SET_BAR_CHART_BORDER_RADIUS_1,
+                        borderColor: 'rgb(255, 99, 132)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        borderWidth: 2,
+                        borderRadius: Number.MAX_VALUE,
+                        borderSkipped: false
+                    },
+                    {
+                        label: 'Dataset 2',
+                        data: DATA_SET_BAR_CHART_BORDER_RADIUS_2,
+                        borderColor: 'rgb(54, 162, 235)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                        borderWidth: 2,
+                        borderRadius: 5,
+                        borderSkipped: false
+                    }
+                ]
+            };
+
             const configBarChartBorderRadius = {
                 type: 'bar',
-                data: dataBorderRadius,
+                data: dataBarChartBorderRadius,
                 options: {
                     responsive: true,
                     plugins: {
