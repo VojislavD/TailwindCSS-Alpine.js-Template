@@ -4,7 +4,7 @@
 Free admin dashboard template created with Tailwind CSS and Alpine.js.
 
 ## Demo
-You can check the demo here :point_right:
+You can check the demo here :point_right: <a href="https://vojislavd.com/ta-template-demo/"> DEMO </a>
 
 ## Usage
 

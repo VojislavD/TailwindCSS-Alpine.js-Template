@@ -13,7 +13,10 @@ module.exports = defineConfig({
         radio: resolve(__dirname, './pages/formElements/radio.html'),
         select: resolve(__dirname, './pages/formElements/select.html'),
         switch: resolve(__dirname, './pages/formElements/switch.html'),
-        textarea: resolve(__dirname, './pages/formElements/textarea.html')
+        textarea: resolve(__dirname, './pages/formElements/textarea.html'),
+        bar_charts: resolve(__dirname, './pages/charts/bar_charts.html'),
+        line_charts: resolve(__dirname, './pages/charts/line_charts.html'),
+        other_charts: resolve(__dirname, './pages/charts/other_charts.html'),
       }
     }
   }
