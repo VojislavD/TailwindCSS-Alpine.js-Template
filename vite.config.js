@@ -18,6 +18,7 @@ module.exports = defineConfig({
         line_charts: resolve(__dirname, './pages/charts/line_charts.html'),
         other_charts: resolve(__dirname, './pages/charts/other_charts.html'),
         formLayouts: resolve(__dirname, './pages/formLayouts.html'),
+        tables: resolve(__dirname, './pages/tables.html'),
       }
     }
   }
