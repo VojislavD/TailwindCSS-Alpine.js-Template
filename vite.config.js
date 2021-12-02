@@ -19,6 +19,9 @@ module.exports = defineConfig({
         other_charts: resolve(__dirname, './pages/charts/other_charts.html'),
         formLayouts: resolve(__dirname, './pages/formLayouts.html'),
         tables: resolve(__dirname, './pages/tables.html'),
+        infoModals: resolve(__dirname, './pages/modals/info.html'),
+        confirmationModals: resolve(__dirname, './pages/modals/confirmation.html'),
+        authenticationModals: resolve(__dirname, './pages/modals/authentication.html')
       }
     }
   }
