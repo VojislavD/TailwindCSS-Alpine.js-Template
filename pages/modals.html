@@ -24,7 +24,8 @@
                 basicSignInModal: false,
                 basicSignUpModal: false,
                 advanceSignInModal: false,
-                advanceSignUpModal: false
+                advanceSignUpModal: false,
+                basicConfirmationModal: true
             }" 
             class="flex min-h-screen custom-scrollbar"
         >
@@ -1806,7 +1807,7 @@
                         <!-- start:: Info Modals -->
                         <div>
                             <h4 class="text-xl capitalize">Info Modals</h4>
-                            <div class="mt-6 flex flex-col space-y-8">
+                            <div class="mt-6 flex flex-col space-y-16">
                                 <!-- start:: Basic Info Modal -->
                                 <div class="space-y-4">
                                     <button 
@@ -1848,10 +1849,31 @@
                     </div>
 
                     <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
+                        <!-- start:: Confirmation Modals -->
+                        <div>
+                            <h4 class="text-xl capitalize">Confirmation Modals</h4>
+                            <div class="mt-6 flex flex-col space-y-16">
+                                <!-- start:: Basic Confirmation Modal -->
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="basicConfirmationModal = !basicConfirmationModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                        >
+                                        Basic Confirmation Modal
+                                    </button>
+                                    <img src="./../img/modals/basic_info_modal.png" alt="basic_info_modal">
+                                </div>
+                                <!-- end:: Basic Confirmation Modal -->
+                            </div>
+                        </div>
+                        <!-- end:: Confirmation Modals -->
+                    </div>
+
+                    <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
                         <!-- start:: Auth Modals -->
                         <div>
                             <h4 class="text-xl capitalize">Auth Modals</h4>
-                            <div class="mt-6 flex flex-col space-y-8">
+                            <div class="mt-6 flex flex-col space-y-16">
                                 <!-- start:: Basic Sign In Modal -->
                                 <div class="space-y-4">
                                     <button 
@@ -1904,29 +1926,14 @@
                         <!-- end:: Auth In Modals -->
                     </div>
 
-                    
-
                     <!-- 
-                        IDEAS
-
-                        some form to submit
-                        sign in form simple
-                        sign in form half image half forms
-                        off -50% promotions                        
-                        Email send confirmation
-                        subscribe to newsletter
-                        ultra thight
-                        thight
-                        normal
-                        wide
-                        ultra wide
+                        TODO
                         confirmation delete
                         right bottom some info
                         full height right
                         modal youtube
                         modal vimeo
                         modal social share                        
-                        chat?s
                     -->
 
                 </div>
@@ -2007,6 +2014,47 @@
                 </div>
             </div>
             <!-- end:: Ultra Wide Info Modal -->
+
+            <!-- start:: Basic Confirmation Modal -->
+            <div 
+                x-show="basicConfirmationModal" 
+                x-transition.opacity
+                x-transition:enter.duration.100ms
+                x-transition:leave.duration.300ms
+                x-cloak
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
+            >
+                <div 
+                    @click.away="basicConfirmationModal = false" 
+                    class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl"
+                >
+                    <span 
+                        @click="basicConfirmationModal = false"
+                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
+                        title="Close"
+                    >
+                        &#x2715
+                    </span>
+                    <p class="text-center">Are you sure you want to :action:?</p>
+                    <div class="flex items-center justify-center space-x-4 mt-6">
+                        <form>
+                            <button 
+                                type="submit" 
+                                class="bg-green-500 hover:bg-green-600 w-20 py-1 text-gray-100 rounded transition duration-150"
+                            >
+                                Yes
+                            </button>
+                        </form>
+                        <button 
+                            @click="basicConfirmationModal = false"
+                            class="bg-red-500 hover:bg-red-600 w-20 py-1 text-gray-100 rounded transition duration-150"
+                        >
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- end:: Basic Confirmation Modal -->
 
             <!-- start:: Basic Sign In Modal -->
             <div 
