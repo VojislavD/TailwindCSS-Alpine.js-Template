@@ -5,7 +5,7 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="../css/tailwind.css">
+        <link rel="stylesheet" href="../../css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -18,14 +18,10 @@
         <div 
             x-data="{ 
                 menuOpen: false, 
-                basicInfoModal: false, 
-                wideInfoModal: false,
-                ultraWideInfoModal: false,
                 basicSignInModal: false,
                 basicSignUpModal: false,
                 advanceSignInModal: false,
                 advanceSignUpModal: false,
-                basicConfirmationModal: false
             }" 
             class="flex min-h-screen custom-scrollbar"
         >
@@ -1804,72 +1800,6 @@
                 <div class="h-full bg-gray-200 p-8">
                     <p class="text-sm">*Click on modal to open it</p>
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Info Modals -->
-                        <div>
-                            <h4 class="text-xl capitalize">Info Modals</h4>
-                            <div class="mt-6 flex flex-col space-y-16">
-                                <!-- start:: Basic Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="basicInfoModal = !basicInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                        >
-                                        Basic Info Modal
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/basic_info_modal.png" alt="basic_info_modal">
-                                </div>
-                                <!-- end:: Basic Info Modal -->
-
-                                <!-- start:: Wide Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="wideInfoModal = !wideInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                    >
-                                        Wide Info Modal
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/wide_info_modal.png" alt="wide_info_modal">
-                                </div>
-                                <!-- end:: Wide Info Modal -->
-
-                                <!-- start:: Ultra Wide Info Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="ultraWideInfoModal = !ultraWideInfoModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                    >
-                                    Ultra Wide Info Modals
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/ultra_wide_info_modal.png" alt="ultra_wide_info_modal">
-                                </div>
-                                <!-- end:: Ultra Wide Info Modal -->
-                            </div>
-                        </div>
-                        <!-- end:: Info Modals -->
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Confirmation Modals -->
-                        <div>
-                            <h4 class="text-xl capitalize">Confirmation Modals</h4>
-                            <div class="mt-6 flex flex-col space-y-16">
-                                <!-- start:: Basic Confirmation Modal -->
-                                <div class="space-y-4">
-                                    <button 
-                                        @click="basicConfirmationModal = !basicConfirmationModal"
-                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                        >
-                                        Basic Confirmation Modal
-                                    </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/basic_confirmation_modal.png" alt="basic_info_modal">
-                                </div>
-                                <!-- end:: Basic Confirmation Modal -->
-                            </div>
-                        </div>
-                        <!-- end:: Confirmation Modals -->
-                    </div>
-
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
                         <!-- start:: Auth Modals -->
                         <div>
                             <h4 class="text-xl capitalize">Auth Modals</h4>
@@ -1882,7 +1812,7 @@
                                     >
                                         Basic Sign In Modal
                                     </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/basic_sign_in_modal.png" alt="basic_sign_in_modal">
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../img/modals/basic_sign_in_modal.png" alt="basic_sign_in_modal">
                                 </div>
                                 <!-- end:: Basic Sign In Modal -->
 
@@ -1894,7 +1824,7 @@
                                     >
                                         Basic Sign Up Modal
                                     </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/basic_sign_up_modal.png" alt="basic_sign_up_modal">
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../img/modals/basic_sign_up_modal.png" alt="basic_sign_up_modal">
                                 </div>
                                 <!-- end:: Basic Sign Up Modal -->
 
@@ -1906,7 +1836,7 @@
                                     >
                                     Advance Sign In Modal
                                     </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/advance_sign_in_modal.png" alt="basic_sign_up_modal">
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../img/modals/advance_sign_in_modal.png" alt="basic_sign_up_modal">
                                 </div>
                                 <!-- end:: Advance Sign In Modal -->
 
@@ -1918,143 +1848,16 @@
                                     >
                                     Advance Sign Up Modal
                                     </button>
-                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../img/modals/advance_sign_up_modal.png" alt="basic_sign_up_modal">
+                                    <img class="w-full lg:w-2/3 2xl:w-1/2" src="./../../img/modals/advance_sign_up_modal.png" alt="basic_sign_up_modal">
                                 </div>
                                 <!-- end:: Advance Sign Up Modal -->
                             </div>
                         </div>
                         <!-- end:: Auth In Modals -->
                     </div>
-
-                    <!-- 
-                        TODO
-                        confirmation delete
-                        right bottom some info
-                        full height right
-                        modal youtube
-                        modal vimeo
-                        modal social share                        
-                    -->
-
                 </div>
                 <!-- end:Page content -->
             </div>
-            
-            <!-- start:: Basic Info Modal -->
-            <div 
-                x-show="basicInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="basicInfoModal = false" 
-                    class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="basicInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Basic Info Modal -->
-
-            <!-- start:: Wide Info Modal -->
-            <div 
-                x-show="wideInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="wideInfoModal = false" 
-                    class="relative w-5/6 md:w-3/4 lg:w-2/3 xl:w-1/2 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="wideInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Wide Info Modal -->
-
-            <!-- start:: Ultra Wide Info Modal -->
-            <div 
-                x-show="ultraWideInfoModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="ultraWideInfoModal = false" 
-                    class="relative w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/3 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="ultraWideInfoModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium eligendi nostrum veniam fugit consequuntur, accusamus laboriosam optio non nulla voluptate provident! Iste repellendus sapiente impedit dolore dolorum, qui enim!</p>
-                </div>
-            </div>
-            <!-- end:: Ultra Wide Info Modal -->
-
-            <!-- start:: Basic Confirmation Modal -->
-            <div 
-                x-show="basicConfirmationModal" 
-                x-transition.opacity
-                x-transition:enter.duration.100ms
-                x-transition:leave.duration.300ms
-                x-cloak
-                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
-            >
-                <div 
-                    @click.away="basicConfirmationModal = false" 
-                    class="relative w-3/4 sm:w-2/3 md:w-1/2 lg:w-1/3 xl:w-1/4 bg-white p-10 rounded-lg shadow-xl"
-                >
-                    <span 
-                        @click="basicConfirmationModal = false"
-                        class="absolute right-2 top-1 text-xl cursor-pointer hover:text-gray-600" 
-                        title="Close"
-                    >
-                        &#x2715
-                    </span>
-                    <p class="text-center text-lg">Are you sure you want to :action:?</p>
-                    <div class="flex items-center justify-center space-x-4 mt-6">
-                        <form>
-                            <button 
-                                type="submit" 
-                                class="bg-green-500 hover:bg-green-600 w-20 py-1 text-gray-100 rounded transition duration-150"
-                            >
-                                Yes
-                            </button>
-                        </form>
-                        <button 
-                            @click="basicConfirmationModal = false"
-                            class="bg-red-500 hover:bg-red-600 w-20 py-1 text-gray-100 rounded transition duration-150"
-                        >
-                            No
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- end:: Basic Confirmation Modal -->
 
             <!-- start:: Basic Sign In Modal -->
             <div 
