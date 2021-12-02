@@ -1804,32 +1804,41 @@
                         <!-- start:: Info Modals -->
                         <div>
                             <h4 class="text-xl capitalize">Info Modals</h4>
-                            <div class="mt-6 flex space-x-8">
+                            <div class="mt-6 flex flex-col space-y-8">
                                 <!-- start:: Basic Info Modal -->
-                                <button 
-                                    @click="basicInfoModal = !basicInfoModal"
-                                    class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                >
-                                    Basic Info Modal
-                                </button>
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="basicInfoModal = !basicInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                        >
+                                        Basic Info Modal
+                                    </button>
+                                    <img src="./../img/modals/basic_info_modal.png" alt="basic_info_modal">
+                                </div>
                                 <!-- end:: Basic Info Modal -->
 
                                 <!-- start:: Wide Info Modal -->
-                                <button 
-                                    @click="wideInfoModal = !wideInfoModal"
-                                    class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                >
-                                    Wide Info Modal
-                                </button>
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="wideInfoModal = !wideInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                        Wide Info Modal
+                                    </button>
+                                    <img src="./../img/modals/wide_info_modal.png" alt="wide_info_modal">
+                                </div>
                                 <!-- end:: Wide Info Modal -->
 
                                 <!-- start:: Ultra Wide Info Modal -->
-                                <button 
-                                    @click="ultraWideInfoModal = !ultraWideInfoModal"
-                                    class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                >
-                                Ultra Wide Info Modals
-                                </button>
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="ultraWideInfoModal = !ultraWideInfoModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                    Ultra Wide Info Modals
+                                    </button>
+                                    <img src="./../img/modals/ultra_wide_info_modal.png" alt="ultra_wide_info_modal">
+                                </div>
                                 <!-- end:: Ultra Wide Info Modal -->
                             </div>
                         </div>
@@ -1840,23 +1849,29 @@
                         <!-- start:: Auth Modals -->
                         <div>
                             <h4 class="text-xl capitalize">Auth Modals</h4>
-                            <div class="mt-6 flex space-x-8">
+                            <div class="mt-6 flex flex-col space-y-8">
                                 <!-- start:: Basic Sign In Modal -->
-                                <button 
-                                    @click="basicSignInModal = !basicSignInModal"
-                                    class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                >
-                                    Basic Sign In Modal
-                                </button>
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="basicSignInModal = !basicSignInModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                        Basic Sign In Modal
+                                    </button>
+                                    <img src="./../img/modals/basic_sign_in_modal.png" alt="basic_sign_in_modal">
+                                </div>
                                 <!-- end:: Basic Sign In Modal -->
 
                                 <!-- start:: Basic Sign Up Modal -->
-                                <button 
-                                    @click="basicSignUpModal = !basicSignUpModal"
-                                    class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
-                                >
-                                    Basic Sign Up Modal
-                                </button>
+                                <div class="space-y-4">
+                                    <button 
+                                        @click="basicSignUpModal = !basicSignUpModal"
+                                        class="bg-gray-100 hover:bg-gray-200 hover:shadow-xl px-4 py-1 rounded-lg border border-primary"
+                                    >
+                                        Basic Sign Up Modal
+                                    </button>
+                                    <img src="./../img/modals/basic_sign_up_modal.png" alt="basic_sign_up_modal">
+                                </div>
                                 <!-- end:: Basic Sign Up Modal -->
                             </div>
                         </div>
@@ -1899,7 +1914,7 @@
                 x-transition:enter.duration.100ms
                 x-transition:leave.duration.300ms
                 x-cloak
-                class="absolute top-0 left-0 z-50 bg-black bg-opacity-30 h-screen w-full flex items-center justify-center"
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
             >
                 <div 
                     @click.away="basicInfoModal = false" 
@@ -1924,7 +1939,7 @@
                 x-transition:enter.duration.100ms
                 x-transition:leave.duration.300ms
                 x-cloak
-                class="absolute top-0 left-0 z-50 bg-black bg-opacity-30 h-screen w-full flex items-center justify-center"
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
             >
                 <div 
                     @click.away="wideInfoModal = false" 
@@ -1949,7 +1964,7 @@
                 x-transition:enter.duration.100ms
                 x-transition:leave.duration.300ms
                 x-cloak
-                class="absolute top-0 left-0 z-50 bg-black bg-opacity-30 h-screen w-full flex items-center justify-center"
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
             >
                 <div 
                     @click.away="ultraWideInfoModal = false" 
@@ -1974,7 +1989,7 @@
                 x-transition:enter.duration.100ms
                 x-transition:leave.duration.300ms
                 x-cloak
-                class="absolute top-0 left-0 z-50 bg-black bg-opacity-30 h-screen w-full flex items-center justify-center"
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
             >
                 <div 
                     @click.away="basicSignInModal = false" 
@@ -2019,7 +2034,7 @@
                 x-transition:enter.duration.100ms
                 x-transition:leave.duration.300ms
                 x-cloak
-                class="absolute top-0 left-0 z-50 bg-black bg-opacity-30 h-screen w-full flex items-center justify-center"
+                class="fixed top-0 left-0 z-50 bg-black bg-opacity-70 h-screen w-full flex items-center justify-center"
             >
                 <div 
                     @click.away="basicSignUpModal = false" 
