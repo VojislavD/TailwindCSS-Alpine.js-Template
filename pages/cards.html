@@ -2296,6 +2296,66 @@
                         </div>
                     </div>
                     <!-- end::Color Header Cards -->
+
+                    <!-- start::Cards Transformations -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Cards Transformations</h4>
+                        <div class="grid grid-cols-5 gap-4">
+                            <!-- start::Collapsable Cards Transformations -->
+                            <div class="mt-6">
+                                <p class="mb-2">Collapsable</p>
+                                <div 
+                                    x-data="{ contentShow: true }"
+                                    class="border border-gray-300 text-center shadow-xl"
+                                >
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button 
+                                            @click="contentShow = !contentShow"
+                                            class="font-bold hover:text-primary-dark" 
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transform duration-500" :class="contentShow ? 'rotate-0' : '-rotate-90'" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                        </button>
+                                    </div>
+                                    <div 
+                                        x-show="contentShow"
+                                        x-transition
+                                        class="h-40 flex items-center justify-center"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Collapsable Cards Transformations -->
+
+                            <!-- start::Close Button Cards Transformations -->
+                            <div class="mt-6">
+                                <p class="mb-2">Close</p>
+                                <div 
+                                    x-data="{ showCard: true }"
+                                    x-show="showCard"
+                                    x-transition
+                                    class="border border-gray-300 text-center shadow-xl"
+                                >
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button 
+                                            @click="showCard = false"
+                                            class="font-bold hover:text-primary-dark" 
+                                            title="Close"
+                                        >
+                                            ✕
+                                        </button>
+                                    </div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Close Button Cards Transformations -->
+                        </div>
+                    </div>
+                    <!-- end::Cards Transformations -->
                 </div>
                 <!-- end:Page content -->
             </div>
