@@ -1,12 +1,10 @@
 const plugin = require('tailwindcss/plugin');
  
 module.exports = {
-  mode: 'jit',
-  purge: [
+  content: [
     './*.html',
     './pages/**/*.html'
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
@@ -16,9 +14,6 @@ module.exports = {
         "secondary-dark": "#060C11",
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/forms'),
