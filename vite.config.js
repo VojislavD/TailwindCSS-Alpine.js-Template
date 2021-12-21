@@ -23,7 +23,8 @@ module.exports = defineConfig({
         confirmationModals: resolve(__dirname, './pages/modals/confirmation.html'),
         authenticationModals: resolve(__dirname, './pages/modals/authentication.html'),
         maps: resolve(__dirname, './pages/maps.html'),
-        cards: resolve(__dirname, './pages/cards.html')
+        cards: resolve(__dirname, './pages/cards.html'),
+        tabs: resolve(__dirname, './pages/tabs.html')
       }
     }
   }
