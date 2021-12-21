@@ -1713,28 +1713,28 @@
                                 <div class="flex">
                                     <button 
                                         @click="activeTab = 1"
-                                        class="border px-6 py-1"
+                                        class="border px-4 md:px-6 py-1"
                                         :class="activeTab == 1 ? 'border-gray-400 border-b-transparent' : 'border-transparent border-b-gray-400 hover:text-primary hover:border-t-gray-200 hover:border-l-gray-200 hover:border-r-gray-200'"
                                     >
                                         Tab 1
                                     </button>
                                     <button 
                                         @click="activeTab = 2"
-                                        class="border px-6 py-1"
+                                        class="border px-4 md:px-6 py-1"
                                         :class="activeTab == 2 ? 'border-gray-400 border-b-transparent' : 'border-transparent border-b-gray-400 hover:text-primary hover:border-t-gray-200 hover:border-l-gray-200 hover:border-r-gray-200'"
                                     >
                                         Tab 2
                                     </button>
                                     <button 
                                         @click="activeTab = 3"
-                                        class="border px-6 py-1"
+                                        class="border px-4 md:px-6 py-1"
                                         :class="activeTab == 3 ? 'border-gray-400 border-b-transparent' : 'border-transparent border-b-gray-400 hover:text-primary hover:border-t-gray-200 hover:border-l-gray-200 hover:border-r-gray-200'"
                                     >
                                         Tab 3
                                     </button>
                                     <button 
                                         @click="activeTab = 4"
-                                        class="border px-6 py-1"
+                                        class="border px-4 md:px-6 py-1"
                                         :class="activeTab == 4 ? 'border-gray-400 border-b-transparent' : 'border-transparent border-b-gray-400 hover:text-primary hover:border-t-gray-200 hover:border-l-gray-200 hover:border-r-gray-200'"
                                     >
                                         Tab 4
@@ -1866,7 +1866,7 @@
                             <!-- start::Vertical Tabs -->
                             <h4 class="text-xl font-semibold mb-4">Vertical Tabs</h4>
                             <div class="flex" x-data="{ activeTab: 1 }">
-                                <div class="flex flex-col items-center justify-center mr-4 space-y-2">
+                                <div class="flex flex-col items-center mt-3 mr-4 space-y-2">
                                     <button 
                                         @click="activeTab = 1"
                                         class="w-32 py-1 rounded"
