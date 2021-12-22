@@ -16,7 +16,7 @@ colors you want in all components where those colors are used.
 
 If you want to use customized scrollbar, make sure to configure that also in tailwind.config.js.
 
-Check file to see how to configure everything properly.
+Check `tailwind.config.js` file to see how to configure everything properly.
 
 ## Installation
 In the project directory run `npm install` command to install all required packages.
