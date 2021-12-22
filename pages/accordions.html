@@ -1967,6 +1967,89 @@
                             </div>
                             <!-- end::Accordions With Plus & Minus Icon -->
                         </div>
+
+                        <div class="px-2 mb-12">
+                            <!-- start::Accordions With Rounded Plus & Minus Icon -->
+                            <h4 class="text-xl font-semibold mb-4">Accordions With Rounded Plus & Minus Icon</h4>
+                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
+                                <div class="px-4 border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion2 = false,
+                                            accordion3 = false,
+                                            accordion1 = !accordion1
+                                        "
+                                        class="w-full flex items-center text-left py-2 hover:text-primary"
+                                        :class="accordion1 ? 'text-primary' : ''"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <p class="ml-2">Accordion Item 1</p>
+                                    </button>
+                                    <div 
+                                        x-show="accordion1"
+                                        class="py-2"
+                                    >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+                                <div class="px-4 border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion1 = false,
+                                            accordion3 = false,
+                                            accordion2 = !accordion2
+                                        "
+                                        class="w-full flex items-center text-left py-2 hover:text-primary"
+                                        :class="accordion2 ? 'text-primary' : ''"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <p class="ml-2">Accordion Item 2</p>
+                                    </button>
+                                    <div 
+                                        x-show="accordion2"
+                                        class="py-2"
+                                    >
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                                    </div>
+                                </div>
+                                <div class="px-4 border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion1 = false,
+                                            accordion2 = false,
+                                            accordion3 = !accordion3
+                                        "
+                                        class="w-full flex items-center text-left py-2 hover:text-primary"
+                                        :class="accordion3 ? 'text-primary' : ''"
+                                    >
+                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                        <p class="ml-2">Accordion Item 3</p>
+                                    </button>
+                                    <div 
+                                        x-show="accordion3"
+                                        class="py-2"
+                                    >
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Accordions With Rounded Plus & Minus Icon -->
+                        </div>
                     </div>
                 </div>
                 <!-- end:Page content -->
