@@ -1720,7 +1720,7 @@
                                         x-show="accordion2"
                                         class="py-2"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
                                     </div>
                                 </div>
                                 <div class="px-4 border border-gray-300">
@@ -1739,11 +1739,76 @@
                                         x-show="accordion3"
                                         class="py-2"
                                     >
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
                                     </div>
                                 </div>
                             </div>
                             <!-- end::Basic Accordions -->
+                        </div>
+
+                        <div class="px-2 mb-12">
+                            <!-- start::Background Color On Active -->
+                            <h4 class="text-xl font-semibold mb-4">Background Color On Active</h4>
+                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
+                                <div class="border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion2 = false,
+                                            accordion3 = false,
+                                            accordion1 = !accordion1
+                                        "
+                                        class="w-full text-left px-4 py-2 hover:text-primary"
+                                        :class="accordion1 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
+                                    >
+                                        Accordion Item 1
+                                    </button>
+                                    <div 
+                                        x-show="accordion1"
+                                        class="px-4 py-2"
+                                    >
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </div>
+                                </div>
+                                <div class="border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion1 = false,
+                                            accordion3 = false,
+                                            accordion2 = !accordion2
+                                        "
+                                        class="w-full text-left px-4  py-2 hover:text-primary"
+                                        :class="accordion2 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
+                                    >
+                                        Accordion Item 2
+                                    </button>
+                                    <div 
+                                        x-show="accordion2"
+                                        class="py-2"
+                                    >
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                                    </div>
+                                </div>
+                                <div class="border border-gray-300">
+                                    <button
+                                        @click="
+                                            accordion1 = false,
+                                            accordion2 = false,
+                                            accordion3 = !accordion3
+                                        "
+                                        class="w-full text-left px-4 py-2 hover:text-primary"
+                                        :class="accordion3 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
+                                    >
+                                        Accordion Item 3
+                                    </button>
+                                    <div 
+                                        x-show="accordion3"
+                                        class="py-2"
+                                    >
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Background Color On Active -->
                         </div>
                     </div>
                 </div>
