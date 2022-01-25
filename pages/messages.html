@@ -1690,7 +1690,7 @@
                     <h4 class="text-xl font-semibold mb-4">Messages</h4>
                     <div 
                         class="flex space-x-4" 
-                        x-data="{ activeMessage: 1 }"
+                        x-data="{ activeMessage: 0 }"
                     >
                         <div class="w-1/4 bg-white rounded-lg h-full">
                             <h5 class="flex items-center p-4 space-x-2 border-b-2">
@@ -1748,11 +1748,17 @@
                         </div>
                         <div class="w-3/4 bg-white rounded-lg h-full">
                             <div
+                                class="flex items-center justify-center h-[720px]" 
+                                :class="activeMessage === 0 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-2xl text-gray-400">Select Conversation</h5>
+                            </div>
+                            <div
                                 class="flex flex-col justify-between h-[720px]" 
                                 :class="activeMessage === 1 ? 'block' : 'hidden'"
                             >
                                 <h5 class="text-lg p-4 border-b-2 font-semibold">To: Annie Baker</h5>
-                                <div class="flex-1 p-4 border-b-2 space-y-8 h-[480px] overflow-y-auto custom-scrollbar">
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
                                     <div class="flex flex-col items-end">
                                         <div class="w-1/2 flex justify-end  space-x-1">
                                             <div>
@@ -1812,8 +1818,136 @@
                                     </div>
                                 </div>
                             </div>
-                            <div :class="activeMessage === 2 ? 'block' : 'hidden'">
-                                <h5 class="text-lg text-center py-4 border-b-2 font-semibold">Jane Doe</h5>
+                            <div
+                                class="flex flex-col justify-between h-[720px]" 
+                                :class="activeMessage === 2 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-lg p-4 border-b-2 font-semibold">To: Anthony Ruiz</h5>
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
+                                    <div class="flex flex-col">
+                                        <div class="w-1/2 flex space-x-1">
+                                            <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:24 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-1/2 flex space-x-1">
+                                            <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:25 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Quis autem vel eum iure reprehenderit qui in ea voluptate?
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:32 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Sent">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="./../img/profile.jpg" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-1/2 flex space-x-1">
+                                            <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    Velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">Wed 07:41 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="p-4">
+                                    <textarea id="textarea_default" class="w-full h-24 mt-2 border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0 rounded-lg" placeholder="Write your message here..."></textarea>
+                                    <div class="flex items-center justify-end">
+                                        <button class="bg-primary hover:bg-primary-dark rounded-lg mt-4 px-10 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="flex flex-col justify-between h-[720px]" 
+                                :class="activeMessage === 3 ? 'block' : 'hidden'"
+                            >
+                                <h5 class="text-lg p-4 border-b-2 font-semibold">To: Maria Watkins</h5>
+                                <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
+                                    <div class="flex flex-col items-end">
+                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.
+                                                </div>
+                                                <div class="flex mt-0.5">
+                                                    <span class="text-gray-400 text-sm">24 Jan 11:54 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="./../img/profile.jpg" class="w-12 h-12 rounded-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div class="w-1/2 flex space-x-1">
+                                            <img src="./../img/message3.jpg" class="w-12 h-12 rounded-full">
+                                            <div>
+                                                <div class="bg-blue-100 p-4 rounded-lg">
+                                                    id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
+                                                </div>
+                                                <div class="flex justify-end mt-0.5">
+                                                    <span class="text-gray-400 text-sm">26 Jan 10:27 am</span>
+                                                    <div class="flex items-center justify-center text-green-600 ml-1" title="Seen">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -ml-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <textarea id="textarea_default" class="w-full h-24 mt-2 border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0 rounded-lg" placeholder="Write your message here..."></textarea>
+                                    <div class="flex items-center justify-end">
+                                        <button class="bg-primary hover:bg-primary-dark rounded-lg mt-4 px-10 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Send</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
