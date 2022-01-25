@@ -1689,10 +1689,10 @@
                     <!-- start::Chat -->
                     <h4 class="text-xl font-semibold mb-4">Messages</h4>
                     <div 
-                        class="flex space-x-4" 
+                        class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-4" 
                         x-data="{ activeMessage: 0 }"
                     >
-                        <div class="w-1/4 bg-white rounded-lg h-full">
+                        <div class="w-full lg:w-1/2 xl:w-1/3 2xl:w-1/4 bg-white rounded-lg h-full">
                             <h5 class="flex items-center p-4 space-x-2 border-b-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
@@ -1746,7 +1746,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="w-3/4 bg-white rounded-lg h-full">
+                        <div class="w-full lg:w-1/2 xl:w-2/3 2xl:w-3/4 bg-white rounded-lg h-full">
                             <div
                                 class="flex items-center justify-center h-[720px]" 
                                 :class="activeMessage === 0 ? 'block' : 'hidden'"
@@ -1760,7 +1760,7 @@
                                 <h5 class="text-lg p-4 border-b-2 font-semibold">To: Annie Baker</h5>
                                 <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
                                     <div class="flex flex-col items-end">
-                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corporis optio, perferendis soluta quos natus quasi officiis ratione ea, necessitatibus tenetur, vero eligendi quidem quo pariatur repellendus voluptatem enim. Dicta!
@@ -1777,7 +1777,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
-                                        <div class="w-1/2 flex space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
                                             <img src="./../img/message1.jpg" class="w-12 h-12 rounded-full">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
@@ -1794,7 +1794,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col items-end">
-                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
                                                     Nemo enim ipsam voluptatem quia voluptas sit
@@ -1825,7 +1825,7 @@
                                 <h5 class="text-lg p-4 border-b-2 font-semibold">To: Anthony Ruiz</h5>
                                 <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
                                     <div class="flex flex-col">
-                                        <div class="w-1/2 flex space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
                                             <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
@@ -1842,7 +1842,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
-                                        <div class="w-1/2 flex space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
                                             <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
@@ -1859,7 +1859,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col items-end">
-                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
                                                     Quis autem vel eum iure reprehenderit qui in ea voluptate?
@@ -1876,7 +1876,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
-                                        <div class="w-1/2 flex space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
                                             <img src="./../img/message2.jpg" class="w-12 h-12 rounded-full">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
@@ -1908,7 +1908,7 @@
                                 <h5 class="text-lg p-4 border-b-2 font-semibold">To: Maria Watkins</h5>
                                 <div class="flex-1 p-4 border-b-2 space-y-8 overflow-y-auto custom-scrollbar">
                                     <div class="flex flex-col items-end">
-                                        <div class="w-1/2 flex justify-end  space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex justify-end  space-x-1">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
                                                     At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.
@@ -1925,7 +1925,7 @@
                                         </div>
                                     </div>
                                     <div class="flex flex-col">
-                                        <div class="w-1/2 flex space-x-1">
+                                        <div class="w-3/4 2xl:w-1/2 flex space-x-1">
                                             <img src="./../img/message3.jpg" class="w-12 h-12 rounded-full">
                                             <div>
                                                 <div class="bg-blue-100 p-4 rounded-lg">
