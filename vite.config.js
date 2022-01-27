@@ -26,7 +26,8 @@ module.exports = defineConfig({
         cards: resolve(__dirname, './pages/cards.html'),
         tabs: resolve(__dirname, './pages/tabs.html'),
         accordions: resolve(__dirname, './pages/accordions.html'),
-        messages: resolve(__dirname, './pages/messages.html')
+        messages: resolve(__dirname, './pages/messages.html'),
+        calendar: resolve(__dirname, './pages/calendar.html')
       }
     }
   }
