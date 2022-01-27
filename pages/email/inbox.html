@@ -1725,7 +1725,7 @@
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
                     <!-- start::Inbox -->
-                    <div class="w-full bg-white shadow-xl rounded-lg flex items-center justify-center">
+                    <div class="w-full bg-white shadow-xl rounded-lg flex">
                         <div class="w-64 px-4">
                             <div class="py-4">
                                 <a 
@@ -1814,7 +1814,62 @@
                             </div>
                         </div>
                         <div class="flex-1 px-4">
-                            Right
+                            <div class="py-4 flex">
+                                <div 
+                                    x-data="{ filterMessages: false }"
+                                    class="relative flex items-center py-2 px-0.5 space-x-0.5" 
+                                >
+                                    <input type="checkbox" name="checkbox_color_primary" id="checkbox_color_primary" class="text-primary border border-primary focus:ring-0">
+                                    <button @click="filterMessages = !filterMessages">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div
+                                        x-show="filterMessages"
+                                        @click.away="filterMessages = false"
+                                        x-cloak 
+                                        class="bg-primary bg-opacity-20 shadow-xl absolute left-0 top-6 w-32 py-2 text-gray-900 rounded"
+                                    >
+                                        <button
+                                            @click="filterMessages = false" 
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            All
+                                        </button>
+                                        <button 
+                                            @click="filterMessages = false"    
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            None
+                                        </button>
+                                        <button 
+                                            @click="filterMessages = false"    
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            Read
+                                        </button>
+                                        <button 
+                                            @click="filterMessages = false"    
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            Unread
+                                        </button>
+                                        <button 
+                                            @click="filterMessages = false"    
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            Starred
+                                        </button>
+                                        <button 
+                                            @click="filterMessages = false"    
+                                            class="w-full text-sm py-1 hover:bg-primary hover:bg-opacity-30"
+                                        >
+                                            Unstarred
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end::Inbox -->
