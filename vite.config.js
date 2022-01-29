@@ -27,7 +27,8 @@ module.exports = defineConfig({
         tabs: resolve(__dirname, './pages/tabs.html'),
         accordions: resolve(__dirname, './pages/accordions.html'),
         messages: resolve(__dirname, './pages/messages.html'),
-        calendar: resolve(__dirname, './pages/calendar.html')
+        calendar: resolve(__dirname, './pages/calendar.html'),
+        inbox: resolve(__dirname, './pages/email/inbox.html')
       }
     }
   }
