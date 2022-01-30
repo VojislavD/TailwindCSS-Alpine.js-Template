@@ -29,7 +29,8 @@ module.exports = defineConfig({
         messages: resolve(__dirname, './pages/messages.html'),
         calendar: resolve(__dirname, './pages/calendar.html'),
         inbox: resolve(__dirname, './pages/email/inbox.html'),
-        viewMessage: resolve(__dirname, './pages/email/viewMessage.html')
+        viewMessage: resolve(__dirname, './pages/email/viewMessage.html'),
+        newMessage: resolve(__dirname, './pages/email/newMessage.html')
       }
     }
   }
