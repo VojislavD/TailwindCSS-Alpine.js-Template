@@ -30,7 +30,8 @@ module.exports = defineConfig({
         calendar: resolve(__dirname, './pages/calendar.html'),
         inbox: resolve(__dirname, './pages/email/inbox.html'),
         viewMessage: resolve(__dirname, './pages/email/viewMessage.html'),
-        newMessage: resolve(__dirname, './pages/email/newMessage.html')
+        newMessage: resolve(__dirname, './pages/email/newMessage.html'),
+        invoices: resolve(__dirname, './pages/invoices.html')
       }
     }
   }
