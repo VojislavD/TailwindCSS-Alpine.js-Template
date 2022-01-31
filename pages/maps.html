@@ -1747,26 +1747,43 @@
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
                     <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Full Width Map -->
-                        <div>
-                            <h4 class="text-xl capitalize">Full Width Map</h4>
-                            <div class="mt-6 flex flex-col space-y-16">
-                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                            <!-- start:: Classic Map -->
+                            <div>
+                                <h4 class="text-xl capitalize">Classic Map</h4>
+                                <div class="mt-6 flex flex-col space-y-16">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1643623896667!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
                             </div>
-                        </div>
-                        <!-- end:: Full Width Map -->
-                    </div>
+                            <!-- end:: Classic Map -->
 
-                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Two Maps In A Row -->
-                        <div>
-                            <h4 class="text-xl capitalize">Two Maps In A Row</h4>
-                            <div class="mt-6 grid grid-cols-2 gap-8">
-                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96708.34194152504!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2srs!4v1638880287768!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <!-- start:: Satellite Map -->
+                            <div>
+                                <h4 class="text-xl capitalize">Satellite Map</h4>
+                                <div class="mt-6 flex flex-col space-y-16">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d119374.35958406996!2d-74.03927092356084!3d40.75904032942992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srs!4v1643624032052!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
                             </div>
+                            <!-- end:: Satellite Map -->
+
+                            <!-- start:: Street View -->
+                            <div>
+                                <h4 class="text-xl capitalize">Street View</h4>
+                                <div class="mt-6 flex flex-col space-y-16">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!4v1643624227512!6m8!1m7!1sCAoSLEFGMVFpcE16ZXhVWjhvSXBMTVhyZFdROXF0d09PVGpRRkpzb3VoMnJuam9Q!2m2!1d40.753333!2d-73.9833329998666!3f7.552397000959218!4f21.29171254274891!5f0.4000000000000002" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <!-- end:: Street View -->
+
+                            <!-- start:: Markers Map -->
+                            <div>
+                                <h4 class="text-xl capitalize">Markers Map</h4>
+                                <div class="mt-6 flex flex-col space-y-16">
+                                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96716.6446768423!2d-73.9833329998666!3d40.753333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2srs!4v1643624375043!5m2!1sen!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+                            </div>
+                            <!-- end:: Markers Map -->
                         </div>
-                        <!-- end:: Two Maps In A Row -->
                     </div>
                 </div>
                 <!-- end:Page content -->
