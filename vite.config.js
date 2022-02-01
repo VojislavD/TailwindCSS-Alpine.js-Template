@@ -31,7 +31,12 @@ module.exports = defineConfig({
         inbox: resolve(__dirname, './pages/email/inbox.html'),
         viewMessage: resolve(__dirname, './pages/email/viewMessage.html'),
         newMessage: resolve(__dirname, './pages/email/newMessage.html'),
-        invoices: resolve(__dirname, './pages/invoices.html')
+        invoices: resolve(__dirname, './pages/invoices.html'),
+        basicSignIn: resolve(__dirname, './pages/authentication/basic/signIn.html'),
+        basicSignUp: resolve(__dirname, './pages/authentication/basic/signUp.html'),
+        basicForgotPassword: resolve(__dirname, './pages/authentication/basic/forgotPassword.html'),
+        basicResetPassword: resolve(__dirname, './pages/authentication/basic/resetPassword.html'),
+        basicEmailVerification: resolve(__dirname, './pages/authentication/basic/emailVerification.html')
       }
     }
   }
