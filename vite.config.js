@@ -36,7 +36,12 @@ module.exports = defineConfig({
         basicSignUp: resolve(__dirname, './pages/authentication/basic/signUp.html'),
         basicForgotPassword: resolve(__dirname, './pages/authentication/basic/forgotPassword.html'),
         basicResetPassword: resolve(__dirname, './pages/authentication/basic/resetPassword.html'),
-        basicEmailVerification: resolve(__dirname, './pages/authentication/basic/emailVerification.html')
+        basicEmailVerification: resolve(__dirname, './pages/authentication/basic/emailVerification.html'),
+        illustrationSignIn: resolve(__dirname, './pages/authentication/illustration/signIn.html'),
+        illustrationSignUp: resolve(__dirname, './pages/authentication/illustration/signUp.html'),
+        illustrationForgotPassword: resolve(__dirname, './pages/authentication/illustration/forgotPassword.html'),
+        illustrationResetPassword: resolve(__dirname, './pages/authentication/illustration/resetPassword.html'),
+        illustrationEmailVerification: resolve(__dirname, './pages/authentication/illustration/emailVerification.html')
       }
     }
   }
