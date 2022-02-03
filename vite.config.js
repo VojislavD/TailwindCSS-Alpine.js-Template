@@ -46,7 +46,8 @@ module.exports = defineConfig({
         coverSignUp: resolve(__dirname, './pages/authentication/cover/signUp.html'),
         coverForgotPassword: resolve(__dirname, './pages/authentication/cover/forgotPassword.html'),
         coverResetPassword: resolve(__dirname, './pages/authentication/cover/resetPassword.html'),
-        coverEmailVerification: resolve(__dirname, './pages/authentication/cover/emailVerification.html')
+        coverEmailVerification: resolve(__dirname, './pages/authentication/cover/emailVerification.html'),
+        profile: resolve(__dirname, './pages/profile.html')
       }
     }
   }
