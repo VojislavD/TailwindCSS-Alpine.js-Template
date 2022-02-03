@@ -1665,7 +1665,7 @@
                                     x-show="linkActive"
                                     @click.away="linkActive = false"
                                     x-cloak
-                                    class="absolute right-0 w-40 top-11"
+                                    class="absolute right-0 w-40 top-11 z-20"
                                 >
                                     <!-- start::Submenu content -->
                                     <div class="bg-white rounded">
@@ -1767,7 +1767,7 @@
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
                     <div class="bg-white rounded-lg shadow-xl">
-                        <div x-data="{ openSettings: false }" class="bg-white absolute right-12 mt-4 rounded z-10">
+                        <div x-data="{ openSettings: false }" class="bg-white absolute right-12 mt-4 rounded">
                             <button
                                 @click="openSettings = !openSettings" 
                                 class="border border-gray-300 p-2 rounded text-gray-500 hover:text-primary hover:bg-gray-100"
