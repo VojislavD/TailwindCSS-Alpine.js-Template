@@ -1767,10 +1767,11 @@
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
                     <div class="bg-white rounded-lg shadow-xl pb-8">
-                        <div x-data="{ openSettings: false }" class="bg-white absolute right-12 mt-4 rounded">
+                        <div x-data="{ openSettings: false }" class="absolute right-12 mt-4 rounded">
                             <button
                                 @click="openSettings = !openSettings" 
-                                class="border border-gray-300 p-2 rounded text-gray-500 hover:text-primary hover:bg-gray-100"
+                                class="border border-gray-300 p-2 rounded text-gray-100 hover:text-gray-300 bg-gray-100 bg-opacity-10 hover:bg-opacity-20"
+                                title="Settings"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
@@ -1830,7 +1831,7 @@
                             <p class="text-gray-700">Senior Software Engineer at Tailwind CSS</p>
                             <p class="text-sm text-gray-500">New York, USA</p>
                         </div>
-                        <div class="flex-1 flex flex-col items-end justify-end px-8 mt-2">
+                        <div class="flex-1 flex flex-col items-center lg:items-end justify-end px-8 mt-2">
                             <div class="flex items-center space-x-4 mt-2">
                                 <button class="flex items-center bg-blue-600 hover:bg-blue-700 text-gray-100 px-4 py-2 rounded text-sm space-x-2 transition duration-100">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
@@ -1849,8 +1850,8 @@
                     </div>
 
                     <div class="my-4 flex flex-col 2xl:flex-row space-y-4 2xl:space-y-0 2xl:space-x-4">
-                        <div class="w-full 2xl:w-1/3">
-                            <div class="bg-white rounded-lg shadow-xl p-8">
+                        <div class="w-full flex flex-col 2xl:w-1/3">
+                            <div class="flex-1 bg-white rounded-lg shadow-xl p-8">
                                 <h4 class="text-xl text-gray-900 font-bold">Personal Info</h4>
                                 <ul class="mt-2 text-gray-700">
                                     <li class="flex border-y py-2">
@@ -1898,9 +1899,9 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bg-white rounded-lg shadow-xl mt-4 p-8">
+                            <div class="flex-1 bg-white rounded-lg shadow-xl mt-4 p-8">
                                 <h4 class="text-xl text-gray-900 font-bold">Activity log</h4>
-                                <div class="relative h-full px-4 pt-2">
+                                <div class="relative px-4">
                                     <div class="absolute h-full border border-dashed border-opacity-20 border-secondary"></div>
     
                                     <!-- start::Timeline item -->
@@ -1980,12 +1981,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="w-full 2xl:w-2/3">
-                            <div class="bg-white rounded-lg shadow-xl p-8">
+                        <div class="flex flex-col w-full 2xl:w-2/3">
+                            <div class="flex-1 bg-white rounded-lg shadow-xl p-8">
                                 <h4 class="text-xl text-gray-900 font-bold">About</h4>
                                 <p class="mt-2 text-gray-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptates obcaecati numquam error et ut fugiat asperiores. Sunt nulla ad incidunt laboriosam, laudantium est unde natus cum numquam, neque facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, magni odio magnam commodi sunt ipsum eum! Voluptas eveniet aperiam at maxime, iste id dicta autem odio laudantium eligendi commodi distinctio!</p>
                             </div>
-                            <div class="bg-white rounded-lg shadow-xl mt-4 p-8">
+                            <div class="flex-1 bg-white rounded-lg shadow-xl mt-4 p-8">
                                 <h4 class="text-xl text-gray-900 font-bold">Statistics</h4>
                                 
                                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-4">
