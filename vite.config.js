@@ -48,7 +48,13 @@ module.exports = defineConfig({
         coverResetPassword: resolve(__dirname, './pages/authentication/cover/resetPassword.html'),
         coverEmailVerification: resolve(__dirname, './pages/authentication/cover/emailVerification.html'),
         profile: resolve(__dirname, './pages/profile.html'),
-        genericEmptyPage: resolve(__dirname, './pages/generic/emptyPage.html')
+        genericEmptyPage: resolve(__dirname, './pages/generic/emptyPage.html'),
+        error404Basic: resolve(__dirname, './pages/error/404/basic.html'),
+        error404Illustration: resolve(__dirname, './pages/error/404/illustration.html'),
+        error404IllustrationCover: resolve(__dirname, './pages/error/404/illustration_cover.html'),
+        error500Basic: resolve(__dirname, './pages/error/500/basic.html'),
+        error500Illustration: resolve(__dirname, './pages/error/500/illustration.html'),
+        error500IllustrationCover: resolve(__dirname, './pages/error/500/illustration_cover.html')
       }
     }
   }
