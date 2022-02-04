@@ -10,8 +10,8 @@
         <style>[x-cloak] { display: none !important; }</style>
 
         <!-- Scripts -->
-        <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     </head>
     <body>
@@ -82,6 +82,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -189,12 +190,13 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./input.html"
+                                    href="../formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -206,7 +208,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./checkbox.html"
+                                    href="../formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -218,7 +220,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./radio.html"
+                                    href="../formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -230,7 +232,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="../formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -242,7 +244,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./switch.html"
+                                    href="../formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -254,7 +256,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./select.html"
+                                    href="../formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -276,7 +278,7 @@
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -296,7 +298,7 @@
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
@@ -351,12 +353,13 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/bar_charts.html"
+                                    href="./bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -368,7 +371,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/line_charts.html"
+                                    href="./line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -380,7 +383,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../charts/other_charts.html"
+                                    href="./other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -416,6 +419,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -498,7 +502,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-                    
+
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
@@ -564,6 +568,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -605,6 +610,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <p class="text-xs text-gray-600 ml-10 my-2 uppercase">Basic</p>
@@ -860,6 +866,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <p class="text-xs text-gray-600 ml-10 my-2 uppercase">404</p>
@@ -986,6 +993,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1051,6 +1059,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1116,6 +1125,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1183,6 +1193,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1248,6 +1259,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->

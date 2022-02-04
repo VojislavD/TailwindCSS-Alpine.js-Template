@@ -10,8 +10,8 @@
         <style>[x-cloak] { display: none !important; }</style>
 
         <!-- Scripts -->
-        <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
+        <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     </head>
     <body>
@@ -48,7 +48,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../../index.html"
+                        href="./../../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,6 +88,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -195,12 +196,13 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/input.html"
+                                    href="../formElements/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -212,7 +214,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/checkbox.html"
+                                    href="../formElements/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -224,7 +226,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/radio.html"
+                                    href="../formElements/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -236,7 +238,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/textarea.html"
+                                    href="../formElements/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -248,7 +250,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/switch.html"
+                                    href="../formElements/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -260,7 +262,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../formElements/select.html"
+                                    href="../formElements/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -278,7 +280,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../formLayouts.html"
+                        href="../formLayouts.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -298,7 +300,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../buttons.html"
+                        href="../buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -312,13 +314,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./../tables.html"
+                        href="../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -357,12 +359,13 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/bar_charts.html"
+                                    href="./bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -374,7 +377,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/line_charts.html"
+                                    href="./line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -386,7 +389,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./../charts/other_charts.html"
+                                    href="./other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -422,12 +425,13 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./info.html"
+                                    href="./../modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -439,7 +443,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./confirmation.html"
+                                    href="./../modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -451,7 +455,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication.html"
+                                    href="./../modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -570,6 +574,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -611,6 +616,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <p class="text-xs text-gray-600 ml-10 my-2 uppercase">Basic</p>
@@ -842,7 +848,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -866,6 +872,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <p class="text-xs text-gray-600 ml-10 my-2 uppercase">404</p>
@@ -992,6 +999,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1057,6 +1065,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1122,6 +1131,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1189,6 +1199,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
@@ -1254,6 +1265,7 @@
                         <ul
                             x-show="linkActive"
                             x-cloak
+                            x-collapse.duration.300ms
                             class="text-gray-400"
                         >
                             <!-- start::Submenu link -->
