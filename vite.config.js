@@ -54,7 +54,8 @@ module.exports = defineConfig({
         error404IllustrationCover: resolve(__dirname, './pages/error/404/illustration_cover.html'),
         error500Basic: resolve(__dirname, './pages/error/500/basic.html'),
         error500Illustration: resolve(__dirname, './pages/error/500/illustration.html'),
-        error500IllustrationCover: resolve(__dirname, './pages/error/500/illustration_cover.html')
+        error500IllustrationCover: resolve(__dirname, './pages/error/500/illustration_cover.html'),
+        maintenance: resolve(__dirname, './pages/maintenance.html')
       }
     }
   }
