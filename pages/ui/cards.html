@@ -5,7 +5,7 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="../css/tailwind.css">
+        <link rel="stylesheet" href="./../../css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -42,7 +42,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../index.html"
+                        href="./../../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +88,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/inbox.html"
+                                    href="./../email/inbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -100,7 +100,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/viewMessage.html"
+                                    href="./../email/viewMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -112,7 +112,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/newMessage.html"
+                                    href="./../email/newMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -130,7 +130,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./messages.html"
+                        href="./../messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -150,7 +150,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./calendar.html"
+                        href="./../calendar.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -166,6 +166,84 @@
                     <!-- end::Menu link -->
 
                     <p class="text-xs text-gray-600 mt-10 mb-2 px-6 uppercase">Components</p>
+
+                    <!-- start::Menu link -->
+                    <div
+                        x-data="{ linkHover: false, linkActive: false }"
+                    >
+                        <div 
+                            @mouseover = "linkHover = true"
+                            @mouseleave = "linkHover = false"
+                            @click = "linkActive = !linkActive"
+                            class="flex items-center justify-between text-gray-400 hover:text-gray-100 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
+                            :class=" linkActive ? 'bg-black bg-opacity-30 text-gray-100' : ''"
+                        >
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                                <span class="ml-3">User Interface</span>
+                            </div>
+                            <svg class="w-3 h-3 transition duration-300" :class="linkActive ? 'rotate-90' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </div>
+                        <!-- start::Submenu -->
+                        <ul
+                            x-show="linkActive"
+                            x-cloak
+                            x-collapse.duration.300ms
+                            class="text-gray-400"
+                        >
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/accordions.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Accordions</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/buttons.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Buttons</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/cards.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Cards</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../ui/tabs.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Tabs</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+                        </ul>
+                        <!-- end::Submenu -->
+                    </div>
+                    <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
                     <div
@@ -196,7 +274,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/layout.html"
+                                    href="./../forms/layout.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -208,7 +286,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/input.html"
+                                    href="./../forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -220,7 +298,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/checkbox.html"
+                                    href="./../forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -232,7 +310,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/radio.html"
+                                    href="./../forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -244,7 +322,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/textarea.html"
+                                    href="./../forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -256,7 +334,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/switch.html"
+                                    href="./../forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -268,7 +346,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./forms/select.html"
+                                    href="./../forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -279,46 +357,6 @@
                         </ul>
                         <!-- end::Submenu -->
                     </div>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./buttons.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Buttons
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./tables.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Tables
-                        </span>
-                    </a>
                     <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
@@ -351,7 +389,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/bar_charts.html"
+                                    href="./../charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -363,7 +401,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/line_charts.html"
+                                    href="./../charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -375,7 +413,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/other_charts.html"
+                                    href="./../charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -386,6 +424,27 @@
                         </ul>
                         <!-- end::Submenu -->
                     </div>
+                    <!-- end::Menu link -->
+
+                    <!-- start::Menu link -->
+                    <a 
+                        x-data="{ linkHover: false }"
+                        @mouseover = "linkHover = true"
+                        @mouseleave = "linkHover = false"
+                        href="./../maps.html"
+                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span 
+                            class="ml-3 transition duration-200" 
+                            :class="linkHover ? 'text-gray-100' : ''"
+                        >
+                            Maps
+                        </span>
+                    </a>
                     <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
@@ -417,7 +476,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/info.html"
+                                    href="./../modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -429,7 +488,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/confirmation.html"
+                                    href="./../modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -441,7 +500,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/authentication.html"
+                                    href="./../modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -459,78 +518,17 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maps.html"
+                        href="./../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                         <span 
                             class="ml-3 transition duration-200" 
                             :class="linkHover ? 'text-gray-100' : ''"
                         >
-                            Maps
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./cards.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Cards
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./tabs.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Tabs
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./accordions.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Accordions
+                            Tables
                         </span>
                     </a>
                     <!-- end::Menu link -->
@@ -566,7 +564,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./generic/emptyPage.html"
+                                    href="./../generic/emptyPage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -610,7 +608,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signIn.html"
+                                    href="./../authentication/basic/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -622,7 +620,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signUp.html"
+                                    href="./../authentication/basic/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -634,7 +632,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/forgotPassword.html"
+                                    href="./../authentication/basic/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -642,11 +640,11 @@
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
-
+                            
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/resetPassword.html"
+                                    href="./../authentication/basic/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -658,7 +656,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/emailVerification.html"
+                                    href="./../authentication/basic/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -672,7 +670,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signIn.html"
+                                    href="./../authentication/illustration/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -684,7 +682,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signUp.html"
+                                    href="./../authentication/illustration/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -696,7 +694,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/forgotPassword.html"
+                                    href="./../authentication/illustration/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -708,7 +706,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/resetPassword.html"
+                                    href="./../authentication/illustration/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -720,7 +718,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/emailVerification.html"
+                                    href="./../authentication/illustration/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -734,7 +732,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signIn.html"
+                                    href="./../authentication/cover/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -746,7 +744,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signUp.html"
+                                    href="./../authentication/cover/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -758,7 +756,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/forgotPassword.html"
+                                    href="./../authentication/cover/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -770,7 +768,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/resetPassword.html"
+                                    href="./../authentication/cover/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -782,7 +780,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/emailVerification.html"
+                                    href="./../authentication/cover/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -800,7 +798,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./profile.html"
+                        href="./../profile.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -820,7 +818,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./invoices.html"
+                        href="./../invoices.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -834,7 +832,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -866,7 +864,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/basic.html"
+                                    href="./../error/404/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -878,7 +876,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration.html"
+                                    href="./../error/404/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -890,7 +888,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration_cover.html"
+                                    href="./../error/404/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -904,7 +902,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/basic.html"
+                                    href="./../error/500/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -916,7 +914,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration.html"
+                                    href="./../error/500/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -928,7 +926,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration_cover.html"
+                                    href="./../error/500/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -946,7 +944,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maintenance.html"
+                        href="./../maintenance.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -991,7 +989,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/basic.html"
+                                    href="./../faq/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1003,7 +1001,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/qa.html"
+                                    href="./../faq/qa.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1015,7 +1013,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/accordion.html"
+                                    href="./../faq/accordion.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1057,7 +1055,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/basic.html"
+                                    href="./../coming_soon/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1069,7 +1067,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/timer.html"
+                                    href="./../coming_soon/timer.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1087,7 +1085,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pricing.html"
+                        href="./../pricing.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1205,7 +1203,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1254,7 +1252,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1303,7 +1301,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1352,7 +1350,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1386,7 +1384,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1404,7 +1402,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./profile.html"
+                                            href="./../profile.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1423,7 +1421,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./email/inbox.html"
+                                            href="./../email/inbox.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1498,514 +1496,717 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <div class="grid grid-cols-1 xl:grid-cols-2 bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
-                        <div class="px-2 mb-12">
-                            <!-- start::Basic Accordions -->
-                            <h4 class="text-xl font-semibold mb-4">Basic Accordions</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 1
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 2
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        Accordion Item 3
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
+                    <!-- start::Basic Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Basic Cards</h4>
+                        <div class="grid grid-cols-4 gap-8">
+                            <!-- start::Simple Basic Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Simple</p>
+                                <div class="h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </div>
                             </div>
-                            <!-- end::Basic Accordions -->
-                        </div>
+                            <!-- end::Simple Basic Card -->
+                            
+                            <!-- start::Large Basic Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Large Rounded</p>
+                                <div class="h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl rounded-lg">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Large Basic Card -->
+                            
+                            <!-- start::XL Rounded Basic Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">XL Rounded</p>
+                                <div class="h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl rounded-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::XL Rounded Basic Card -->
 
-                        <div class="px-2 mb-12">
-                            <!-- start::Background Color On Active -->
-                            <h4 class="text-xl font-semibold mb-4">Background Color On Active</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full text-left px-4 py-2 hover:text-primary"
-                                        :class="accordion1 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
-                                    >
-                                        Accordion Item 1
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full text-left px-4  py-2 hover:text-primary"
-                                        :class="accordion2 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
-                                    >
-                                        Accordion Item 2
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full text-left px-4 py-2 hover:text-primary"
-                                        :class="accordion3 ? 'bg-primary text-gray-100 hover:text-gray-300' : ''"
-                                    >
-                                        Accordion Item 3
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="px-4 py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
+                            <!-- start::Full Rounded Basic Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Full Rounded</p>
+                                <div class="h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl rounded-full">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 </div>
                             </div>
-                            <!-- end::Background Color On Active -->
-                        </div>
-
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Arrow Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Arrow Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 1</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 2</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 3</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'text-primary rotate-180 transition duration-300' : 'rotate-0 transition duration-300'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Accordions With Arrow Icon -->
-                        </div>
-
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Plus & Minus Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Plus & Minus Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 1</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 2</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center justify-between text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <p>Accordion Item 3</p>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Accordions With Plus & Minus Icon -->
-                        </div>
-
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Plus & Minus Icon Left -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Plus & Minus Icon Left</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 1</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 2</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 3</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Accordions With Plus & Minus Icon Left -->
-                        </div>
-
-                        <div class="px-2 mb-12">
-                            <!-- start::Accordions With Rounded Plus & Minus Icon -->
-                            <h4 class="text-xl font-semibold mb-4">Accordions With Rounded Plus & Minus Icon</h4>
-                            <div x-data="{ accordion1: false, accordion2: false, accordion3: false }" >
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion2 = false,
-                                            accordion3 = false,
-                                            accordion1 = !accordion1
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion1 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion1 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 1</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion1"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion3 = false,
-                                            accordion2 = !accordion2
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion2 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion2 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 2</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion2"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="px-4 border border-gray-300">
-                                    <button
-                                        @click="
-                                            accordion1 = false,
-                                            accordion2 = false,
-                                            accordion3 = !accordion3
-                                        "
-                                        class="w-full flex items-center text-left py-2 hover:text-primary"
-                                        :class="accordion3 ? 'text-primary' : ''"
-                                    >
-                                        <svg xmlns="http://www.w3.org/2000/svg"  class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'hidden' : 'block'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-primary" :class="accordion3 ? 'block' : 'hidden'" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                        <p class="ml-2">Accordion Item 3</p>
-                                    </button>
-                                    <div 
-                                        x-show="accordion3"
-                                        x-cloak
-                                        x-collapse.duration.500ms
-                                    >
-                                        <div class="py-2">
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Accordions With Rounded Plus & Minus Icon -->
+                            <!-- end::Full Rounded Basic Card -->
                         </div>
                     </div>
+                    <!-- end::Basic Cards -->
+
+                    <!-- start::Cards With Header -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Cards With Header</h4>
+                        <div class="grid grid-cols-4 gap-8">
+                            <!-- start::Simple Cards With Header -->
+                            <div class="mt-6">
+                                <p class="mb-2">Simple</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Simple Cards With Header -->
+
+                            <!-- start::Large Rounded Cards With Header -->
+                            <div class="mt-6">
+                                <p class="mb-2">Large Rounded</p>
+                                <div class="border border-gray-300 text-center shadow-xl rounded-lg">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center rounded-tl-lg rounded-tr-lg">Title</div>
+                                    <div class="h-40 flex items-center justify-center rounded-bl-lg rounded-br-lg">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Large Rounded Cards With Header -->
+
+                            <!-- start::XL Rounded Cards With Header -->
+                            <div class="mt-6">
+                                <p class="mb-2">XL Rounded</p>
+                                <div class="border border-gray-300 text-center shadow-xl rounded-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center rounded-tl-xl rounded-tr-xl">Title</div>
+                                    <div class="h-40 flex items-center justify-center rounded-bl-xl rounded-br-xl">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::XL Rounded Cards With Header -->
+                        </div>
+                    </div>
+                    <!-- end::Cards With Header -->
+
+                    <!-- start::Action Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Action Cards</h4>
+                        <div class="grid grid-cols-5 gap-4">
+                            <!-- start::Close Button Action Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Close Button</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button class="font-bold hover:text-primary-dark" title="close">&#x2715</button>
+                                    </div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Close Button Action Cards -->
+
+                            <!-- start::Action Button Header Action Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Action Button Header</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button class="bg-primary hover:bg-primary-dark hover:shadow-xl text-gray-100 text-sm px-2 py-1 rounded-lg" title="Action">Action</button>
+                                    </div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Action Button Header Action Cards -->
+
+                            <!-- start::Action Button Body Left Action Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Action Button Body Left</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center px-3">
+                                        <span>Title</span>
+                                    </div>
+                                    <div class="h-40 flex flex-col items-start justify-center">
+                                        <p class="flex-1 flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="bg-primary hover:bg-primary-dark hover:shadow-xl text-gray-100 text-sm px-3 py-1.5 rounded-lg mx-4 my-2" title="Action">Action</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Action Button Body Left Action Cards -->
+
+                            <!-- start::Action Button Body Center Action Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Action Button Body Center</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center px-3">
+                                        <span>Title</span>
+                                    </div>
+                                    <div class="h-40 flex flex-col items-center justify-center">
+                                        <p class="flex-1 flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="bg-primary hover:bg-primary-dark hover:shadow-xl text-gray-100 text-sm px-3 py-1.5 rounded-lg mx-4 my-2" title="Action">Action</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Action Button Body Center Action Cards -->
+
+                            <!-- start::Action Button Body Right Action Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Action Button Body Right</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-center px-3">
+                                        <span>Title</span>
+                                    </div>
+                                    <div class="h-40 flex flex-col items-end justify-center">
+                                        <p class="flex-1 flex items-center justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <button class="bg-primary hover:bg-primary-dark hover:shadow-xl text-gray-100 text-sm px-3 py-1.5 rounded-lg mx-4 my-2" title="Action">Action</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Action Button Body Right Action Cards -->
+                        </div>
+                    </div>
+                    <!-- end::Action Cards -->
+
+                    <!-- start::Border Color Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Border Color Cards</h4>
+                        <div class="grid grid-cols-6 gap-4">
+                            <!-- start::Primary Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary</p>
+                                <div class="bg-white text-primary h-40 flex items-center justify-center border border-primary text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Primary Border Color Card -->
+
+                            <!-- start::Primary Dark Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary Dark</p>
+                                <div class="bg-white text-primary-dark h-40 flex items-center justify-center border border-primary-dark text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Primary Dark Border Color Card -->
+
+                            <!-- start::Secondary Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary</p>
+                                <div class="bg-white text-secondary h-40 flex items-center justify-center border border-secondary text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Secondary Border Color Card -->
+
+                            <!-- start::Secondary Dark Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary Dark</p>
+                                <div class="bg-white text-secondary-dark h-40 flex items-center justify-center border border-secondary-dark text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Secondary Dark Border Color Card -->
+
+                            <!-- start::Gray Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Gray</p>
+                                <div class="bg-white text-gray-500 h-40 flex items-center justify-center border border-gray-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Gray Border Color Card -->
+
+                            <!-- start::Red Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Red</p>
+                                <div class="bg-white text-red-500 h-40 flex items-center justify-center border border-red-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Red Border Color Card -->
+
+                            <!-- start::Yellow Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Yellow</p>
+                                <div class="bg-white text-yellow-500 h-40 flex items-center justify-center border border-yellow-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Yellow Border Color Card -->
+
+                            <!-- start::Green Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Green</p>
+                                <div class="bg-white text-green-500 h-40 flex items-center justify-center border border-green-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Green Border Color Card -->
+
+                            <!-- start::Blue Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Blue</p>
+                                <div class="bg-white text-blue-500 h-40 flex items-center justify-center border border-blue-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Blue Border Color Card -->
+
+                            <!-- start::Indigo Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Indigo</p>
+                                <div class="bg-white text-indigo-500 h-40 flex items-center justify-center border border-indigo-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Indigo Border Color Card -->
+
+                            <!-- start::Purple Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Purple</p>
+                                <div class="bg-white text-purple-500 h-40 flex items-center justify-center border border-purple-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Purple Border Color Card -->
+
+                            <!-- start::Pink Border Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Pink</p>
+                                <div class="bg-white text-pink-500 h-40 flex items-center justify-center border border-pink-500 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Pink Border Color Card -->
+                        </div>
+                    </div>
+                    <!-- end::Border Color Cards -->
+
+                    <!-- start::Color Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Color Cards</h4>
+                        <div class="grid grid-cols-6 gap-4">
+                            <!-- start::Primary Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary</p>
+                                <div class="bg-primary text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Primary Color Card -->
+
+                            <!-- start::Primary Dark Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary Dark</p>
+                                <div class="bg-primary-dark text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Primary Dark Color Card -->
+
+                            <!-- start::Secondary Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary</p>
+                                <div class="bg-secondary text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Secondary Color Card -->
+
+                            <!-- start::Secondary Dark Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary Dark</p>
+                                <div class="bg-secondary-dark text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Secondary Dark Color Card -->
+
+                             <!-- start::Gray Color Card -->
+                             <div class="mt-6">
+                                <p class="mb-2">Gray</p>
+                                <div class="bg-gray-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Gray Color Card -->
+
+                            <!-- start::Red Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Red</p>
+                                <div class="bg-red-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Red Color Card -->
+
+                            <!-- start::Yellow Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Yellow</p>
+                                <div class="bg-yellow-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Yellow Color Card -->
+
+                            <!-- start::Green Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Green</p>
+                                <div class="bg-green-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Green Color Card -->
+
+                            <!-- start::Blue Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Blue</p>
+                                <div class="bg-blue-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Blue Color Card -->
+
+                            <!-- start::Indigo Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Indigo</p>
+                                <div class="bg-indigo-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Indigo Color Card -->
+
+                            <!-- start::Purple Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Purple</p>
+                                <div class="bg-purple-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Purple Color Card -->
+
+                            <!-- start::Pink Color Card -->
+                            <div class="mt-6">
+                                <p class="mb-2">Pink</p>
+                                <div class="bg-pink-500 text-gray-100 h-40 flex items-center justify-center border border-gray-300 text-center shadow-xl">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                            <!-- end::Pink Color Card -->
+                        </div>
+                    </div>
+                    <!-- end::Color Cards -->
+
+                    <!-- start::Color Header Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Color Header Cards</h4>
+                        <div class="grid grid-cols-6 gap-4">
+                            <!-- start::Primary Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-primary text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Primary Color Header Cards -->
+
+                            <!-- start::Primary Dark Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Primary Dark</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-primary-dark text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Primary Dark Color Header Cards -->
+
+                            <!-- start::Secondary Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-secondary text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Secondary Color Header Cards -->
+
+                            <!-- start::Secondary Dark Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Secondary Dark</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-secondary-dark text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Secondary Dark Color Header Cards -->
+
+                            <!-- start::Gray Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Gray</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-gray-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Gray Color Header Cards -->
+
+                            <!-- start::Red Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Red</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-red-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Red Color Header Cards -->
+
+                            <!-- start::Yellow Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Yellow</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-yellow-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Yellow Color Header Cards -->
+
+                            <!-- start::Green Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Green</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-green-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Green Color Header Cards -->
+
+                            <!-- start::Blue Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Blue</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-blue-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Blue Color Header Cards -->
+
+                            <!-- start::Indigo Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Indigo</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-indigo-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Indigo Color Header Cards -->
+
+                            <!-- start::Purple Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Purple</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-purple-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Purple Color Header Cards -->
+
+                            <!-- start::Pink Color Header Cards -->
+                            <div class="mt-6">
+                                <p class="mb-2">Pink</p>
+                                <div class="border border-gray-300 text-center shadow-xl">
+                                    <div class="w-full h-12 bg-pink-500 text-gray-100  font-bold flex items-center justify-center">Title</div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Pink Color Header Cards -->
+                        </div>
+                    </div>
+                    <!-- end::Color Header Cards -->
+
+                    <!-- start::Cards Transformations -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Cards Transformations</h4>
+                        <div class="grid grid-cols-5 gap-4">
+                            <!-- start::Collapsable Cards Transformations -->
+                            <div class="mt-6">
+                                <p class="mb-2">Collapsable</p>
+                                <div 
+                                    x-data="{ contentShow: true }"
+                                    class="border border-gray-300 text-center shadow-xl"
+                                >
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button 
+                                            @click="contentShow = !contentShow"
+                                            class="font-bold hover:text-primary-dark" 
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 duration-500" :class="contentShow ? 'rotate-0' : '-rotate-90'" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                                        </button>
+                                    </div>
+                                    <div 
+                                        x-show="contentShow"
+                                        x-transition
+                                        class="h-40 flex items-center justify-center"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Collapsable Cards Transformations -->
+
+                            <!-- start::Close Button Cards Transformations -->
+                            <div class="mt-6">
+                                <p class="mb-2">Close</p>
+                                <div 
+                                    x-data="{ showCard: true }"
+                                    x-show="showCard"
+                                    x-transition
+                                    class="border border-gray-300 text-center shadow-xl"
+                                >
+                                    <div class="w-full h-12 bg-gray-200 text-primary font-bold flex items-center justify-between px-3">
+                                        <span class="ml-2">Title</span>
+                                        <button 
+                                            @click="showCard = false"
+                                            class="font-bold hover:text-primary-dark" 
+                                            title="Close"
+                                        >
+                                            ✕
+                                        </button>
+                                    </div>
+                                    <div class="h-40 flex items-center justify-center">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Close Button Cards Transformations -->
+                        </div>
+                    </div>
+                    <!-- end::Cards Transformations -->
+
+                    <!-- start::Custom Cards -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Custom Cards</h4>
+                        <!-- start::Stats Custom Cards -->
+                        <div class="mt-6">
+                            <p class="mb-2">Stats</p>
+                            <div class="grid grid-cols-4 gap-8">
+                                <div class="h-24 flex items-center justify-between border border-gray-400 border-l-8 border-l-blue-500 shadow-xl rounded-lg px-4">
+                                    <div>
+                                        <p class="uppercase text-sm text-blue-500 font-bold">Total Revenue</p>
+                                        <p class="font-bold text-gray-800 text-lg">$8.141</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+
+                                <div class="h-24 flex items-center justify-between border border-gray-400 border-l-8 border-l-green-500 shadow-xl rounded-lg px-4">
+                                    <div>
+                                        <p class="uppercase text-sm text-green-500 font-bold">New Orders</p>
+                                        <p class="font-bold text-gray-800 text-lg">217</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                                </div>
+
+                                <div class="h-24 flex items-center justify-between border border-gray-400 border-l-8 border-l-indigo-500 shadow-xl rounded-lg px-4">
+                                    <div>
+                                        <p class="uppercase text-sm text-indigo-500 font-bold">New Users</p>
+                                        <p class="font-bold text-gray-800 text-lg">54</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-indigo-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                                </div>
+
+                                <div class="h-24 flex items-center justify-between border border-gray-400 border-l-8 border-l-yellow-500 shadow-xl rounded-lg px-4">
+                                    <div>
+                                        <p class="uppercase text-sm text-yellow-500 font-bold">Visits</p>
+                                        <p class="font-bold text-gray-800 text-lg">10.644</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end::Stats Custom Cards -->
+
+                        <div class="grid grid-cols-2 gap-8 mt-6">
+                            <!-- start::Horizonal Card Image Left Custom Cards -->
+                            <div>
+                                <p class="mb-2">Horizonal Card - Image Left</p>
+                                <div class="flex items-start justify-center border border-gray-300">
+                                    <img class="" src="./../../assets/img//card.jpg">
+                                    <div class="py-2 px-4">
+                                        <p class="text-xl font-bold">Card Title</p>
+                                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi pariatur dicta doloribus sunt facere iusto minus.</p>
+                                        <button class="px-2 py-1 mt-6 rounded text-sm bg-primary hover:bg-primary-dark text-gray-100 transition duration-150">Read More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end::Horizonal Card Image Left -->
+
+                            <!-- start::Horizonal Card Image Right Custom Cards -->
+                            <div>
+                                <p class="mb-2">Horizonal Card - Image Right</p>
+                                <div class="flex items-start justify-center border border-gray-300">
+                                    <div class="py-2 px-4">
+                                        <p class="text-xl font-bold">Card Title</p>
+                                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi pariatur dicta doloribus sunt facere iusto minus.</p>
+                                        <button class="px-2 py-1 mt-6 rounded text-sm bg-primary hover:bg-primary-dark text-gray-100 transition duration-150">Read More</button>
+                                    </div>
+                                    <img class="" src="./../../assets/img//card.jpg">
+                                </div>
+                            </div>
+                            <!-- end::Horizonal Card Image Right -->
+                        </div>
+
+                        <div class="grid grid-cols-4 gap-8 mt-6">
+                            <!-- start::Classic Article Custom Cards -->
+                            <div>
+                                <p class="mb-2">Classic Article</p>
+                                <div class="flex flex-col items-start justify-center border border-gray-300 shadow-xl rounded-lg">
+                                    <img class="w-full rounded-tl-lg rounded-tr-lg" src="./../../assets/img//card.jpg">
+                                    <p class="text-xl px-4 mt-3 font-bold">Card Title</p>
+                                    <p class="px-4 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi pariatur dicta doloribus sunt facere iusto minus.</p>
+                                    <button class="my-3 mx-4 px-2 py-1 rounded text-sm bg-primary hover:bg-primary-dark text-gray-100 transition duration-150">Read More</button>
+                                </div>
+                            </div>
+                            <!-- end::Classic Article Custom Cards -->
+
+                            <!-- start::Text Over Image Article Custom Cards -->
+                            <div>
+                                <p class="mb-2">Text Over Image Article</p>
+                                <a href="#" class="relative flex items-end border border-gray-300 shadow-xl">
+                                    <img class="w-full h-full" src="./../../assets/img//card.jpg">
+                                    <span class="absolute w-full h-full bg-black bg-opacity-70"></span>
+                                    <div class="absolute text-white py-2">
+                                        <p class="text-xl px-4 font-bold">Card Title</p>
+                                        <p class="px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sequi pariatur dicta doloribus sunt facere iusto minus.</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- end::Text Over Image Article Custom Cards -->
+                        </div>
+                    </div>
+                    <!-- end::Custom Cards -->
+
                 </div>
                 <!-- end:Page content -->
             </div>
