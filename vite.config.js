@@ -58,7 +58,9 @@ module.exports = defineConfig({
         maintenance: resolve(__dirname, './pages/maintenance.html'),
         faqBasic: resolve(__dirname, './pages/faq/basic.html'),
         faqQa: resolve(__dirname, './pages/faq/qa.html'),
-        faqAccordion: resolve(__dirname, './pages/faq/accordion.html')
+        faqAccordion: resolve(__dirname, './pages/faq/accordion.html'),
+        comingSoonBasic: resolve(__dirname, './pages/coming_soon/basic.html'),
+        comingSoonTimer: resolve(__dirname, './pages/coming_soon/timer.html')
       }
     }
   }
