@@ -60,7 +60,8 @@ module.exports = defineConfig({
         faqQa: resolve(__dirname, './pages/faq/qa.html'),
         faqAccordion: resolve(__dirname, './pages/faq/accordion.html'),
         comingSoonBasic: resolve(__dirname, './pages/coming_soon/basic.html'),
-        comingSoonTimer: resolve(__dirname, './pages/coming_soon/timer.html')
+        comingSoonTimer: resolve(__dirname, './pages/coming_soon/timer.html'),
+        pricing: resolve(__dirname, './pages/pricing.html')
       }
     }
   }
