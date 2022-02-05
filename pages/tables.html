@@ -2730,70 +2730,71 @@
                         </div>
                         <div 
                             x-show="filter"
-                            x-transition
-                            class="mb-2 py-4 bg-gray-200 px-8 rounded-lg"
+                            x-collapse.duration.300ms
                         >
-                            <h5 class="underline">Filter Results</h5>
-                            <form class="py-2">
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-4">
-                                    <input 
-                                        type="text" 
-                                        name="order_id" 
-                                        class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                        placeholder="Order ID"
-                                    >
-                                    <input 
-                                        type="text" 
-                                        name="customer_name" 
-                                        class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                        placeholder="Customer Name"
-                                    >
-                                    <div class="w-full">
-                                        <label class="mr-2">Status:</label>
-                                        <select class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0">
-                                            <option></option>
-                                            <option>Pending</option>
-                                            <option>Shipped</option>
-                                            <option>Paid</option>
-                                            <option>Canceled</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-4">
-                                    <input 
-                                        type="number" 
-                                        name="min_price" 
-                                        class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                        placeholder="Min Price"
-                                    >
-                                    <input 
-                                        type="number" 
-                                        name="max_price" 
-                                        class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                        placeholder="Max Price"
-                                    >
-                                </div>
-                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-4">
-                                    <div>
-                                        <label class="mr-2">From Date:</label>
+                            <div class="mb-2 py-4 bg-gray-200 px-8 rounded-lg">
+                                <h5 class="underline">Filter Results</h5>
+                                <form class="py-2">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 my-4">
                                         <input 
-                                        type="date" 
-                                        name="from_date" 
-                                        class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            type="text" 
+                                            name="order_id" 
+                                            class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            placeholder="Order ID"
+                                        >
+                                        <input 
+                                            type="text" 
+                                            name="customer_name" 
+                                            class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            placeholder="Customer Name"
+                                        >
+                                        <div class="w-full">
+                                            <label class="mr-2">Status:</label>
+                                            <select class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0">
+                                                <option></option>
+                                                <option>Pending</option>
+                                                <option>Shipped</option>
+                                                <option>Paid</option>
+                                                <option>Canceled</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-4">
+                                        <input 
+                                            type="number" 
+                                            name="min_price" 
+                                            class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            placeholder="Min Price"
+                                        >
+                                        <input 
+                                            type="number" 
+                                            name="max_price" 
+                                            class="flex-1 py-1 border-gray-300 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            placeholder="Max Price"
                                         >
                                     </div>
-                                    <div>
-                                        <label class="mr-2">To Date:</label>
-                                        <input 
-                                        type="date" 
-                                        name="to_date" 
-                                        class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                        >
+                                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-4">
+                                        <div>
+                                            <label class="mr-2">From Date:</label>
+                                            <input 
+                                            type="date" 
+                                            name="from_date" 
+                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            >
+                                        </div>
+                                        <div>
+                                            <label class="mr-2">To Date:</label>
+                                            <input 
+                                            type="date" 
+                                            name="to_date" 
+                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
+                                            >
+                                        </div>
                                     </div>
-                                </div>
 
-                                <button class="bg-primary hover:bg-primary-dark rounded-lg px-8 py-1 text-gray-100 hover:shadow-xl transition duration-150 mt-8 text-sm">Filter</button>
-                            </form>
+                                    <button class="bg-primary hover:bg-primary-dark rounded-lg px-8 py-1 text-gray-100 hover:shadow-xl transition duration-150 mt-8 text-sm">Filter</button>
+                                </form>
+                            </div>
                         </div>
                         <table class="w-full whitespace-nowrap mb-8">
                             <thead class="bg-secondary text-gray-100 font-bold">
