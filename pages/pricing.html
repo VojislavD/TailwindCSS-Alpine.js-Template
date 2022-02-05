@@ -1685,13 +1685,45 @@
                 <!-- end::Topbar -->
 
                 <!-- start:Page content -->
-                <div class="min-h-full bg-gray-200">
+                <div
+                    x-data="{ 
+                        billingType: 'month', 
+                        basicPrice: '19',
+                        premiumPrice: '29',
+                        proPrice: '39'
+                    }" 
+                    class="min-h-full bg-gray-200"
+                >
                     <div class="w-full bg-primary pt-16 pb-24 text-center">
                         <h4 class="text-2xl text-gray-100">Choose the right plan for you</h4>
                         <p class="text-sm text-gray-100 mt-2">Pricing built for businesses of all sizes. Choose package that suits your needs.</p>
                         <div class="flex items-center justify-center mt-8">
-                            <button class="bg-cyan-400 text-gray-800 px-4 py-2 rounded-tl-lg rounded-bl-lg" title="Choose Monthly billing">Monthly billing</button>
-                            <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-tr-lg rounded-br-lg" title="Choose Annual billing">Annual billing</button>
+                            <button 
+                                @click="
+                                    billingType = 'month',
+                                    basicPrice = '19',
+                                    premiumPrice = '29',
+                                    proPrice = '39'
+                                " 
+                                class="text-gray-800 px-4 py-2 rounded-tl-lg rounded-bl-lg"
+                                :class=" billingType === 'month' ? 'bg-cyan-400' : 'bg-gray-200' "
+                                title="Choose Monthly billing"
+                            >
+                                Monthly billing
+                            </button>
+                            <button
+                                @click="
+                                    billingType = 'year',
+                                    basicPrice = '205',
+                                    premiumPrice = '313',
+                                    proPrice = '421'
+                                " 
+                                class="text-gray-800 px-4 py-2 rounded-tr-lg rounded-br-lg"
+                                :class=" billingType === 'year' ? 'bg-cyan-400' : 'bg-gray-200' "
+                                title="Choose Annual billing"
+                            >
+                                Annual billing
+                            </button>
                         </div>
                     </div>
                     <div class="w-2/3 flex items-center justify-center mx-auto -mt-8">
@@ -1699,8 +1731,12 @@
                             <div class="bg-white shadow-2xl rounded-lg py-4">
                                 <p class="text-xl text-center font-bold text-primary">Basic</p>
                                 <p class="text-center py-8">
-                                    <span class="text-4xl font-bold text-gray-700">$19</span>
-                                    <span class="text-xs uppercase text-gray-500">/ month</span>
+                                    <span class="text-4xl font-bold text-gray-700">
+                                        $<span x-text="basicPrice"></span>    
+                                    </span>
+                                    <span class="text-xs uppercase text-gray-500">
+                                        / <span  x-text="billingType"></span>
+                                    </span>
                                 </p>
                                 <ul class="border-t border-gray-300 py-8 space-y-6">
                                     <li class="flex items-center space-x-2 px-8">
@@ -1775,8 +1811,12 @@
                             <div class="bg-white shadow-2xl rounded-lg py-4">
                                 <p class="text-xl text-center font-bold text-primary">Premium</p>
                                 <p class="text-center py-8">
-                                    <span class="text-4xl font-bold text-gray-700">$29</span>
-                                    <span class="text-xs uppercase text-gray-500">/ month</span>
+                                    <span class="text-4xl font-bold text-gray-700">
+                                        $<span x-text="premiumPrice"></span>
+                                    </span>
+                                    <span class="text-xs uppercase text-gray-500">
+                                        / <span  x-text="billingType"></span>
+                                    </span>
                                 </p>
                                 <ul class="border-t border-gray-300 py-8 space-y-6">
                                     <li class="flex items-center space-x-2 px-8">
@@ -1851,8 +1891,12 @@
                             <div class="bg-white shadow-2xl rounded-lg py-4">
                                 <p class="text-xl text-center font-bold text-primary">Pro</p>
                                 <p class="text-center py-8">
-                                    <span class="text-4xl font-bold text-gray-700">$39</span>
-                                    <span class="text-xs uppercase text-gray-500">/ month</span>
+                                    <span class="text-4xl font-bold text-gray-700">
+                                        $<span x-text="proPrice"></span>
+                                    </span>
+                                    <span class="text-xs uppercase text-gray-500">
+                                        / <span  x-text="billingType"></span>
+                                    </span>
                                 </p>
                                 <ul class="border-t border-gray-300 py-8 space-y-6">
                                     <li class="flex items-center space-x-2 px-8">
