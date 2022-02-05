@@ -17,36 +17,36 @@
     <body>
         <div class="w-full h-screen" style="background-image: url('./../../../assets/img/coming-soon.jpg');">
             <div class="w-full h-screen bg-black bg-opacity-70">
-                <div class="w-full h-full flex flex-col items-start justify-between container mx-auto py-8">
+                <div class="w-full h-full flex flex-col items-start justify-between container mx-auto py-8 px-8 lg:px-4 xl:px-0">
                     <div class="bg-white bg-opacity-10 px-4 py-2 rounded-xl flex items-center justify-center text-cyan-100 space-x-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 lg:h-8 w-6 lg:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                         </svg>
-                        <span class="text-2xl font-bold">Template</span>
+                        <span class="text-lg lg:text-2xl font-bold">Template</span>
                     </div>
                     <div class="flex-1 flex flex-col items-start justify-center">
-                        <h1 class="text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12">We Are <span class="text-yellow-300">Coming</span> Soon</h1>
+                        <h1 class="text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center md:text-left">We Are <span class="text-yellow-300">Coming</span> Soon</h1>
                         
                         <div class="mt-12 flex flex-col items-center mt-8 ml-2">
                             <p class="text-gray-300 uppercase text-sm">Time left until lunching</p>
                             <div class="flex items-center justify-center space-x-4 mt-4" x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
                                 <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().days" class="text-5xl text-gray-200"></span>
+                                    <span x-text="time().days" class="text-4xl lg:text-5xl text-gray-200"></span>
                                     <span class="text-gray-400 mt-2">Days</span>
                                 </div>
                                 <span class="w-[1px] h-24 bg-gray-400"></span>
                                 <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().hours" class="text-5xl text-gray-200"></span>
+                                    <span x-text="time().hours" class="text-4xl lg:text-5xl text-gray-200"></span>
                                     <span class="text-gray-400 mt-2">Hours</span>
                                 </div>
                                 <span class="w-[1px] h-24 bg-gray-400"></span>
                                 <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().minutes" class="text-5xl text-gray-200"></span>
+                                    <span x-text="time().minutes" class="text-4xl lg:text-5xl text-gray-200"></span>
                                     <span class="text-gray-400 mt-2">Minutes</span>
                                 </div>
                                 <span class="w-[1px] h-24 bg-gray-400"></span>
                                 <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().seconds" class="text-5xl text-gray-200"></span>
+                                    <span x-text="time().seconds" class="text-4xl lg:text-5xl text-gray-200"></span>
                                     <span class="text-gray-400 mt-2">Seconds</span>
                                 </div>
                             </div>                      
@@ -59,7 +59,7 @@
                             </form>
                         </div>
                     </div>
-                    <div class="w-full flex items-center justify-end">
+                    <div class="w-full flex items-center justify-center md:justify-end">
                         <ul class="flex items-center space-x-4">
                             <li>
                                 <a href="#" title="Facebook">
