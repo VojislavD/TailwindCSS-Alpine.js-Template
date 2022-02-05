@@ -5,7 +5,7 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="../css/tailwind.css">
+        <link rel="stylesheet" href="./../../css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
@@ -42,7 +42,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="../index.html"
+                        href="./../../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +88,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/inbox.html"
+                                    href="./../email/inbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -100,7 +100,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/viewMessage.html"
+                                    href="./../email/viewMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -112,7 +112,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./email/newMessage.html"
+                                    href="./../email/newMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -130,7 +130,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./messages.html"
+                        href="./../messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -150,7 +150,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./calendar.html"
+                        href="./../calendar.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -182,7 +182,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                   </svg>
-                                <span class="ml-3">Form Elements</span>
+                                <span class="ml-3">Forms</span>
                             </div>
                             <svg class="w-3 h-3 transition duration-300" :class="linkActive ? 'rotate-90' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
@@ -196,7 +196,19 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/input.html"
+                                    href="./../forms/layout.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Layout</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -208,7 +220,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/checkbox.html"
+                                    href="./../forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -220,7 +232,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/radio.html"
+                                    href="./../forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -232,7 +244,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/textarea.html"
+                                    href="./../forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -244,7 +256,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/switch.html"
+                                    href="./../forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -256,7 +268,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./formElements/select.html"
+                                    href="./../forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -274,27 +286,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./formLayouts.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Form Layouts
-                        </span>
-                    </a>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="./buttons.html"
+                        href="../buttons.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -308,13 +300,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./tables.html"
+                        href="../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -359,7 +351,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/bar_charts.html"
+                                    href="./bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -371,7 +363,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/line_charts.html"
+                                    href="./line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -383,7 +375,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./charts/other_charts.html"
+                                    href="./other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -425,7 +417,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/info.html"
+                                    href="./../modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -437,7 +429,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/confirmation.html"
+                                    href="./../modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -449,7 +441,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./modals/authentication.html"
+                                    href="./../modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -467,7 +459,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maps.html"
+                        href="./../maps.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -488,7 +480,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./cards.html"
+                        href="./../cards.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -508,7 +500,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./tabs.html"
+                        href="./../tabs.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -528,7 +520,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./accordions.html"
+                        href="./../accordions.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -574,7 +566,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./generic/emptyPage.html"
+                                    href="./../generic/emptyPage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -618,7 +610,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signIn.html"
+                                    href="./../authentication/basic/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -630,7 +622,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/signUp.html"
+                                    href="./../authentication/basic/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -642,7 +634,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/forgotPassword.html"
+                                    href="./../authentication/basic/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -650,11 +642,11 @@
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
-
+                            
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/resetPassword.html"
+                                    href="./../authentication/basic/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -666,7 +658,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/basic/emailVerification.html"
+                                    href="./../authentication/basic/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -680,7 +672,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signIn.html"
+                                    href="./../authentication/illustration/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -692,7 +684,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/signUp.html"
+                                    href="./../authentication/illustration/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -704,7 +696,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/forgotPassword.html"
+                                    href="./../authentication/illustration/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -716,7 +708,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/resetPassword.html"
+                                    href="./../authentication/illustration/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -728,7 +720,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/illustration/emailVerification.html"
+                                    href="./../authentication/illustration/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -742,7 +734,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signIn.html"
+                                    href="./../authentication/cover/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -754,7 +746,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/signUp.html"
+                                    href="./../authentication/cover/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -766,7 +758,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/forgotPassword.html"
+                                    href="./../authentication/cover/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -778,7 +770,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/resetPassword.html"
+                                    href="./../authentication/cover/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -790,7 +782,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./authentication/cover/emailVerification.html"
+                                    href="./../authentication/cover/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -808,7 +800,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./profile.html"
+                        href="./../profile.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -828,7 +820,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./invoices.html"
+                        href="./../invoices.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -842,7 +834,7 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <div
                         x-data="{ linkHover: false, linkActive: false }"
@@ -874,7 +866,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/basic.html"
+                                    href="./../error/404/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -886,7 +878,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration.html"
+                                    href="./../error/404/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -898,7 +890,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/404/illustration_cover.html"
+                                    href="./../error/404/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -912,7 +904,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/basic.html"
+                                    href="./../error/500/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -924,7 +916,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration.html"
+                                    href="./../error/500/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -936,7 +928,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./error/500/illustration_cover.html"
+                                    href="./../error/500/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -954,7 +946,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./maintenance.html"
+                        href="./../maintenance.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -999,7 +991,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/basic.html"
+                                    href="./../faq/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1011,7 +1003,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/qa.html"
+                                    href="./../faq/qa.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1023,7 +1015,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./faq/accordion.html"
+                                    href="./../faq/accordion.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1065,7 +1057,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/basic.html"
+                                    href="./../coming_soon/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1077,7 +1069,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./coming_soon/timer.html"
+                                    href="./../coming_soon/timer.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1095,7 +1087,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pricing.html"
+                        href="./../pricing.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1213,7 +1205,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1262,7 +1254,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1311,7 +1303,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1360,7 +1352,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./../assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1394,7 +1386,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./../assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1506,295 +1498,267 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Form Layouts -->
-                    <div class="bg-white p-4 grid grid-cols-2 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Horizontal Form Layout -->
-                        <div>
-                            <h4 class="text-xl capitalize">Horizontal Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="first_name_horizontal">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_horizontal" 
-                                            id="first_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="last_name_horizontal">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_horizontal" 
-                                            id="last_name_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="email_horizontal">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_horizontal" 
-                                            id="email_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="address_horizontal">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_horizontal" 
-                                            id="address_horizontal" 
-                                            class="flex-1 py-1 border-gray-300 ml-4 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex items-center my-4">
-                                        <label class="w-20" for="password_horizontal">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 ml-4 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_horizontal" 
-                                                id="password_horizontal" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms_horizontal" 
-                                        id="terms_horizontal" 
-                                        class="ml-24 text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms_horizontal">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
-
-                                    <div class="flex gap-2 ml-24 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                    <!-- start::Default Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8">
+                        <h4 class="text-xl capitalize">Default Selects</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- start::Default Select -->
+                            <div class="flex flex-col">
+                                <label for="default_select">Default</label>
+                                <select
+                                    name="default_select"
+                                    id="default_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
                             </div>
+                            <!-- end::Default Select -->
+
+                            <!-- start::Disabled Select -->
+                            <div class="flex flex-col">
+                                <label for="disabled_select">Disabled</label>
+                                <select
+                                    name="disabled_select"
+                                    id="disabled_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    disabled
+                                >
+                                    <option></option>
+                                    <option selected>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Disabled Select -->
+
+                            <!-- start::Rounded Select -->
+                            <div class="flex flex-col">
+                                <label for="rounded_select">Rounded</label>
+                                <select
+                                    name="rounded_select"
+                                    id="rounded_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-lg"
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Rounded Select -->
+
+                            <!-- start::Multiple Select -->
+                            <div class="flex flex-col">
+                                <label for="mulitple_select">Multiple</label>
+                                <select
+                                    name="mulitple_select"
+                                    id="mulitple_select"
+                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    multiple
+                                >
+                                    <option></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                            <!-- end::Multiple Select -->
                         </div>
-                        <!-- end::Horizontal Form Layout -->
+                    </div>
+                    <!-- start::Default Selects -->
 
-                        <!-- start:: Vertical Form Layout -->
-                        <div>
-                            <h4 class="text-xl capitalize">Vertical Form Layout</h4>
-                            <div class="mt-6">
-                                <form>
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_vertical">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_vertical" 
-                                            id="first_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="last_name_vertical">Last Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="last_name_vertical" 
-                                            id="last_name_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your Last Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_vertical">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_vertical" 
-                                            id="email_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_vertical">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_vertical" 
-                                            id="address_vertical" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_vertical">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_vertical" 
-                                                id="password_vertical" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
+                    <!-- start::Size Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="grid grid-cols-1 gap-6">
+                                <h4 class="text-xl capitalize">Size</h4>
+                                <!-- start::Extra Large Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="extra_large_size_select">Extra Large</label>
+                                    <select
+                                        name="extra_large_size_select"
+                                        id="extra_large_size_select"
+                                        class="mt-2 py-1 text-xl border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Extra Large Size Select -->
 
-                                    <div class="flex items-center my-4">
-                                        <input 
-                                        type="checkbox" 
-                                        name="terms" 
-                                        id="terms" 
-                                        class="text-primary border border-primary focus:ring-0"
-                                        >
-                                        <label class="ml-2" for="terms">
-                                            Accept <a href="#" class="underline">Terms Of Use</a>
-                                        </label>
-                                    </div>
+                                <!-- start::Large Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="large_size_select">Large</label>
+                                    <select
+                                        name="large_size_select"
+                                        id="large_size_select"
+                                        class="mt-2 py-1 text-lg border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Large Size Select -->
 
-                                    <div class="flex gap-2 mt-6">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
+                                <!-- start::Default Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="default_size_select">Default</label>
+                                    <select
+                                        name="default_size_select"
+                                        id="default_size_select"
+                                        class="mt-2 py-1 text-base border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Default Size Select -->
 
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </form>
+                                <!-- start::Small Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="small_size_select">Small</label>
+                                    <select
+                                        name="small_size_select"
+                                        id="small_size_select"
+                                        class="mt-2 py-1 text-sm border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Small Size Select -->
+
+                                <!-- start::Extra Small Size Select -->
+                                <div class="flex flex-col">
+                                    <label for="extra_small_size_select">Extra Small</label>
+                                    <select
+                                        name="extra_small_size_select"
+                                        id="extra_small_size_select"
+                                        class="mt-2 py-1 text-xs border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Extra Small Size Select -->
+                            </div>
+                            <div class="grid grid-cols-1 gap-6">
+                                <h4 class="text-xl capitalize">Colors</h4>
+                                <!-- start::Primary Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="primary_color_select">Primary</label>
+                                    <select
+                                        name="primary_color_select"
+                                        id="primary_color_select"
+                                        class="mt-2 py-1 border-primary focus:outline-none focus:ring-0 focus:border-primary"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Primary Color Select -->
+
+                                <!-- start::Secondary Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="secondary_color_select">Secondary</label>
+                                    <select
+                                        name="secondary_color_select"
+                                        id="secondary_color_select"
+                                        class="mt-2 py-1 border-secondary focus:outline-none focus:ring-0 focus:border-secondary"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Secondary Color Select -->
+
+                                <!-- start::Green Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="green_color_select">Green</label>
+                                    <select
+                                        name="green_color_select"
+                                        id="green_color_select"
+                                        class="mt-2 py-1 border-green-500 focus:outline-none focus:ring-0 focus:border-green-500"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Green Color Select -->
+
+                                <!-- start::Red Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="red_color_select">Red</label>
+                                    <select
+                                        name="red_color_select"
+                                        id="red_color_select"
+                                        class="mt-2 py-1 border-red-600 focus:outline-none focus:ring-0 focus:border-red-600"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Red Color Select -->
+
+                                <!-- start::Blue Color Select -->
+                                <div class="flex flex-col">
+                                    <label for="blue_color_select">Blue</label>
+                                    <select
+                                        name="blue_color_select"
+                                        id="blue_color_select"
+                                        class="mt-2 py-1 border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-500"
+                                    >
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <!-- end::Blue Color Select -->
                             </div>
                         </div>
                     </div>
+                    <!-- start::Size Selects -->
 
-                    <div class="bg-white p-4 grid grid-cols-1 gap-8 rounded-lg shadow-xl py-8 mt-12">
-                        <!-- start:: Multiple Columns -->
-                        <div>
-                            <h4 class="text-xl capitalize">Multiple Columns</h4>
-                            <form>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="first_name_multiple_columns">First Name</label>
-                                        <input 
-                                            type="text" 
-                                            name="first_name_multiple_columns" 
-                                            id="first_name_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:border-gray-300 focus:outline-none focus:ring-0" 
-                                            placeholder="Your First Name"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="email_multiple_columns">Email</label>
-                                        <input 
-                                            type="email" 
-                                            name="email_multiple_columns" 
-                                            id="email_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Email Address"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-3 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="address_multiple_columns">Address</label>
-                                        <input 
-                                            type="text" 
-                                            name="address_multiple_columns" 
-                                            id="address_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="Your Address"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="city_multiple_columns">City</label>
-                                        <input 
-                                            type="text" 
-                                            name="city_multiple_columns" 
-                                            id="city_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="City"
-                                        >
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="state_multiple_columns">State</label>
-                                        <input 
-                                            type="text" 
-                                            name="state_multiple_columns" 
-                                            id="state_multiple_columns" 
-                                            class="flex-1 py-1 border-gray-300 mt-1 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                            placeholder="State"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-2 gap-8">
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_multiple_columns">Password</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_multiple_columns" 
-                                                id="password_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Your Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="flex flex-col my-4">
-                                        <label for="password_confirmation_multiple_columns">Password Confirmation</label>
-                                        <div 
-                                            x-data="{ show: false }"
-                                            class="relative flex-1 mt-1 flex items-center"
-                                        >
-                                            <input 
-                                                :type=" show ? 'text': 'password' "
-                                                name="password_confirmation_multiple_columns" 
-                                                id="password_confirmation_multiple_columns" 
-                                                class="flex-1 py-1 pr-10 border-gray-300 rounded focus:outline-none focus:ring-0 focus:border-gray-300" 
-                                                placeholder="Confirm Password"
-                                            >
-                                            <button type="button" class="absolute right-2 bg-transparent flex items-center justify-center" @click="show = !show">
-                                                <svg x-show="!show"  class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"></path></svg>
-    
-                                                <svg x-show="show" x-cloak class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex gap-2">
-                                        <button class="bg-secondary bg-opacity-20 hover:bg-opacity-40 rounded-lg px-6 py-1.5 text-secondary hover:shadow-xl transition duration-150">Cancel</button>
-
-                                        <button class="bg-primary hover:bg-primary-dark rounded-lg px-6 py-1.5 text-gray-100 hover:shadow-xl transition duration-150">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
+                    <!-- start::Size Selects -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
+                        <h4 class="text-xl capitalize">Advanced</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- start::Text And Image Select -->
+                            <div 
+                                x-data="{ selected: 0 }"
+                                class="flex flex-col"
+                            >
+                                <label for="text_and_image_select">Border Color Based On Selected Value</label>
+                                <select
+                                    x-model="selected"
+                                    name="text_and_image_select"
+                                    id="text_and_image_select"
+                                    class="mt-2 py-1 border border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                    :class="selected == 1 ? 'border-green-500 focus:border-green-500' : selected == 2 ? 'border-red-600 focus:border-red-600' : ''"
+                                >
+                                    <option value="0"></option>
+                                    <option value="1">Allowed</option>
+                                    <option value="2">Forbidden</option>
+                                    <option disabled>Disabled</option>
+                                </select>
+                            </div>
+                            <!-- end::Text And Image Select  -->
                         </div>
                     </div>
-                    <!-- start::Form Layouts -->
+                    <!-- start::Size Selects -->
                 </div>
                 <!-- end:Page content -->
             </div>

@@ -182,7 +182,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover || linkActive ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                                   </svg>
-                                <span class="ml-3">Form Elements</span>
+                                <span class="ml-3">Forms</span>
                             </div>
                             <svg class="w-3 h-3 transition duration-300" :class="linkActive ? 'rotate-90' : ''" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                         </div>
@@ -196,7 +196,19 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/input.html"
+                                    href="./../forms/layout.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Layout</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
+                                    href="./../forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -208,7 +220,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/checkbox.html"
+                                    href="./../forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -220,7 +232,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/radio.html"
+                                    href="./../forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -232,7 +244,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/textarea.html"
+                                    href="./../forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -244,7 +256,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/switch.html"
+                                    href="./../forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -256,7 +268,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="../formElements/select.html"
+                                    href="./../forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -267,26 +279,6 @@
                         </ul>
                         <!-- end::Submenu -->
                     </div>
-                    <!-- end::Menu link -->
-
-                    <!-- start::Menu link -->
-                    <a 
-                        x-data="{ linkHover: false }"
-                        @mouseover = "linkHover = true"
-                        @mouseleave = "linkHover = false"
-                        href="../formLayouts.html"
-                        class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <span 
-                            class="ml-3 transition duration-200" 
-                            :class="linkHover ? 'text-gray-100' : ''"
-                        >
-                            Form Layouts
-                        </span>
-                    </a>
                     <!-- end::Menu link -->
 
                     <!-- start::Menu link -->
@@ -1506,267 +1498,178 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Default Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8">
-                        <h4 class="text-xl capitalize">Default Selects</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- start::Default Select -->
-                            <div class="flex flex-col">
-                                <label for="default_select">Default</label>
-                                <select
-                                    name="default_select"
-                                    id="default_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
-                            </div>
-                            <!-- end::Default Select -->
+                    <!-- start::Default Checkbox -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Default Checkbox</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
 
-                            <!-- start::Disabled Select -->
-                            <div class="flex flex-col">
-                                <label for="disabled_select">Disabled</label>
-                                <select
-                                    name="disabled_select"
-                                    id="disabled_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                            <!-- start::Checkbox Unchecked -->
+                            <div class="flex items-center">
+                                <label for="checkbox_unchecked">Unchecked</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_unchecked" 
+                                    id="checkbox_unchecked" 
+                                    class="ml-2 focus:ring-0" 
+                                >
+                            </div>
+                            <!-- end::Checkbox Unchecked -->
+
+                            <!-- start::Checkbox Checked -->
+                            <div class="flex items-center">
+                                <label for="checkbox_checked">Checked</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_checked" 
+                                    id="checkbox_checked" 
+                                    class="ml-2 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Checked -->
+
+                            <!-- start::Checkbox Unchecked Disabled -->
+                            <div class="flex items-center">
+                                <label for="checkbox_unchecked_disabled" class="text-gray-500">Unchecked Disabled</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_unchecked_disabled" 
+                                    id="checkbox_unchecked_disabled" 
+                                    class="ml-2 text-gray-300 focus:ring-0"
                                     disabled
                                 >
-                                    <option></option>
-                                    <option selected>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
                             </div>
-                            <!-- end::Disabled Select -->
+                            <!-- end::Checkbox Unchecked Disabled -->
 
-                            <!-- start::Rounded Select -->
-                            <div class="flex flex-col">
-                                <label for="rounded_select">Rounded</label>
-                                <select
-                                    name="rounded_select"
-                                    id="rounded_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-lg"
+                            <!-- start::Checkbox Checked Disabled -->
+                            <div class="flex items-center">
+                                <label for="checkbox_checked_disabled" class="text-gray-500">Checked Disabled</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_checked_disabled" 
+                                    id="checkbox_checked_disabled" 
+                                    class="ml-2 text-gray-500 focus:ring-0"
+                                    checked
+                                    disabled
                                 >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
                             </div>
-                            <!-- end::Rounded Select -->
+                            <!-- end::Checkbox Checked Disabled -->
 
-                            <!-- start::Multiple Select -->
-                            <div class="flex flex-col">
-                                <label for="mulitple_select">Multiple</label>
-                                <select
-                                    name="mulitple_select"
-                                    id="mulitple_select"
-                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    multiple
+                            <!-- start::Checkbox Rounded -->
+                            <div class="flex items-center">
+                                <label for="checkbox_rounded">Rounded</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_rounded" 
+                                    id="checkbox_rounded" 
+                                    class="ml-2 focus:ring-0 rounded-full"
+                                    checked
                                 >
-                                    <option></option>
-                                    <option>Option 1</option>
-                                    <option>Option 2</option>
-                                    <option>Option 3</option>
-                                </select>
                             </div>
-                            <!-- end::Multiple Select -->
+                            <!-- end::Input Checkbox Rounded -->
+
+                            <!-- start::Checkbox Label Right -->
+                            <div class="flex items-center">
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_label_right" 
+                                    id="checkbox_label_right" 
+                                    class="mr-2 focus:ring-0"
+                                    checked
+                                >
+                                <label for="checkbox_label_right">Label Right</label>
+                            </div>
+                            <!-- end::Checkbox Label Right-->
+
+                            
                         </div>
                     </div>
-                    <!-- start::Default Selects -->
+                    <!-- end::Default Checkbox -->
 
-                    <!-- start::Size Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="grid grid-cols-1 gap-6">
-                                <h4 class="text-xl capitalize">Size</h4>
-                                <!-- start::Extra Large Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="extra_large_size_select">Extra Large</label>
-                                    <select
-                                        name="extra_large_size_select"
-                                        id="extra_large_size_select"
-                                        class="mt-2 py-1 text-xl border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Extra Large Size Select -->
-
-                                <!-- start::Large Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="large_size_select">Large</label>
-                                    <select
-                                        name="large_size_select"
-                                        id="large_size_select"
-                                        class="mt-2 py-1 text-lg border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Large Size Select -->
-
-                                <!-- start::Default Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="default_size_select">Default</label>
-                                    <select
-                                        name="default_size_select"
-                                        id="default_size_select"
-                                        class="mt-2 py-1 text-base border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Default Size Select -->
-
-                                <!-- start::Small Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="small_size_select">Small</label>
-                                    <select
-                                        name="small_size_select"
-                                        id="small_size_select"
-                                        class="mt-2 py-1 text-sm border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Small Size Select -->
-
-                                <!-- start::Extra Small Size Select -->
-                                <div class="flex flex-col">
-                                    <label for="extra_small_size_select">Extra Small</label>
-                                    <select
-                                        name="extra_small_size_select"
-                                        id="extra_small_size_select"
-                                        class="mt-2 py-1 text-xs border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Extra Small Size Select -->
-                            </div>
-                            <div class="grid grid-cols-1 gap-6">
-                                <h4 class="text-xl capitalize">Colors</h4>
-                                <!-- start::Primary Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="primary_color_select">Primary</label>
-                                    <select
-                                        name="primary_color_select"
-                                        id="primary_color_select"
-                                        class="mt-2 py-1 border-primary focus:outline-none focus:ring-0 focus:border-primary"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Primary Color Select -->
-
-                                <!-- start::Secondary Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="secondary_color_select">Secondary</label>
-                                    <select
-                                        name="secondary_color_select"
-                                        id="secondary_color_select"
-                                        class="mt-2 py-1 border-secondary focus:outline-none focus:ring-0 focus:border-secondary"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Secondary Color Select -->
-
-                                <!-- start::Green Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="green_color_select">Green</label>
-                                    <select
-                                        name="green_color_select"
-                                        id="green_color_select"
-                                        class="mt-2 py-1 border-green-500 focus:outline-none focus:ring-0 focus:border-green-500"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Green Color Select -->
-
-                                <!-- start::Red Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="red_color_select">Red</label>
-                                    <select
-                                        name="red_color_select"
-                                        id="red_color_select"
-                                        class="mt-2 py-1 border-red-600 focus:outline-none focus:ring-0 focus:border-red-600"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Red Color Select -->
-
-                                <!-- start::Blue Color Select -->
-                                <div class="flex flex-col">
-                                    <label for="blue_color_select">Blue</label>
-                                    <select
-                                        name="blue_color_select"
-                                        id="blue_color_select"
-                                        class="mt-2 py-1 border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-500"
-                                    >
-                                        <option>Option 1</option>
-                                        <option>Option 2</option>
-                                        <option>Option 3</option>
-                                    </select>
-                                </div>
-                                <!-- end::Blue Color Select -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- start::Size Selects -->
-
-                    <!-- start::Size Selects -->
-                    <div class="bg-white p-4 rounded-lg shadow-xl space-y-4 py-8 mt-12">
-                        <h4 class="text-xl capitalize">Advanced</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <!-- start::Text And Image Select -->
-                            <div 
-                                x-data="{ selected: 0 }"
-                                class="flex flex-col"
-                            >
-                                <label for="text_and_image_select">Border Color Based On Selected Value</label>
-                                <select
-                                    x-model="selected"
-                                    name="text_and_image_select"
-                                    id="text_and_image_select"
-                                    class="mt-2 py-1 border border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
-                                    :class="selected == 1 ? 'border-green-500 focus:border-green-500' : selected == 2 ? 'border-red-600 focus:border-red-600' : ''"
+                    <!-- start::Color Checkbox -->
+                    <div class="bg-white p-4 rounded-lg shadow-xl py-8 mt-12">
+                        <h4 class="text-xl capitalize">Color Checkbox</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6 mt-6">
+                            <!-- start::Checkbox Color Primary -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_primary">Color Primary</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_primary" 
+                                    id="checkbox_color_primary" 
+                                    class="ml-2 text-primary border border-primary focus:ring-0"
+                                    checked
                                 >
-                                    <option value="0"></option>
-                                    <option value="1">Allowed</option>
-                                    <option value="2">Forbidden</option>
-                                    <option disabled>Disabled</option>
-                                </select>
                             </div>
-                            <!-- end::Text And Image Select  -->
+                            <!-- end::Checkbox Color Primary -->
+
+                            <!-- start::Checkbox Color Secondary -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_secondary">Color Secondary</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_secondary" 
+                                    id="checkbox_color_secondary" 
+                                    class="ml-2 text-secondary border border-secondary focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Color Secondary -->
+
+                            <!-- start::Checkbox Color Red -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_red">Color Red</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_red" 
+                                    id="checkbox_color_red" 
+                                    class="ml-2 text-red-600 border border-red-600 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Color Red -->
+
+                            <!-- start::Checkbox Color Green -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_green">Color Green</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_green" 
+                                    id="checkbox_color_green" 
+                                    class="ml-2 text-green-500 border border-green-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Color Green -->
+
+                            <!-- start::Checkbox Color Blue -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_blue">Color Blue</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_blue" 
+                                    id="checkbox_color_blue" 
+                                    class="ml-2 text-blue-500 border border-blue-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Color Blue -->
+
+                            <!-- start::Checkbox Color Yellow -->
+                            <div class="flex items-center">
+                                <label for="checkbox_color_yellow">Color Yellow</label>
+                                <input 
+                                    type="checkbox" 
+                                    name="checkbox_color_yellow" 
+                                    id="checkbox_color_yellow" 
+                                    class="ml-2 text-yellow-500 border border-yellow-500 focus:ring-0"
+                                    checked
+                                >
+                            </div>
+                            <!-- end::Checkbox Color Yellow -->
                         </div>
                     </div>
-                    <!-- start::Size Selects -->
+                    <!-- end::Color Checkbox -->
                 </div>
                 <!-- end:Page content -->
             </div>
