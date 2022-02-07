@@ -62,7 +62,8 @@ module.exports = defineConfig({
         comingSoonBasic: resolve(__dirname, './pages/coming_soon/basic.html'),
         comingSoonTimer: resolve(__dirname, './pages/coming_soon/timer.html'),
         pricing: resolve(__dirname, './pages/pricing.html'),
-        settings: resolve(__dirname, './pages/settings.html')
+        settings: resolve(__dirname, './pages/settings.html'),
+        colors: resolve(__dirname, './pages/colors.html')
       }
     }
   }
