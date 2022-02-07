@@ -66,7 +66,8 @@ module.exports = defineConfig({
         colors: resolve(__dirname, './pages/colors.html'),
         breadcrumbs: resolve(__dirname, './pages/ui/breadcrumbs.html'),
         badges: resolve(__dirname, './pages/ui/badges.html'),
-        tooltips: resolve(__dirname, './pages/ui/tooltips.html')
+        tooltips: resolve(__dirname, './pages/ui/tooltips.html'),
+        pagination: resolve(__dirname, './pages/ui/pagination.html')
       }
     }
   }
