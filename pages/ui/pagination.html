@@ -1553,193 +1553,393 @@
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
                     <div class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
-                        <!-- start::Basic Badges -->
+                        <!-- start::Basic -->
                         <div class="py-2">
-                            <h4 class="text-xl capitalize">Tooltips</h4>
-                            <div class="mt-12 flex items-center space-x-4">
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Top
-                                    </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-black text-white text-sm text-center px-2 py-1 mb-1 z-10"
-                                    >
-                                        Tooltip on top
-                                    </div>
-                                </div>
-
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Right
-                                    </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute left-full bg-black text-white text-sm text-center px-2 py-1 ml-1 z-10"
-                                    >
-                                        Tooltip on right
-                                    </div>
-                                </div>
-
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Bottom
-                                    </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute top-full bg-black text-white text-sm text-center px-2 py-1 mt-1 z-10"
-                                    >
-                                        Tooltip on bottom
-                                    </div>
-                                </div>
-
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Left
-                                    </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute right-full bg-black text-white text-sm text-center px-2 py-1 mr-1 z-10"
-                                    >
-                                        Tooltip on left
-                                    </div>
-                                </div>
-
+                            <h4 class="text-xl capitalize">Basic</h4>
+                            <div class="flex items-center space-x-4 mt-4">
+                                <button class="text-gray-400" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="bg-primary hover:bg-primary-dark text-gray-100 text-lg px-3 py-0.5 rounded-full">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600 text-lg px-3 py-0.5 rounded-full">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600 text-lg px-3 py-0.5 rounded-full">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
                             </div>
-                            <div class="mt-12 flex items-center space-x-4">
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        On Hover
+                        </div>
+                        <!-- end::Basic -->
+
+                        <!-- start::Border -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Border</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 hover:bg-gray-200 p-2 border border-gray-300" disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:bg-gray-200 p-2 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Border -->
+
+                        <!-- start::Rounded -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Rounded</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 hover:bg-gray-200 p-2 border border-gray-300 rounded-l-lg " disabled>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                                    </svg>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 hover:bg-gray-200 p-2 border border-gray-300 rounded-r-lg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Rounded -->
+
+                        <!-- start::Text -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Text</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Text -->
+
+                        <!-- start::Prev & Next -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Prev & Next</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Prev & Next -->
+
+                        <!-- start::First & Last Page -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">First & Last Page</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300 mr-3">
+                                    <span>First</span>
+                                </button>
+
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>4</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>5</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>6</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>7</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300 ml-3">
+                                    <span>Last</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::First & Last Page -->
+
+                        <!-- start::First & Last Page With Number -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">First & Last Page With Number</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <span class="mx-2">...</span>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>4</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>5</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>6</span>
+                                </button>
+                                <span class="mx-2">...</span>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>10</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::First & Last Page With Number -->
+
+                        <!-- start::Total Results Info -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Total Results Info</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                    <span>Prev</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="flex items-center space-x-1 text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                        <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="text-gray-500 text-sm mt-2 ml-1">
+                                <span>Showing 10 to 20 of 50 results</span>
+                            </div>
+                        </div>
+                        <!-- end::Total Results Info -->
+
+                        <!-- start::Size -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Size</h4>
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
                                     </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-black text-white text-sm text-center px-2 py-1 mb-1 z-10"
-                                    >
-                                        Tooltip on hover
-                                    </div>
+                                    <button class="text-gray-100 text-sm bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-sm hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
                                 </div>
 
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @click="tooltip = !tooltip" 
-                                        @click.away="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        On Click
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400  hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
                                     </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-black text-white text-sm text-center px-2 py-1 mb-1 z-10"
-                                    >
-                                        Tooltip on click
-                                    </div>
+                                    <button class="text-gray-100 bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
                                 </div>
 
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Light
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
                                     </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-gray-100 text-gray-900 border border-gray-300 text-sm text-center px-2 py-1 mb-1 z-10"
-                                    >
-                                        Light tooltip
-                                    </div>
+                                    <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
+                                    </button>
+                                    <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
                                 </div>
 
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Dark
+                                <div class="flex items-center mt-4">
+                                    <button class="text-gray-400 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                        <span>Previous</span>
                                     </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-black text-gray-100 border border-gray-300 text-sm text-center px-2 py-1 mb-1 z-10"
-                                    >
-                                        Dark tooltip
-                                    </div>
-                                </div>
-
-                                <div
-                                    x-data="{ tooltip: false }" 
-                                    class="flex items-center justify-center relative"
-                                >
-                                    <button
-                                        @mouseenter="tooltip = true" 
-                                        @mouseleave="tooltip = false" 
-                                        class="w-36 bg-primary text-gray-100 px-6 py-1 rounded"
-                                    >
-                                        Rounded
+                                    <button class="text-gray-100 text-xl bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                        <span>1</span>
                                     </button>
-                                    <div 
-                                        x-show="tooltip"
-                                        x-cloak
-                                        class="w-full absolute bottom-full bg-black text-gray-100 border border-gray-300 text-sm text-center rounded-lg px-2 py-1 mb-1 z-10"
-                                    >
-                                        Rounded tooltip
-                                    </div>
+                                    <button class="text-gray-600 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>2</span>
+                                    </button>
+                                    <button class="text-gray-600 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>3</span>
+                                    </button>
+                                    <button class="text-gray-900 text-xl hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                        <span>Next</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                        <!-- end::Size -->
+
+                        <!-- start::Align -->
+                        <div class="mt-8 py-2">
+                            <h4 class="text-xl capitalize">Align</h4>
+                            <div class="flex items-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-center mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+
+                            <div class="flex items-center justify-end mt-4">
+                                <button class="text-gray-400 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300" disabled>
+                                    <span>Previous</span>
+                                </button>
+                                <button class="text-gray-100 text-lg bg-primary hover:bg-primary-dark px-3 py-0.5 border border-primary">
+                                    <span>1</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>2</span>
+                                </button>
+                                <button class="text-gray-600 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>3</span>
+                                </button>
+                                <button class="text-gray-900 text-lg hover:bg-gray-200 px-3 py-0.5 border border-gray-300">
+                                    <span>Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- end::Align -->
+                        
+
                     </div>
                 </div>
                 <!-- end:Page content -->
