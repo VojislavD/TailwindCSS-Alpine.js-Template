@@ -67,7 +67,8 @@ module.exports = defineConfig({
         breadcrumbs: resolve(__dirname, './pages/ui/breadcrumbs.html'),
         badges: resolve(__dirname, './pages/ui/badges.html'),
         tooltips: resolve(__dirname, './pages/ui/tooltips.html'),
-        pagination: resolve(__dirname, './pages/ui/pagination.html')
+        pagination: resolve(__dirname, './pages/ui/pagination.html'),
+        alerts: resolve(__dirname, './pages/ui/alerts.html')
       }
     }
   }
