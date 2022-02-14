@@ -268,6 +268,18 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
+                                    href="./../ui/count_up.html"
+                                    class="flex items-center"
+                                >
+                                    <span class="mr-2 text-sm">&bull;</span>
+                                    <span class="overflow-ellipsis">Count Up</span>
+                                </a>
+                            </li>
+                            <!-- end::Submenu link -->
+
+                            <!-- start::Submenu link -->
+                            <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
+                                <a 
                                     href="./../ui/pagination.html"
                                     class="flex items-center"
                                 >
@@ -1579,7 +1591,7 @@
                     <div class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar mb-12">
                         <h4 class="text-xl capitalize">Count Up</h4>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-                            <div class="flex flex-col items-center justify-center">
+                            <div class="flex flex-col items-center justify-center space-y-2">
                                 <div 
                                     x-data="{ current: 0, target: 1000, time: 1000}" 
                                     x-init="() => {
@@ -1595,14 +1607,14 @@
                                             }   
                                             }, interval)
                                     }"
-                                    class="flex text-4xl font-bold space-x-0.5"
+                                    class="flex items-center text-primary text-4xl font-bold space-x-0.5"
                                 >
                                     <span x-text="Math.round(current)"></span>
                                 </div>
-                                <p class="mt-4">Default</p>
+                                <p class="text-gray-600">Default</p>
                             </div>
 
-                            <div class="flex flex-col items-center justify-center">
+                            <div class="flex flex-col items-center justify-center space-y-2">
                                 <div 
                                     x-data="{ current: 0, target: 1000, time: 5000}" 
                                     x-init="() => {
@@ -1618,14 +1630,14 @@
                                             }   
                                             }, interval)
                                     }"
-                                    class="flex text-4xl font-bold space-x-0.5"
+                                    class="flex items-center text-primary text-4xl font-bold space-x-0.5"
                                 >
                                     <span x-text="Math.round(current)"></span>
                                 </div>
-                                <p class="mt-4">Duration 5s</p>
+                                <p class="text-gray-600">Duration 5s</p>
                             </div>
 
-                            <div class="flex flex-col items-center justify-center">
+                            <div class="flex flex-col items-center justify-center space-y-2">
                                 <div 
                                     x-data="{ current: 0, target: 1000, time: 1000}" 
                                     x-init="() => {
@@ -1641,16 +1653,16 @@
                                             }   
                                             }, interval)
                                     }"
-                                    class="flex text-4xl font-bold space-x-0.5"
+                                    class="flex items-center text-primary text-4xl font-bold space-x-0.5"
                                 >
                                     
                                     <span>$</span>
                                     <span x-text="Math.round(current)"></span>
                                 </div>
-                                <p class="mt-4">Prefix</p>
+                                <p class="text-gray-600">Prefix</p>
                             </div>
 
-                            <div class="flex flex-col items-center justify-center">
+                            <div class="flex flex-col items-center justify-center space-y-2">
                                 <div 
                                     x-data="{ current: 0, target: 100, time: 1000}" 
                                     x-init="() => {
@@ -1666,13 +1678,13 @@
                                             }   
                                             }, interval)
                                     }"
-                                    class="flex text-4xl font-bold space-x-0.5"
+                                    class="flex items-center text-primary text-4xl font-bold space-x-0.5"
                                 >
                                     
                                     <span x-text="Math.round(current)"></span>
                                     <span>k</span>
                                 </div>
-                                <p class="mt-4">Suffix</p>
+                                <p class="text-gray-600">Suffix</p>
                             </div>
                         </div>
                     </div>
