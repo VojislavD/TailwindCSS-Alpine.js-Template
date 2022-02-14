@@ -69,7 +69,8 @@ module.exports = defineConfig({
         tooltips: resolve(__dirname, './pages/ui/tooltips.html'),
         pagination: resolve(__dirname, './pages/ui/pagination.html'),
         alerts: resolve(__dirname, './pages/ui/alerts.html'),
-        countUp: resolve(__dirname, './pages/ui/count_up.html')
+        countUp: resolve(__dirname, './pages/ui/count_up.html'),
+        dropdowns: resolve(__dirname, './pages/ui/dropdowns.html')
       }
     }
   }
