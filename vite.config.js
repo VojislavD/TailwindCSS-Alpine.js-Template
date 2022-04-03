@@ -70,7 +70,8 @@ module.exports = defineConfig({
         pagination: resolve(__dirname, './pages/ui/pagination.html'),
         alerts: resolve(__dirname, './pages/ui/alerts.html'),
         countUp: resolve(__dirname, './pages/ui/count_up.html'),
-        dropdowns: resolve(__dirname, './pages/ui/dropdowns.html')
+        dropdowns: resolve(__dirname, './pages/ui/dropdowns.html'),
+        ecommerceProducts: resolve(__dirname, './pages/ecommerce/products.html'),
       }
     }
   }
