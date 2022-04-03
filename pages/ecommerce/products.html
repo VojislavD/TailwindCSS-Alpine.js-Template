@@ -1599,8 +1599,127 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <div class="flex flex-col xl:flex-row">
-                        <div class="w-full xl:w-1/5">Left</div>
+                    <div class="flex flex-col xl:flex-row space-y-12 xl:space-y-0 xl:space-x-4">
+                        <div class="w-full xl:w-1/5 h-full bg-white px-2 2xl:px-4 py-6 space-y-8">
+                            <div x-data="{ minPrice: '', maxPrice: '' }" class="space-y-2">
+                                <span class="font-bold">Price</span>
+
+                                <div class="pl-2 space-y-1">
+                                    <div class="flex items-center space-x-2">
+                                        <label for="minPrice">Min:</label>
+                                        <input x-model="minPrice" type="range" id="minPrice" min="0" max="1000" step="10">
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-2">
+                                        <label for="maxPrice">Max:</label>
+                                        <input x-model="maxPrice" type="range" id="maxPrice" min="0" max="1000" step="10">
+                                    </div>
+
+                                    <div x-show="minPrice && !maxPrice">
+                                        <span>Min Price:</span>
+                                        <span class="text-primary font-bold">$<span x-text="minPrice"></span></span>
+                                    </div>
+
+                                    <div x-show="!minPrice && maxPrice">
+                                        <span>Max Price:</span>
+                                        <span class="text-primary font-bold">$<span x-text="maxPrice"></span></span>
+                                    </div>
+
+                                    <div x-show="minPrice && maxPrice">
+                                        <span>Price between</span>
+                                        <span class="text-primary font-bold">$<span x-text="minPrice"></span></span>
+                                        <span>and</span> 
+                                        <span class="text-primary font-bold">$<span x-text="maxPrice"></span></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <span class="font-bold">Categories</span>
+
+                                <div class="space-y-1 pl-2">
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="dresses" id="dresses" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="dresses">Dresses</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="coats_jackets" id="coats_jackets" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="coats_jackets">Coats and Jackets</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="blazers" id="blazers" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="blazers">Blazers</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="sweaters_cardigans" id="sweaters_cardigans" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="sweaters_cardigans">Sweaters and Cardigans</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="shirts_tops" id="shirts_tops" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="shirts_tops">Shirts and Tops</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="tshirts_sweatshirts" id="tshirts_sweatshirts" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="tshirts_sweatshirts">T-Shirts and Sweatshirts</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="trousers_shorts" id="trousers_shorts" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="trousers_shorts">Trousers and Shorts</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="denim" id="denim" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="denim">Denim</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="loungewear" id="loungewear" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="loungewear">Loungewear</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="beachwear" id="beachwear" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="beachwear">Beachwear</label>
+                                    </div>
+
+                                    <div class="flex items-center">
+                                        <input type="checkbox" name="underwear" id="underwear" class="mr-2 text-primary border border-primary focus:ring-0">
+                                        <label for="underwear">Underwear</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <span class="font-bold">Color</span>
+                                
+                                <div class="flex flex-wrap items-center pl-1">
+                                
+                                    <input type="radio" name="red" class="w-5 h-5 bg-red-600 text-red-600 border border-red-600 m-1 focus:ring-0" title="Red">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-orange-600 text-orange-600 border border-orange-600 m-1 focus:ring-0" title="Orange">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-yellow-600 text-yellow-600 border border-yellow-600 m-1 focus:ring-0" title="Yellow">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-green-600 text-green-600 border border-green-600 m-1 focus:ring-0" title="Green">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-blue-600 text-blue-600 border border-blue-600 m-1 focus:ring-0" title="Blue">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-indigo-600 text-indigo-600 border border-indigo-600 m-1 focus:ring-0" title="Indigo">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-purple-600 text-purple-600 border border-purple-600 m-1 focus:ring-0" title="Purple">
+
+                                    <input type="radio" name="red" class="w-5 h-5 bg-pink-600 text-pink-600 border border-pink-600 m-1 focus:ring-0" title="Pink">
+
+                                </div>
+                            </div>
+                        </div>
                         <div class="w-full xl:w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
                             <div class="flex flex-col items-center justify-center space-y-3">
                                 <div 
@@ -2305,7 +2424,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center justify-end my-8 mx-6">
+                    <div class="flex items-center justify-center xl:justify-end my-8 mx-6">
                         <button class="text-gray-400 hover:bg-gray-200 p-2 border border-gray-300" disabled="">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
