@@ -72,6 +72,7 @@ module.exports = defineConfig({
         countUp: resolve(__dirname, './pages/ui/count_up.html'),
         dropdowns: resolve(__dirname, './pages/ui/dropdowns.html'),
         ecommerceProducts: resolve(__dirname, './pages/ecommerce/products.html'),
+        ecommerceProductDetails: resolve(__dirname, './pages/ecommerce/productDetails.html'),
       }
     }
   }
