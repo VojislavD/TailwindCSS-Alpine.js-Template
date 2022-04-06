@@ -73,6 +73,7 @@ module.exports = defineConfig({
         dropdowns: resolve(__dirname, './pages/ui/dropdowns.html'),
         ecommerceProducts: resolve(__dirname, './pages/ecommerce/products.html'),
         ecommerceProductDetails: resolve(__dirname, './pages/ecommerce/productDetails.html'),
+        ecommerceShoppingCart: resolve(__dirname, './pages/ecommerce/shoppingCart.html'),
       }
     }
   }
