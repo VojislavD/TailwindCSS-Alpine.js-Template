@@ -74,6 +74,7 @@ module.exports = defineConfig({
         ecommerceProducts: resolve(__dirname, './pages/ecommerce/products.html'),
         ecommerceProductDetails: resolve(__dirname, './pages/ecommerce/productDetails.html'),
         ecommerceShoppingCart: resolve(__dirname, './pages/ecommerce/shoppingCart.html'),
+        ecommerceCheckout: resolve(__dirname, './pages/ecommerce/checkout.html'),
       }
     }
   }
