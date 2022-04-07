@@ -5,14 +5,13 @@
         <title>Tailwind CSS & Alpine.js Template</title>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="./css/tailwind.css">
+        <link rel="stylesheet" href="./../../css/tailwind.css">
 
         <style>[x-cloak] { display: none !important; }</style>
 
         <!-- Scripts -->
         <script defer src="https://unpkg.com/@alpinejs/collapse@3.4.2/dist/cdn.min.js"></script>
         <script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     </head>
     <body>
         <div 
@@ -42,7 +41,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./index.html"
+                        href="./../../index.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +87,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/email/inbox.html"
+                                    href="./../email/inbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -100,7 +99,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/email/viewMessage.html"
+                                    href="./../email/viewMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -112,7 +111,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/email/newMessage.html"
+                                    href="./../email/newMessage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -154,7 +153,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ecommerce/products.html"
+                                    href="./../ecommerce/products.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -166,7 +165,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ecommerce/productDetails.html"
+                                    href="./../ecommerce/productDetails.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -178,7 +177,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ecommerce/shoppingCart.html"
+                                    href="./../ecommerce/shoppingCart.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -190,11 +189,11 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ecommerce/checkout.html"
+                                    href="#"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
-                                    <span class="overflow-ellipsis">Checkout</span>
+                                    <span class="overflow-ellipsis">Checkout (Soon)</span>
                                 </a>
                             </li>
                             <!-- end::Submenu link -->
@@ -202,13 +201,13 @@
                         <!-- end::Submenu -->
                     </div>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/messages.html"
+                        href="./../messages.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -222,13 +221,13 @@
                         </span>
                     </a>
                     <!-- end::Menu link -->
-
+                    
                     <!-- start::Menu link -->
                     <a 
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/calendar.html"
+                        href="./../calendar.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class="linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -274,7 +273,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/accordions.html"
+                                    href="./../ui/accordions.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -286,7 +285,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/alerts.html"
+                                    href="./../ui/alerts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -298,7 +297,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/badges.html"
+                                    href="./../ui/badges.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -310,7 +309,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/breadcrumbs.html"
+                                    href="./../ui/breadcrumbs.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -322,7 +321,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/buttons.html"
+                                    href="./../ui/buttons.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -334,7 +333,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/cards.html"
+                                    href="./../ui/cards.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -346,7 +345,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/count_up.html"
+                                    href="./../ui/count_up.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -358,7 +357,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/dropdowns.html"
+                                    href="./../ui/dropdowns.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -370,7 +369,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/pagination.html"
+                                    href="./../ui/pagination.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -382,7 +381,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/tabs.html"
+                                    href="./../ui/tabs.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -394,7 +393,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/ui/tooltips.html"
+                                    href="./../ui/tooltips.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -436,7 +435,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/layout.html"
+                                    href="./../forms/layout.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -448,7 +447,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/input.html"
+                                    href="./../forms/input.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -460,7 +459,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/checkbox.html"
+                                    href="./../forms/checkbox.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -472,7 +471,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/radio.html"
+                                    href="./../forms/radio.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -484,7 +483,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/textarea.html"
+                                    href="./../forms/textarea.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -496,7 +495,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/switch.html"
+                                    href="./../forms/switch.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -508,7 +507,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/forms/select.html"
+                                    href="./../forms/select.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -551,7 +550,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/charts/bar_charts.html"
+                                    href="./../charts/bar_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -563,7 +562,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/charts/line_charts.html"
+                                    href="./../charts/line_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -575,7 +574,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/charts/other_charts.html"
+                                    href="./../charts/other_charts.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -593,7 +592,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/colors.html"
+                        href="./../colors.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -613,7 +612,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/maps.html"
+                        href="./../maps.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -658,7 +657,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/modals/info.html"
+                                    href="./../modals/info.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -670,7 +669,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/modals/confirmation.html"
+                                    href="./../modals/confirmation.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -682,7 +681,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/modals/authentication.html"
+                                    href="./../modals/authentication.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -700,7 +699,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/tables.html"
+                        href="./../tables.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -746,7 +745,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/generic/emptyPage.html"
+                                    href="./../generic/emptyPage.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -790,7 +789,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/basic/signIn.html"
+                                    href="./../authentication/basic/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -802,7 +801,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/basic/signUp.html"
+                                    href="./../authentication/basic/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -814,7 +813,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/basic/forgotPassword.html"
+                                    href="./../authentication/basic/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -826,7 +825,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/basic/resetPassword.html"
+                                    href="./../authentication/basic/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -838,7 +837,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/basic/emailVerification.html"
+                                    href="./../authentication/basic/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -852,7 +851,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/illustration/signIn.html"
+                                    href="./../authentication/illustration/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -864,7 +863,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/illustration/signUp.html"
+                                    href="./../authentication/illustration/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -876,7 +875,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/illustration/forgotPassword.html"
+                                    href="./../authentication/illustration/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -888,7 +887,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/illustration/resetPassword.html"
+                                    href="./../authentication/illustration/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -900,7 +899,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/illustration/emailVerification.html"
+                                    href="./../authentication/illustration/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -914,7 +913,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/cover/signIn.html"
+                                    href="./../authentication/cover/signIn.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -926,7 +925,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/cover/signUp.html"
+                                    href="./../authentication/cover/signUp.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -938,7 +937,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/cover/forgotPassword.html"
+                                    href="./../authentication/cover/forgotPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -950,7 +949,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/cover/resetPassword.html"
+                                    href="./../authentication/cover/resetPassword.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -962,7 +961,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/authentication/cover/emailVerification.html"
+                                    href="./../authentication/cover/emailVerification.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -980,7 +979,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/profile.html"
+                        href="./../profile.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1000,7 +999,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/invoices.html"
+                        href="./../invoices.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1046,7 +1045,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/404/basic.html"
+                                    href="./../error/404/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1058,7 +1057,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/404/illustration.html"
+                                    href="./../error/404/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1070,7 +1069,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/404/illustration_cover.html"
+                                    href="./../error/404/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1084,7 +1083,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/500/basic.html"
+                                    href="./../error/500/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1096,7 +1095,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/500/illustration.html"
+                                    href="./../error/500/illustration.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1108,7 +1107,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-16 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/error/500/illustration_cover.html"
+                                    href="./../error/500/illustration_cover.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1126,7 +1125,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/maintenance.html"
+                        href="./../maintenance.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1171,7 +1170,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/faq/basic.html"
+                                    href="./../faq/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1183,7 +1182,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/faq/qa.html"
+                                    href="./../faq/qa.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1195,7 +1194,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/faq/accordion.html"
+                                    href="./../faq/accordion.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1237,7 +1236,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/coming_soon/basic.html"
+                                    href="./../coming_soon/basic.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1249,7 +1248,7 @@
                             <!-- start::Submenu link -->
                             <li class="pl-10 pr-6 py-2 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200 hover:text-gray-100">
                                 <a 
-                                    href="./pages/coming_soon/timer.html"
+                                    href="./../coming_soon/timer.html"
                                     class="flex items-center"
                                 >
                                     <span class="mr-2 text-sm">&bull;</span>
@@ -1267,7 +1266,7 @@
                         x-data="{ linkHover: false }"
                         @mouseover = "linkHover = true"
                         @mouseleave = "linkHover = false"
-                        href="./pages/pricing.html"
+                        href="./../pricing.html"
                         class="flex items-center text-gray-400 px-6 py-3 cursor-pointer hover:bg-black hover:bg-opacity-30 transition duration-200"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition duration-200" :class=" linkHover ? 'text-gray-100' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -1385,7 +1384,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1434,7 +1433,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1483,7 +1482,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1532,7 +1531,7 @@
                                         >
                                             <div class="flex items-center">
                                                 <img 
-                                                    src="./assets/img/profile.jpg"
+                                                    src="./../../assets/img/profile.jpg"
                                                     class="w-8 rounded-full"
                                                 >
                                                 <div class="text-sm ml-3">
@@ -1566,7 +1565,7 @@
                                     class="cursor-pointer"
                                 >
                                     <img 
-                                        src="./assets/img/profile.jpg"
+                                        src="./../../assets/img/profile.jpg"
                                         class="w-10 rounded-full"
                                     >
                                 </div>
@@ -1584,7 +1583,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./pages/profile.html"
+                                            href="./../profile.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1603,7 +1602,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./pages/email/inbox.html"
+                                            href="./../email/inbox.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1625,7 +1624,7 @@
                                         <!-- start::Submenu link -->
                                         <a 
                                             x-data="{ linkHover: false }"
-                                            href="./pages/settings.html"
+                                            href="./../settings.html"
                                             class="flex items-center justify-between py-2 px-3 hover:bg-gray-100 bg-opacity-20"
                                             @mouseover="linkHover = true"
                                             @mouseleave="linkHover = false"
@@ -1678,829 +1677,380 @@
 
                 <!-- start:Page content -->
                 <div class="h-full bg-gray-200 p-8">
-                    <!-- start::Stats -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-                        <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-                            <div class="flex items-center justify-between">
-                                <span class="font-bold text-sm text-indigo-600">Total Revenue</span>
-                                <span class="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">Today</span>
-                            </div>
-                            <div class="flex items-center justify-between mt-6">
-                                <div>
-                                    <svg class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3 bg-indigo-400 bg-opacity-20 rounded-full text-indigo-600 border border-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                </div>
-                                <div class="flex flex-col">
-                                    <div class="flex items-end">
-                                        <span class="text-2xl 2xl:text-4xl font-bold">$8,141</span>
-                                        <div class="flex items-center ml-2 mb-1">
-                                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                                            <span class="font-bold text-sm text-gray-500 ml-0.5">3%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-                            <div class="flex items-center justify-between">
-                                <span class="font-bold text-sm text-green-600">New Orders</span>
-                                <span class="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">7 days</span>
-                            </div>
-                            <div class="flex items-center justify-between mt-6">
-                                <div>
-                                    <svg class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3 bg-green-400 bg-opacity-20 rounded-full text-green-600 border border-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-                                </div>
-                                <div class="flex flex-col">
-                                    <div class="flex items-end">
-                                        <span class="text-2xl 2xl:text-4xl font-bold">217</span>
-                                        <div class="flex items-center ml-2 mb-1">
-                                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                                            <span class="font-bold text-sm text-gray-500 ml-0.5">5%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-                            <div class="flex items-center justify-between">
-                                <span class="font-bold text-sm text-blue-600">New Users</span>
-                                <span class="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">7 days</span>
-                            </div>
-                            <div class="flex items-center justify-between mt-6">
-                                <div>
-                                    <svg class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3 bg-blue-400 bg-opacity-20 rounded-full text-blue-600 border border-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                                </div>
-                                <div class="flex flex-col">
-                                    <div class="flex items-end">
-                                        <span class="text-2xl 2xl:text-4xl font-bold">54</span>
-                                        <div class="flex items-center ml-2 mb-1">
-                                            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                                            <span class="font-bold text-sm text-gray-500 ml-0.5">7%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-6 py-6 bg-white rounded-lg shadow-xl">
-                            <div class="flex items-center justify-between">
-                                <span class="font-bold text-sm text-yellow-600">Visits</span>
-                                <span class="text-xs bg-gray-200 hover:bg-gray-500 text-gray-500 hover:text-gray-200 px-2 py-1 rounded-lg transition duration-200 cursor-default">30 days</span>
-                            </div>
-                            <div class="flex items-center justify-between mt-6">
-                                <div>
-                                    <svg class="w-12 2xl:w-16 h-12 2xl:h-16 p-1 2xl:p-3 bg-yellow-400 bg-opacity-20 rounded-full text-yellow-600 border border-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                </div>
-                                <div class="flex flex-col">
-                                    <div class="flex items-end">
-                                        <span class="text-2xl 2xl:text-4xl font-bold">10,644</span>
-                                        <div class="flex items-center ml-2 mb-1">
-                                            <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
-                                            <span class="font-bold text-sm text-gray-500 ml-0.5">-1%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end::Stats -->
-
-                    <!-- start::Charts -->
-                    <div class="w-full flex flex-col lg:flex-row items-center justify-between bg-white my-16 px-2 py-4 rounded-lg shadow-lg">
-                        <div class="w-full lg:w-2/3">
-                            <h4 class="text-center text-xl font-semibold mb-4">Statistic 1</h4>
+                    <div class="flex space-x-8">
+                        <div class="w-2/3 bg-white rounded-lg p-8">
                             <div>
-                                <canvas id="chart_1"></canvas>
-                            </div>
-                        </div>
-                        <div class="hidden lg:block lg:mx-2 xl:mx-10 2xl:mx-20"></div>
-                        <div class="w-full lg:w-1/3 mt-10 lg:mt-0">
-                            <h4 class="text-center text-xl font-semibold mb-4">Statistic 2</h4>
-                            <div>                          
-                                <canvas id="chart_2"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end::Charts -->
+                                <p class="font-bold text-primary text-lg">Personal Info</p>
+                                <form action="" class="mt-4 space-y-4">
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="flex flex-col">
+                                            <label for="first_name">
+                                                First Name
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="first_name" 
+                                                id="first_name" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
 
-                    <!-- start::Stats  -->
-                    <div class="flex flex-col xl:flex-row space-y-4 xl:space-y-0 xl:space-x-4">
-                        <!-- start::Stats by category -->
-                        <div class="w-full xl:w-1/3 p-6 space-y-6 bg-white rounded-lg shadow-xl capitalize">
-                            <h4 class="text-center text-xl font-semibold mb-4">Project completion</h4>
-                            <section 
-                                x-data="statsByCategory"
-                                class="space-y-6"
-                            >
-                                <div class="flex items-center justify-center">
-                                    <template x-for="item in items">
-                                        <button x-text="item.name"
-                                            class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 mx-1 rounded-lg transition duration-200"
-                                            :class="(currentItem.name == item.name) && 'bg-gray-300'"
-                                            @click="currentItem = item"></button>
-                                    </template>
+                                        <div class="flex flex-col">
+                                            <label for="last_name">
+                                                Last Name
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="last_name" 
+                                                id="last_name" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="flex flex-col">
+                                            <label for="email">
+                                                Email
+                                            </label>
+                                            <input 
+                                                type="email" 
+                                                name="email" 
+                                                id="email" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+
+                                        <div class="flex flex-col">
+                                            <label for="phone">
+                                                Phone
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="phone" 
+                                                id="phone" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <hr class="my-8">
+
+                            <div>
+                                <p class="font-bold text-primary text-lg">Shipping Info</p>
+                                <form action="" class="mt-4 space-y-4">
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="flex flex-col">
+                                            <label for="address">
+                                                Address
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="address" 
+                                                id="address" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+
+                                        <div class="flex flex-col">
+                                            <label for="postal_code">
+                                                Postal Code
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="postal_code" 
+                                                id="postal_code" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+                                    </div>
+
+                                    <div class="grid grid-cols-2 gap-8">
+                                        <div class="flex flex-col">
+                                            <label for="city">
+                                                City
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="city" 
+                                                id="city" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+
+                                        <div class="flex flex-col">
+                                            <label for="country">
+                                                Country
+                                            </label>
+                                            <input 
+                                                type="text" 
+                                                name="country" 
+                                                id="country" 
+                                                class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                            >
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <hr class="my-8">
+                            
+                            <div>
+                                <p class="font-bold text-primary text-lg">Payment</p>
+                                
+                                <div x-data="{ paymentOption: 'cc' }" class="mt-4">
+                                    <div class="grid grid-cols-3">
+                                        <div 
+                                            @click="paymentOption = 'cc'"
+                                            class="flex items-center justify-center py-3 border-x-2 border-gray-100 space-x-2 cursor-pointer"
+                                            :class="paymentOption === 'cc' ? 'bg-primary text-gray-100' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                            </svg>
+                                            <span class="text-sm">Credit Card</span>
+                                        </div>
+                                        <div
+                                            @click="paymentOption = 'pp'"
+                                            class="flex items-center justify-center py-3 border-x-2 border-gray-100 space-x-2 cursor-pointer"
+                                            :class="paymentOption === 'pp' ? 'bg-primary text-gray-100' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                                            </svg>
+                                            <span class="text-sm">Paypal</span>
+                                        </div>
+                                        <div
+                                            @click="paymentOption = 'od'"
+                                            class="flex items-center justify-center py-3 border-x-2 border-gray-100 space-x-2 cursor-pointer"
+                                            :class="paymentOption === 'od' ? 'bg-primary text-gray-100' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                                            </svg>
+                                            <span class="text-sm">On Delivery</span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        x-show="paymentOption === 'cc'"
+                                        x-cloak
+                                        class="py-10"
+                                    >
+                                        <form action="" class="px-8 space-y-8">
+                                            <div class="flex flex-col">
+                                                <label for="name_on_card">
+                                                    Name on card
+                                                </label>
+                                                <input 
+                                                    type="text" 
+                                                    name="name_on_card" 
+                                                    id="name_on_card" 
+                                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                                >
+                                            </div>
+
+                                            <div class="flex flex-col">
+                                                <label for="card_number">
+                                                    Card Number
+                                                </label>
+                                                <input 
+                                                    type="text" 
+                                                    name="card_number" 
+                                                    id="card_number" 
+                                                    class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                                    placeholder="1234 1234 1234 1234"
+                                                >
+                                            </div>
+
+                                            <div class="grid grid-cols-2 gap-8">
+                                                <div class="flex flex-col">
+                                                    <label for="expiration_date">
+                                                        Expiration date
+                                                    </label>
+                                                    <input 
+                                                        type="text" 
+                                                        name="expiration_date" 
+                                                        id="expiration_date" 
+                                                        class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                                        placeholder="MM / YY"
+                                                    >
+                                                </div>
+
+                                                <div class="flex flex-col">
+                                                    <label for="cvc">
+                                                        CV Code
+                                                    </label>
+                                                    <input 
+                                                        type="text" 
+                                                        name="cvc" 
+                                                        id="cvc" 
+                                                        class="mt-2 py-1 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300"
+                                                        placeholder="CVC"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div
+                                        x-show="paymentOption === 'pp'"
+                                        x-cloak
+                                    >
+                                        <div class="py-10 flex items-center justify-center">
+                                            <button class="flex space-x-2 items-center justify-center bg-blue-700 hover:bg-blue-800 rounded-sm px-4 py-1.5 text-gray-100 text-sm hover:shadow-xl transition duration-150">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                                </svg>
+                                                <span>Log in to Paypal</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div
+                                        x-show="paymentOption === 'od'"
+                                        x-cloak
+                                    >
+                                        <div class="py-10 flex items-center justify-center">
+                                            <p class="text-gray-600">You choosed payment on delivery.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-8">
+
+                            <div class="flex items-center justify-end">
+                                <button class="flex space-x-2 items-center justify-center bg-primary hover:bg-primary-dark rounded-sm px-4 py-1.5 text-gray-100 text-sm hover:shadow-xl transition duration-150">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Complete Order</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-1/3 h-full bg-white rounded-lg p-8">
+                            <p class="text-primary font-bold text-lg">Order Summary</p>
+
+                            <hr class="my-4">
+
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <img 
+                                        src="./../../assets/img/ecommerce/product1.jpg" 
+                                        alt="Product Name"
+                                        class="w-16"
+                                    >
+                                    <div class="flex-1 px-4">
+                                        <p class="text-sm font-bold">Product Name</p>
+                                        <div class="text-xs text-gray-500 mt-0.5">
+                                            <span>Size: <span class="font-bold">S</span></span>
+                                            <span>Color: <span class="font-bold">White</span></span>
+                                        </div>
+                                        <p class="font-bold text-sm mt-2">x 1</p>
+                                    </div>
+                                    <div>
+                                        <span class="font-bold">$ 145.00</span>
+                                    </div>
+                                </div>
+
+                                <hr>
+                                
+                                <div class="flex items-center justify-between">
+                                    <img 
+                                        src="./../../assets/img/ecommerce/product2.jpg" 
+                                        alt="Product Name"
+                                        class="w-16"
+                                    >
+                                    <div class="flex-1 px-4">
+                                        <p class="text-sm font-bold">Product Name</p>
+                                        <div class="text-xs text-gray-500 mt-0.5">
+                                            <span>Size: <span class="font-bold">M</span></span>
+                                            <span>Color: <span class="font-bold">White</span></span>
+                                        </div>
+                                        <p class="font-bold text-sm mt-2">x 3</p>
+                                    </div>
+                                    <div>
+                                        <span class="font-bold">$ 189.00</span>
+                                    </div>
                                 </div>
                                 
-                                <p class="text-center text-xl font-semibold text-gray-700" x-text="`${currentItem.name}`"></p>
+                                <hr>
 
-                                <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 80 }">
-                                    <svg class="-rotate-90 w-48 h-48">
-                                        <circle cx="96" cy="96" r="80" stroke="currentColor" stroke-width="20" fill="transparent"
-                                        class="text-gray-300" />
-                                        
-                                        <circle cx="96" cy="96" r="80" stroke="currentColor" stroke-width="20" fill="transparent"
-                                        :stroke-dasharray="circumference"
-                                        :stroke-dashoffset="circumference - currentItem.percent / 100 * circumference"
-                                        class="text-green-500" />
-                                    </svg>
-                                    <span class="absolute text-3xl font-bold text-green-500" x-text="`${currentItem.percent}%`"></span>
+                                <div class="flex items-center justify-between">
+                                    <img 
+                                        src="./../../assets/img/ecommerce/product4.jpg" 
+                                        alt="Product Name"
+                                        class="w-16"
+                                    >
+                                    <div class="flex-1 px-4">
+                                        <p class="text-sm font-bold">Product Name</p>
+                                        <div class="text-xs text-gray-500 mt-0.5">
+                                            <span>Size: <span class="font-bold">L</span></span>
+                                            <span>Color: <span class="font-bold">White</span></span>
+                                        </div>
+                                        <p class="font-bold text-sm mt-2">x 1</p>
+                                    </div>
+                                    <div>
+                                        <span class="font-bold">$ 230.00</span>
+                                    </div>
                                 </div>
-                            </section>
-                        </div>
-                        <!-- end::Stats by category -->
+                                
+                                <hr>
 
-                        <!-- start::Project overview stats -->
-                        <div 
-                            x-data="productOverviewStats"
-                            class="w-full xl:w-1/3 p-6 space-y-6 bg-white shadow-xl rounded-lg"
-                        >
-                            <h4 class="text-xl font-semibold mb-4 capitalize">Project overview</h4>
-                            <section class="space-y-6">
-                                <div class="flex items-center justify-center" x-data="{ circumference: 2 * 22 / 7 * 110 }">
-                                    <svg class="rotate-90 w-64 h-64">
-                                        <circle cx="128" cy="128" r="110" stroke="currentColor" stroke-width="7" fill="transparent"
-                                        class="text-gray-300" />
-                                        
-                                        <circle cx="128" cy="128" r="110" stroke="currentColor" stroke-width="20" fill="transparent"
-                                        :stroke-dasharray="circumference"
-                                        :stroke-dashoffset="circumference - Math.round((project.completed / (project.completed + project.in_progress)) * 100) / 100 * circumference"
-                                        class="text-green-500" />
-                                    </svg>
-                                    <span class="absolute text-5xl font-bold text-green-500" x-text="`${Math.round((project.completed / (project.completed + project.in_progress)) * 100)}%`"></span>
+                                <div class="flex items-center justify-between">
+                                    <img 
+                                        src="./../../assets/img/ecommerce/product6.jpg" 
+                                        alt="Product Name"
+                                        class="w-16"
+                                    >
+                                    <div class="flex-1 px-4">
+                                        <p class="text-sm font-bold">Product Name</p>
+                                        <div class="text-xs text-gray-500 mt-0.5">
+                                            <span>Size: <span class="font-bold">M</span></span>
+                                            <span>Color: <span class="font-bold">Gray</span></span>
+                                        </div>
+                                        <p class="font-bold text-sm mt-2">x 2</p>
+                                    </div>
+                                    <div>
+                                        <span class="font-bold">$ 198.00</span>
+                                    </div>
                                 </div>
-                            </section>
-                            <div class="grid grid-cols-2 border-t-2 border-gray-300 pt-4">
-                                <div class="flex flex-col items-center justify-center border-r-2 border-gray-300">
-                                    <span class="text-sm text-gray-600">Completed</span>
-                                    <span class="text-3xl font-bold text-gray-800" x-text="`${project.completed}`"></span>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mt-8 space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span>Subtotal:</span>
+                                    <span class="font-bold">$762.00</span>
                                 </div>
-                                <div class="flex flex-col items-center justify-center">
-                                    <span class="text-sm text-gray-600">In Progress</span>
-                                    <span class="text-3xl font-bold text-gray-800" x-text="`${project.in_progress}`"></span>
+
+                                <div class="flex items-center justify-between">
+                                    <span>Discount:</span>
+                                    <span class="font-bold">10% (- $76.2)</span>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <span>Shipping:</span>
+                                    <span class="font-bold">$0</span>
+                                </div>
+
+                                <div class="flex items-center justify-between">
+                                    <span>Estimated Tax (15%):</span>
+                                    <span class="font-bold">$102.87</span>
+                                </div>
+
+                                <div class="flex items-center justify-between pt-8">
+                                    <span>Total:</span>
+                                    <span class="font-bold text-xl text-red-500">$864.87</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- end::Project overview stats -->
-
-                        <!-- start::Total stats -->
-                        <div class="w-full xl:w-1/3 p-6 space-y-6 bg-white shadow-xl rounded-lg">
-                            <h4 class="text-xl font-semibold mb-4 capitalize">Order stats</h4>
-                            <div class="grid grid-cols-2 gap-4 h-40">
-                                <div class="bg-green-300 bg-opacity-20 text-green-700 flex flex-col items-center justify-center rounded-lg">
-                                    <span class="text-4xl font-bold">184</span>
-                                    <span>Completed</span>
-                                </div>
-                                <div class="bg-indigo-300 bg-opacity-20 text-indigo-700 flex flex-col items-center justify-center rounded-lg">
-                                    <span class="text-4xl font-bold">54</span>
-                                    <span>Shipped</span>
-                                </div>
-                            </div>
-                            <div class="grid grid-cols-3 gap-2 h-32">
-                                <div class="bg-yellow-300 bg-opacity-20 text-yellow-700 flex flex-col items-center justify-center rounded-lg">
-                                    <span class="text-3xl font-bold">9</span>
-                                    <span>Pending</span>
-                                </div>
-                                <div class="bg-blue-300 bg-opacity-20 text-blue-700 flex flex-col items-center justify-center rounded-lg">
-                                    <span class="text-3xl font-bold">24</span>
-                                    <span>Refunded</span>
-                                </div>
-                                <div class="bg-red-300 bg-opacity-20 text-red-700 flex flex-col items-center justify-center rounded-lg">
-                                    <span class="text-3xl font-bold">37</span>
-                                    <span>Canceled</span>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end::Total stats -->
                     </div>
-                    <!-- end::Stats -->
-
-                    <!-- start::Activities -->
-                    <div class="flex flex-col xl:flex-row my-16 space-y-4 xl:space-y-0 xl:space-x-4">
-                        <!-- start::Schedule -->
-                        <div class="w-full xl:w-2/3 bg-white shadow-xl rounded-lg space-y-1">
-                            <h4 class="text-xl font-semibold m-6 capitalize">Schedule</h4>
-                            <!-- start::Task in calendar -->
-                            <div class="flex">
-                                <div class="w-32 flex flex-col items-center justify-center px-2 bg-blue-500 text-gray-100">
-                                    <span class="text-sm lg:text-base font-semibold">24 Sep</span>
-                                    <span class="text-xs lg:text-sm text-gray-200">1:30 PM</span>
-                                </div>
-                                <div class="w-full flex justify-between p-4 bg-gray-100 hover:bg-gray-200 transition duration-200">
-                                    <div class="flex flex-col justify-center">
-                                        <span class="xl:text-lg">New project requirements meeting</span>
-                                        <span class="flex items-start">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                            <span class="text-xs lg:text-sm">
-                                                Meeting room 3
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="text-xs lg:text-sm bg-gray-300 p-2 rounded-lg text-center">2 hours</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Task in calendar -->
-
-                            <!-- start::Task in calendar -->
-                            <div class="flex">
-                                <div class="w-32 flex flex-col items-center justify-center px-2 bg-blue-500 text-gray-100">
-                                    <span class="text-sm lg:text-base font-semibold">27 Sep</span>
-                                    <span class="text-xs lg:text-sm text-gray-200">11:30 AM</span>
-                                </div>
-                                <div class="w-full flex justify-between p-4 bg-gray-100 hover:bg-gray-200 transition duration-200">
-                                    <div class="flex flex-col justify-center">
-                                        <span class="xl:text-lg">Weekly dev team meeting</span>
-                                        <span class="flex items-start">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                            <span class="text-xs lg:text-sm">
-                                                Meeting room 2
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="text-xs lg:text-sm bg-gray-300 p-2 rounded-lg text-center">3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Task in calendar -->
-
-                            <!-- start::Task in calendar -->
-                            <div class="flex">
-                                <div class="w-32 flex flex-col items-center justify-center px-2 bg-blue-500 text-gray-100">
-                                    <span class="text-sm lg:text-base font-semibold">27 Sep</span>
-                                    <span class="text-xs lg:text-sm text-gray-200">3:30 PM</span>
-                                </div>
-                                <div class="w-full flex justify-between p-4 bg-gray-100 hover:bg-gray-200 transition duration-200">
-                                    <div class="flex flex-col justify-center">
-                                        <span class="xl:text-lg">Meeting with Laravel client</span>
-                                        <span class="flex items-start">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                            <span class="text-xs lg:text-sm">
-                                                Zoom
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="text-xs lg:text-sm bg-gray-300 p-2 rounded-lg text-center">3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Task in calendar -->
-
-                            <!-- start::Task in calendar -->
-                            <div class="flex">
-                                <div class="w-32 flex flex-col items-center justify-center px-2 bg-blue-500 text-gray-100">
-                                    <span class="text-sm lg:text-base font-semibold">29 Sep</span>
-                                    <span class="text-xs lg:text-sm text-gray-200">10:00 AM</span>
-                                </div>
-                                <div class="w-full flex justify-between p-4 bg-gray-100 hover:bg-gray-200 transition duration-200">
-                                    <div class="flex flex-col justify-center">
-                                        <span class="xl:text-lg">Meeting with Tailwind CSS client</span>
-                                        <span class="flex items-start">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                            <span class="text-xs lg:text-sm">
-                                                Zoom
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="text-xs lg:text-sm bg-gray-300 p-2 rounded-lg text-center">5 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Task in calendar -->
-
-                            <!-- start::Task in calendar -->
-                            <div class="flex">
-                                <div class="w-32 flex flex-col items-center justify-center px-2 bg-blue-500 text-gray-100">
-                                    <span class="text-sm lg:text-base font-semibold">30 Sep</span>
-                                    <span class="text-xs lg:text-sm text-gray-200">8:00 AM</span>
-                                </div>
-                                <div class="w-full flex justify-between p-4 bg-gray-100 hover:bg-gray-200 transition duration-200">
-                                    <div class="flex flex-col justify-center">
-                                        <span class="lg:text-lg">Laracon</span>
-                                        <span class="flex items-start">
-                                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                            <span class="text-xs lg:text-sm">
-                                                Amsterdam
-                                            </span>
-                                        </span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="text-xs lg:text-sm bg-gray-300 p-2 rounded-lg text-center">6 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- end::Task in calendar -->
-                        </div>
-                        <!-- end::Schedule -->
-
-                        <!-- start::Activity -->
-                        <div class="w-full xl:w-1/3 bg-white rounded-lg shadow-xl px-4 overflow-y-hidden">
-                            <h4 class="text-xl font-semibold p-6 capitalize">Activity</h4>
-                            <div class="relative h-full px-8 pt-2">
-                                <div class="absolute h-full border border-dashed border-opacity-20 border-secondary"></div>
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm">Server down for maintenance.</p>
-                                        <p class="text-xs text-gray-500">3 min ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm">
-                                            <a href="#" class="text-primary font-bold">Harold Hobbs</a> make payment for order <a href="#" class="text-primary font-bold">#OR7546</a>.</p>
-                                        <p class="text-xs text-gray-500">15 min ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm">Invoice <a href="#" class="text-primary font-bold">#4563</a> was created.</p>
-                                        <p class="text-xs text-gray-500">57 min ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm"><a href="#" class="text-primary font-bold">Cecilia Hendric</a> just confirmed email address.</p>
-                                        <p class="text-xs text-gray-500">1 hour ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm">New order received <a href="#" class="text-primary font-bold">#OR9653</a>.</p>
-                                        <p class="text-xs text-gray-500">2 hours ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-
-                                <!-- start::Timeline item -->
-                                <div class="flex items-center w-full my-6 -ml-1.5">
-                                    <div class="w-1/12">
-                                        <div class="w-3.5 h-3.5 bg-primary rounded-full"></div>
-                                    </div>
-                                    <div class="w-11/12">
-                                        <p class="text-sm"><a href="#" class="text-primary font-bold">Jane Stillman</a> canceled order <a href="#" class="text-primary font-bold">#OR7451</a>.</p>
-                                        <p class="text-xs text-gray-500">2 hours ago</p>
-                                    </div>
-                                </div>
-                                <!-- end::Timeline item -->
-                            </div>
-                        </div>
-                        <!-- end::Activity -->
-                    </div>
-                    <!-- end::Activities -->
-
-                    <!-- start::Table -->
-                    <div class="bg-white rounded-lg px-8 py-6 overflow-x-scroll custom-scrollbar">
-                        <h4 class="text-xl font-semibold">Recent transactions</h4>
-                        <table class="w-full my-8 whitespace-nowrap">
-                            <thead class="bg-secondary text-gray-100 font-bold">
-                                <td>
-                                </td>
-                                <td class="py-2 pl-2">
-                                    Order ID
-                                </td>
-                                <td class="py-2 pl-2">
-                                    Customer Name
-                                </td>
-                                <td class="py-2 pl-2">
-                                    Price
-                                </td>
-                                <td class="py-2 pl-2">
-                                    Status
-                                </td>
-                                <td class="py-2 pl-2">
-                                    Date
-                                </td>
-                                <td class="py-2 pl-2">
-                                    View Details
-                                </td>
-                            </thead>
-                            <tbody class="text-sm">
-                                <tr class="bg-gray-100 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR7546
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Harold Hobbs
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 123.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-green-500 px-1.5 py-0.5 rounded-lg text-gray-100">Paid</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 30, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-200 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR4359
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Shirley Williams
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 745.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-indigo-500 px-1.5 py-0.5 rounded-lg text-gray-100">Shipped</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 28, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-100 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR3654
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Timothy Reyes
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 1344.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-yellow-500 px-1.5 py-0.5 rounded-lg text-gray-100">Pending</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 27, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-200 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR7451
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Jane Stillman
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 230.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-red-500 px-1.5 py-0.5 rounded-lg text-gray-100">Canceled</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 24, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-100 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR1324
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Leon Blank
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 511.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-indigo-500 px-1.5 py-0.5 rounded-lg text-gray-100">Shipped</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 20, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-200 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR5331
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Cecilia Hendric
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 2654.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-green-500 px-1.5 py-0.5 rounded-lg text-gray-100">Paid</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Sep 09, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-100 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR1874
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Suzanne Williams
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 400.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-green-500 px-1.5 py-0.5 rounded-lg text-gray-100">Paid</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Aug 31, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-200 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR4963
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Gerland Falvin
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 954.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-yellow-500 px-1.5 py-0.5 rounded-lg text-gray-100">Pending</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Aug 31, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-100 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR9452
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        Crystal Reagle
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 1365.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-red-500 px-1.5 py-0.5 rounded-lg text-gray-100">Canceled</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        Aug 25, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                                <tr class="bg-gray-200 hover:bg-primary hover:bg-opacity-20 transition duration-200">
-                                    <td class="py-3 pl-2">
-                                        <input type="checkbox" class="rounded focus:ring-0 checked:bg-red-500 ml-2">
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        #OR8563
-                                    </td>
-                                    <td class="py-3 pl-2 capitalize">
-                                        John Reeves
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        $ 164.00
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <span class="bg-indigo-500 px-1.5 py-0.5 rounded-lg text-gray-100">Shipped</span>
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        July 20, 2021
-                                    </td>
-                                    <td class="py-3 pl-2">
-                                        <a href="#" class="bg-primary hover:bg-opacity-90 px-2 py-1 mr-2 text-gray-100 rounded-lg">View Details</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <!-- end::Table -->
                 </div>
                 <!-- end:Page content -->
             </div>
         </div>
-
-        <script>
-            // Stats by category
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('statsByCategory', () => ({
-                    items: [{
-                            'name': 'Project 1',
-                            'percent': '71',
-                        },
-                        {
-                            'name': 'Project 2',
-                            'percent': '63',
-                        },
-                        {
-                            'name': 'Project 3',
-                            'percent': '92',
-                        },
-                        {
-                            'name': 'Project 4',
-                            'percent': '84',
-                        },
-                    ],
-                    currentItem: {
-                        'name': 'Project 1',
-                        'percent': '71',
-                    }
-                }));
-            });
-
-            // Project overview stats
-            document.addEventListener('alpine:init', () => {
-                Alpine.data('productOverviewStats', () => ({
-                    project: {
-                        'completed': 149,
-                        'in_progress': 42,
-                    }
-                }));
-            });
-
-
-            // start::Chart 1
-            const labels = [
-                'January',
-                'February',
-                'Mart',
-                'April',
-                'May',
-                'Jun',
-                'July'
-            ];
-
-            const data_1 = {
-                labels: labels,
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [65, 59, 80, 81, 56, 55, 40],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(255, 159, 64, 0.2)',
-                        'rgba(255, 205, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(201, 203, 207, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgb(255, 99, 132)',
-                        'rgb(255, 159, 64)',
-                        'rgb(255, 205, 86)',
-                        'rgb(75, 192, 192)',
-                        'rgb(54, 162, 235)',
-                        'rgb(153, 102, 255)',
-                        'rgb(201, 203, 207)'
-                    ],
-                    borderWidth: 1
-                }]
-            };
-
-            const config_1 = {
-                type: 'bar',
-                data: data_1,
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true
-                        }
-                    }
-                },
-            };
-
-            var chart_1 = new Chart(
-                document.getElementById('chart_1'),
-                config_1
-            );
-
-            // end::Chart 1
-
-            // start::Chart 2
-            const data_2 = {
-                labels: [
-                    'Eating',
-                    'Drinking',
-                    'Sleeping',
-                    'Designing',
-                    'Coding',
-                    'Cycling',
-                    'Running'
-                ],
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [65, 59, 90, 81, 56, 55, 40],
-                    fill: true,
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    pointBackgroundColor: 'rgb(255, 99, 132)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(255, 99, 132)'
-                }, {
-                    label: 'My Second Dataset',
-                    data: [28, 48, 40, 19, 96, 27, 100],
-                    fill: true,
-                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                    borderColor: 'rgb(54, 162, 235)',
-                    pointBackgroundColor: 'rgb(54, 162, 235)',
-                    pointBorderColor: '#fff',
-                    pointHoverBackgroundColor: '#fff',
-                    pointHoverBorderColor: 'rgb(54, 162, 235)'
-                }]
-            };
-            
-            const config_2 = {
-                type: 'radar',
-                data: data_2,
-                options: {
-                    elements: {
-                        line: {
-                            borderWidth: 3
-                        }
-                    }
-                },
-            };
-
-            var chart_2 = new Chart(
-                document.getElementById('chart_2'),
-                config_2
-            );
-            // end::Chart 2
-        </script>
     </body>
 </html>
