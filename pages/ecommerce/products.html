@@ -1685,12 +1685,12 @@
                                 <div class="pl-2 space-y-1">
                                     <div class="flex items-center space-x-2">
                                         <label for="minPrice">Min:</label>
-                                        <input x-model="minPrice" type="range" id="minPrice" min="0" max="1000" step="10">
+                                        <input x-model="minPrice" type="range" id="minPrice" class="xl:w-full" min="0" max="1000" step="10">
                                     </div>
                                     
                                     <div class="flex items-center space-x-2">
                                         <label for="maxPrice">Max:</label>
-                                        <input x-model="maxPrice" type="range" id="maxPrice" min="0" max="1000" step="10">
+                                        <input x-model="maxPrice" type="range" id="maxPrice" class="xl:w-full" min="0" max="1000" step="10">
                                     </div>
 
                                     <div x-show="minPrice && !maxPrice">
