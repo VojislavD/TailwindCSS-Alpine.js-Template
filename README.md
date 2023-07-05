@@ -24,3 +24,7 @@ In the project directory run `npm install` command to install all required packa
 After installation is completed, run `npm run dev` command and you will have project running at http://localhost:3000/.
 
 Enjoy :palm_tree:
+
+## License
+
+The project is open-sourced software licensed under the [MIT license](LICENSE.md).
